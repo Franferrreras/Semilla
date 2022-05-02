@@ -1,0 +1,45 @@
+@if ($include__breadcrumbs==true) {
+
+    .portlet-breadcrumb {
+        .evr-breadcrumb {
+            p {
+                font-family: $wf__font--default;
+                font-size: rem(14);
+                line-height: rem(21);
+
+                a {
+                    margin-left: rem(10);
+                    padding-right: rem(20);
+                    display: inline-block;
+                    position: relative;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    &:after {
+                        content: "»";
+                        right: 5px;
+                        top: 0;
+                        height: 100%;
+                        position: absolute;
+                        color: #000000;
+                        line-height: 21px;
+                    }
+                }
+
+                span {
+                    color: color(black);
+                }
+            }
+        }
+    }
+
+    @include media-query(sm) {
+        .portlet-breadcrumb {
+            .evr-breadcrumb {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.#{$ns}box-event {
+    height: 100%;
+    border: 1.5px solid color(primary,0.5);
+    font-size: 0;
+    @include border-radius(4px);
+
+    &__container {
+        padding: rem(12) rem(12);
+    }
+    &__icon {
+        display: inline-block;
+        width: rem(25);
+        font-size: rem(24);
+        color: color(primary);
+        vertical-align: top;
+    }
+    &__body {
+        display: inline-block;
+        width: calc(100% - 25px);
+        padding-left: rem(20);
+        vertical-align: top;
+    }
+    &__title {
+        display: block;
+        font-size: rem(14);
+        line-height: 1.2;
+        font-weight: bold;
+        margin-bottom: rem(20);
+    }
+    &__txt {
+        display: block;
+        font-size: rem(14);
+        line-height: 1.2;
+        color: color(grey-5);
+    }
+}

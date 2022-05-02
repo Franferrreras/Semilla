@@ -1,0 +1,106 @@
+////
+/// Botones de tabs component
+///
+/// Description of the component
+///
+/// @access public
+/// @author Dfront Specialist Team
+/// @group components
+/// @name .#{$wf__ns}example
+/// @since version 1.0.0
+////
+.#{$ns}panel-protection{
+    &__container-btn{
+        margin-bottom: rem(20);
+        display: flex;
+	    flex-wrap: wrap;
+        
+    }
+    &__btn{
+        background: transparent;
+        border: 1px solid color(primary);
+        padding: rem(9) rem(18);
+        display: inline-block;
+        width: 29%;
+        margin-right: 5%;
+        margin: 0 5% rem(10) 0;
+        &:nth-child(3n){
+            margin-right: 0;
+        }
+        
+    }
+    &__lnk{
+        width: 100%;
+        &:hover, &:focus, &:active {
+            text-decoration: none; 
+        }
+    }
+    &__fig{
+        display: inline-block;
+        width: rem(85);
+        height: rem(72);
+        margin-right: rem(13);
+        vertical-align: top;
+    }
+    &__img{
+        max-width: 100%;
+        height: 100%;
+        max-height: 100%;
+    }
+    &__text-container{
+        display: inline-block;
+        white-space: normal;
+        // width: calc(100% - 75px);
+        vertical-align: top;
+        overflow: hidden;
+        max-width: calc(100% - 105px);
+    }
+    &__btn-title{
+        display: block;
+        color: color(primary);
+        font-size: rem(16);
+        font-weight: 600;
+        line-height: rem(19);
+        font-family: $wf__font--assistant-bold;
+        letter-spacing: -0.3px;
+        margin-bottom: rem(8);
+        word-break: break-word;
+    }
+    &__btn-span{
+        display: block;
+        font-size: rem(14);
+        line-height: rem(14);
+        font-weight: 600;
+        color: color(grey-21);
+        font-family: $wf__font--assistant-Semibold;
+    }
+}
+
+@include media-query(md){
+    .#{$ns}panel-protection{
+        &__container-btn{
+            flex-direction: column;
+        }
+        &__btn{
+            width: 100%;
+            margin: 0 0 rem(15) 0;
+            :first-child{
+                margin-top: 0;
+            }
+            :last-child{
+                margin-bottom: 0;
+            }
+        }
+        &__list{
+
+            &--style{
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@include media-query(sm){
+    .#{$ns}panel-protection{
+    }
+}

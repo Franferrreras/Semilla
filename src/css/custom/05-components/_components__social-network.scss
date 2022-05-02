@@ -1,0 +1,84 @@
+.#{$ns}social-network {
+    display: flex;
+
+    &__jssocials-share {
+        margin-left: 10px !important;
+        .evr-social-network__jssocials-share-link {
+            padding: 10px;
+            border: 2px solid #acacac;
+            border-radius: 50% 50% 50% 50%;
+            color: color(grey-26);
+            &.jssocials-share-link:hover, &.jssocials-share-link:focus{
+                color: color(grey-26);
+            }
+        }
+
+        &.active {
+            position: relative;
+            .evr-social-network__jssocials-share-link {
+                border: 2px solid gray;
+                padding: 10px;
+                border-radius: 40px 40px 0 0;
+                border: 2px solid #acacac;
+                border-radius: 50% 50% 0 0;
+                border-bottom: none;
+            }
+
+            .evr-social-network__inline.jssocials.block {
+                border: 2px solid #acacac;
+                border-radius: 40px;
+                border-top: none;
+                top: 50px;
+                left: 0px;
+                padding: 4px;
+                background: white;
+                .jssocials-shares .jssocials-share-link {
+                    padding: 5px;
+                    margin-left: 0;
+                    margin-right: 0;
+                    width: 100%;
+                    &:hover{
+                        border: transparent;
+                    }
+                }
+            }
+        }
+    }
+
+    &__inline {
+        position: absolute;
+        z-index: 100;
+        border: 1px solid gray;
+        border-top: 0;
+        padding: 10px;
+
+        &:not(.hidden) {
+            border-radius: 0 0 40px 40px;
+        }
+
+        .jssocials-shares {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .jssocials-share {
+            margin-right: 0;
+        }
+    }
+
+    .jssocials-share.jssocials-share-whatsapp {
+        display: none;
+    }
+
+}
+
+@include media-query(sm){
+
+    .#{$ns}social-network {
+
+        .jssocials-share.jssocials-share-whatsapp {
+            display: block;
+        }
+    }
+
+}

@@ -1,0 +1,302 @@
+@if ($include__forms == true){
+    .portlet-forms{
+        background: color(grey-2);
+        padding: rem(45) rem(130) rem(45) 0;  
+        border-bottom-right-radius: 65px;
+        .ddl-form-name {
+            display: none;
+        }
+        .container-fluid-1280{
+            max-width: 100% !important;
+            padding: 0;
+        }
+        .liferay-ddm-form-field-paragraph{
+            color: color(secondary);
+            font-size: rem(22);
+            position: relative;
+            padding: rem(20) 0;
+            font-weight: normal;
+            > div {
+                position: absolute;
+                width: calc(100% + 305px);
+                bottom: 0;
+                line-height: 30px;
+            }
+            .control-label {
+                position: static;
+                display: none;
+                & + div{
+                    padding-left: 0 !important;
+                }
+            }
+        }
+
+        .ddl-form-builder-app{
+             .lfr-ddm-form-container {
+                display: flex;
+                width: 100%;
+                .lfr-ddm-form-pages{
+                    display: flex;
+                    &:before {
+                        display: block;
+                        content: "";
+                        width: rem(400);
+                        background: transparent url(#{$wf__image-path-custom}contacto_bg.png) center top no-repeat;
+                        margin-left: rem(-15);
+                    }
+                }
+                .lfr-ddm-form-page{
+                    padding: 0;
+                    width: calc(100% - 400px);
+
+                    > div:last-child .lfr-ddm-form-field-container {
+                        padding-bottom: 0;
+                    }
+                }
+
+            }
+
+        }
+        
+        .lfr-ddm-form-content {
+            width: calc(100% - 130px);
+            & + div{
+                width: rem(130);
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+        }
+        .lfr-ddm-form-field-container {
+             padding: rem(10) 0; 
+            display: flex;
+            .form-group {
+                margin: 0;
+                width: 100%;
+            }
+            .control-label {
+                position: absolute;
+                font-size: rem(20);
+                color:color(secondary);
+                font-weight: normal;
+
+                > .icon-asterisk::before {
+                    content: "\f069";
+                    font-size: 10px;
+                    color: color(error);
+                    float: right;
+                    margin-top: rem(5);
+                    display: none;
+                }
+
+                & + div{
+                    padding-left: rem(143);
+                }
+            }
+
+            .field.form-control {
+                border: 0;
+                border-radius: 0;
+                box-shadow: none;
+                height: rem(30);
+            }
+
+            textarea.field.form-control{
+                height: rem(85) !important;
+            }
+        }
+        .lfr-ddm-form-container .lfr-ddm-form-pagination-controls {
+            /* padding-top: 0; */
+        }
+
+        .required-warning{
+            display: none;
+        }
+
+        .help-block {
+            text-align: right;
+        }
+
+        .ddl-form-name {
+            /* display: none; */
+        }
+
+        .taglib-captcha{
+            padding-left: rem(143);
+            .captcha {
+                margin-bottom: rem(45);
+            }
+            .control-label {
+                margin-top: rem(-35);
+                font-size: rem(16);
+            }
+            .text-warning {
+                display: none;
+            }
+        }
+
+    }
+
+/*@include media-query(sm) {*/
+    @media(max-width:1024px){
+        .portlet-forms{
+            padding: 0;  
+            border-bottom-right-radius: 30px;
+            margin-left: -20px;
+            margin-right: -20px;
+            .ddl-form-name {
+                display: none;
+            }
+            .container-fluid-1280{
+                max-width: 100% !important;
+                padding: 0;
+            }
+            .liferay-ddm-form-field-paragraph{
+                font-size: rem(19);
+                padding: 0;
+                > div {
+                    position: static;
+                    width: 100%;
+
+                    p{
+                        margin-top: 20px;
+                        line-height: 25px;
+                    }
+                }
+                .control-label {
+                    position: static;
+                    display: none;
+                    & + div{
+                        padding-left: 0 !important;
+                    }
+                }
+            }
+
+            .ddl-form-builder-app{
+                 .lfr-ddm-form-container {
+                    display: block;
+                    width: 100%;
+                    .lfr-ddm-form-pages{
+                        display: block;
+                        &:before {
+                            display: block;
+                            content: "";
+                            width: rem(400);
+                            background: transparent url(#{$wf__image-path-custom}contacto_bg.png) center top no-repeat;
+                            margin-left: rem(-15);
+                        }
+                    }
+                    .lfr-ddm-form-page{
+                        padding: 0;
+                        width: 100%;
+
+                        > div:last-child .lfr-ddm-form-field-container {
+                            padding-bottom: 0;
+                        }
+                    }
+
+                }
+
+            }
+            
+            .lfr-ddm-form-content {
+                width: 100%;
+                & + div{
+                    width: 100%;
+                    display: block;
+                }
+            }
+            .lfr-ddm-form-field-container {
+                 padding: rem(10) 0; 
+                display: flex;
+                .form-group {
+                    margin: 0;
+                    width: 100%;
+                }
+                .control-label {
+                    position: absolute;
+                    font-size: rem(19);
+                    color:color(secondary);
+                    font-weight: normal;
+
+                    > .icon-asterisk::before {
+                        content: "\f069";
+                        font-size: 10px;
+                        color: color(error);
+                        float: right;
+                        margin-top: rem(5);
+                        display: none;
+                    }
+
+                    & + div{
+                        padding-left: rem(140);
+                    }
+                }
+
+                .field.form-control {
+                    border: 0;
+                    border-radius: 0;
+                    box-shadow: none;
+                    height: rem(30);
+                }
+
+                textarea.field.form-control{
+                    height: rem(85) !important;
+                }
+            }
+            .lfr-ddm-form-container .lfr-ddm-form-pagination-controls {
+                /* padding-top: 0; */
+                .btn.btn-primary.btn-lg{
+                    padding: 20px 15px;
+                    margin-right: 32px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .required-warning{
+                display: none;
+            }
+
+            .help-block {
+                text-align: right;
+            }
+
+            .ddl-form-name {
+                /* display: none; */
+            }
+
+        }
+    }
+
+    @media(max-width:768px){
+        .portlet-forms{
+            .liferay-ddm-form-field-paragraph{
+                font-size: rem(14);
+                > div {
+                    p{
+                        margin-top: 10px;
+                        line-height: 20px;
+                    }
+                }
+            }
+            
+            .lfr-ddm-form-field-container {
+                .control-label {
+                    font-size: rem(13);
+                    & + div{
+                        padding-left: rem(100);
+                    }
+                }
+            }
+
+            .taglib-captcha{
+                padding-left: rem(100);
+            }
+
+        }
+
+
+    }
+
+}

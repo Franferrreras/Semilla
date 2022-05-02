@@ -1,0 +1,335 @@
+/* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
+
+
+/* inject:imports */
+
+
+/* endinject */
+
+
+/* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
+
+
+/*-------------------------------------------------------------------------
+//   # FRONT MODULES CONFIG
+//------------------------------------------------------------------------*/
+
+//	CONTENT THIS FILE:
+//		# IMPORT FILE CONFIG SCSS
+//      # SETTINGS
+//		# TOOLS
+//      # GENERIC
+//		# TAG ELEMENTS
+//		# LIFERAY OBJETCS
+//      # EVERIS COMPONENTS
+//      # LIFERAY AND CUSTOM PORTLETS
+//      # TEMPLATES & ADTS
+//      # LAYOUTS
+//      # COLOR SCHEMES
+//      # TRUMPS
+
+/*--------------------------------------------------------
+//    # IMPORT FILE CONFIG SCSS
+//--------------------------------------------------------*/
+
+@import 'custom/_config__project';
+
+/*--------------------------------------------------------
+//    # SETTINGS
+//--------------------------------------------------------*/
+
+@import 'custom/00-settings/_settings__colors';
+@import 'custom/00-settings/_settings__responsive';
+@import 'custom/00-settings/_settings__basics';
+@import 'custom/00-settings/_settings__colors';
+@import 'custom/00-settings/_settings__responsive';
+@import 'custom/00-settings/_settings__grid-reflex';
+@import 'custom/00-settings/_settings__headings';
+@import 'custom/00-settings/_settings__trumps';
+@import 'custom/00-settings/_settings__objects';
+
+/*----------------------------------------------------------
+//    # TOOLS
+//--------------------------------------------------------*/
+
+@import 'custom/01-tools/_tools__colors';
+@import 'custom/01-tools/_tools__fonts';
+@import 'custom/01-tools/_tools__percentaje';
+@import 'custom/01-tools/_tools__pixel-to-em';
+@import 'custom/01-tools/_tools__pixel-to-rem';
+@import 'custom/01-tools/_tools__responsive';
+@import 'custom/01-tools/_tools__border-radius';
+@import 'custom/01-tools/_tools__box-shadow';
+@import 'custom/01-tools/_tools__transform';
+@import 'custom/01-tools/_tools__transition';
+@import 'custom/01-tools/_tools__truncate';
+@import 'custom/01-tools/_tools__user-select';
+@import 'custom/01-tools/_tools__z-index';
+@import 'custom/01-tools/_tools__print-content';
+
+/*----------------------------------------------------------
+//     # GENERIC
+// --------------------------------------------------------*/
+
+@import 'custom/02-generic/generic__accessible';
+@import 'custom/02-generic/generic__barebone';
+@import 'custom/02-generic/generic__basic-content';
+@import 'custom/02-generic/generic__fonts';
+@import 'custom/02-generic/_generic__box-sizing';
+@import 'custom/02-generic/_generic__reset';
+
+/*!
+ * Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+
+@import 'custom/02-generic/fontawesome/font-awesome';
+// Import files grid reflex
+@import 'custom/02-generic/reflex/_mixins';
+@import 'custom/02-generic/reflex/_grid';
+@import 'custom/02-generic/reflex/_helpers';
+
+/*----------------------------------------------------------
+//     # TAG ELEMENTS
+// --------------------------------------------------------*/
+
+@import 'custom/03-elements/_elements__a';
+// @import 'custom/03-elements/_elements__body';
+@import 'custom/03-elements/_elements__button';
+@import 'custom/03-elements/_elements__figure';
+@import 'custom/03-elements/_elements__headings';
+@import 'custom/03-elements/_elements__hr';
+@import 'custom/03-elements/_elements__html';
+@import 'custom/03-elements/_elements__iframe';
+@import 'custom/03-elements/_elements__image';
+@import 'custom/03-elements/_elements__lists';
+@import 'custom/03-elements/_elements__p';
+
+/*----------------------------------------------------------
+//     # LIFERAY OBJETCS
+// --------------------------------------------------------*/
+
+@import 'custom/04-objects/_objects__badge';
+@import 'custom/04-objects/_objects__banner';
+@import 'custom/04-objects/_objects__buttons';
+@import 'custom/04-objects/_objects__calendar-yui';
+@import 'custom/04-objects/_objects__calendar';
+@import 'custom/04-objects/_objects__card';
+@import 'custom/04-objects/_objects__carousel';
+@import 'custom/04-objects/_objects__debug';
+@import 'custom/04-objects/_objects__dropdown';
+@import 'custom/04-objects/_objects__figcaption';
+@import 'custom/04-objects/_objects__form-controls';
+@import 'custom/04-objects/_objects__form-labels';
+@import 'custom/04-objects/_objects__loaders';
+@import 'custom/04-objects/_objects__modal-dialog';
+@import 'custom/04-objects/_objects__navbar';
+@import 'custom/04-objects/_objects__navigation';
+@import 'custom/04-objects/_objects__pagination';
+@import 'custom/04-objects/_objects__portlet';
+@import 'custom/04-objects/_objects__quote';
+@import 'custom/04-objects/_objects__search-facet';
+@import 'custom/04-objects/_objects__search-sugest';
+@import 'custom/04-objects/_objects__sidebar';
+@import 'custom/04-objects/_objects__sidenav';
+@import 'custom/04-objects/_objects__site-title';
+@import 'custom/04-objects/_objects__table';
+@import 'custom/04-objects/_objects__tabs';
+@import 'custom/04-objects/_objects__taglib-discussion';
+@import 'custom/04-objects/_objects__wrapper';
+
+/*----------------------------------------------------------
+//     # EVERIS COMPONENTS
+// --------------------------------------------------------*/
+
+
+/* libs */
+
+@import 'custom/05-components/libs/_daterangepicker';
+@import 'custom/05-components/libs/_jquery.ui';
+@import 'custom/05-components/libs/_datepickk';
+@import 'custom/05-components/libs/_slick';
+@import 'custom/05-components/libs/_jssocials';
+@import 'custom/05-components/libs/jquery.mCustomScrollbar';
+@import 'custom/05-components/libs/jssocials-theme-classic.css';
+@import 'custom/05-components/libs/multiselect.css';
+
+/* custom components */
+
+@import 'custom/05-components/_components__header';
+@import 'custom/05-components/_components__main-navigation';
+@import 'custom/05-components/_components__search';
+@import 'custom/05-components/_components__form-send';
+@import 'custom/05-components/_components__language';
+@import 'custom/05-components/_components__footer';
+@import 'custom/05-components/_components__banner';
+@import 'custom/05-components/_components__main-content';
+@import 'custom/05-components/_components__title';
+@import 'custom/05-components/_components__subtitle';
+@import 'custom/05-components/_components__content-links';
+@import 'custom/05-components/_components__highlighted';
+@import 'custom/05-components/_components__buttons';
+@import 'custom/05-components/_components__show-content';
+@import 'custom/05-components/_components__present';
+@import 'custom/05-components/_components__wrapper';
+@import 'custom/05-components/_components__social-network';
+@import 'custom/05-components/_components__social-networks';
+@import 'custom/05-components/_components__banner-natural-space';
+@import 'custom/05-components/_components__mapa-web';
+//Agregados a la maquete:
+@import 'custom/05-components/components__visitcollage';
+@import 'custom/05-components/components__perfil'; //PERFIL
+@import 'custom/05-components/components__photographytitle'; //Titulo imagen y título 
+@import 'custom/05-components/components__separator'; //Icono usuarios y lápiz con titulo y separado
+@import 'custom/05-components/components__visit'; //•	Titulo imagen y título :visitasss
+@import 'custom/05-components/components__modal-add';
+@import 'custom/05-components/components__visitform';
+@import 'custom/05-components/components__activity';
+// /*----------------------------------------------------------
+//     # COMPONENTS: DISEÑO VENTANA v3
+// ----------------------------------------------------------*/
+@import 'custom/05-components/_components__article-mini.scss';
+@import 'custom/05-components/_components__article-layout.scss';
+@import 'custom/05-components/_components__article-related.scss';
+@import 'custom/05-components/_components__article-result.scss';
+@import 'custom/05-components/_components__article-collage.scss';
+@import 'custom/05-components/_components__article-insta.scss';
+@import 'custom/05-components/_components__tags.scss';
+@import 'custom/05-components/_components__box-event.scss';
+@import 'custom/05-components/_components__btn-thumb.scss';
+@import 'custom/05-components/_components__breadcrumbs.scss';
+@import 'custom/05-components/_components__input-search.scss';
+@import 'custom/05-components/_components__btn-default.scss';
+@import 'custom/05-components/_components__table-simple.scss';
+@import 'custom/05-components/_components__table-pagination.scss';
+@import 'custom/05-components/_components__selectmenu.scss';
+@import 'custom/05-components/_components__input-ico.scss';
+@import 'custom/05-components/_components__datepicker.scss';
+@import 'custom/05-components/_components__video.scss';
+@import 'custom/05-components/_components__video-detalle.scss';
+@import 'custom/05-components/_components__audio.scss';
+@import 'custom/05-components/_components__link.scss';
+@import 'custom/05-components/_components__carousel.scss';
+@import 'custom/05-components/_components__btn-collapse.scss';
+// /*----------------------------------------------------------
+//     # COMPONENTS: VENTANA VISITANTE v2
+// ----------------------------------------------------------*/
+@import 'custom/05-components/_components__accessibility-table';
+@import 'custom/05-components/_components__alert';
+@import 'custom/05-components/_components__carrusel-banner';
+@import 'custom/05-components/_components__caminame';
+@import 'custom/05-components/_components__carrusel-player';
+@import 'custom/05-components/_components__carrusel';
+@import 'custom/05-components/_components__cookies';
+@import 'custom/05-components/_components__download';
+@import 'custom/05-components/_components__infoca';
+@import 'custom/05-components/_components__infoca-twitter';
+@import 'custom/05-components/_components__meteo-time';
+@import 'custom/05-components/_components__notice-level';
+@import 'custom/05-components/_components__space-natural';
+@import 'custom/05-components/_components__tabs';
+@import 'custom/05-components/_components__search-map';
+@import 'custom/05-components/_components__map-result';
+@import 'custom/05-components/_components__article-collage-map';
+@import 'custom/05-components/_components__panel-content';
+@import 'custom/05-components/_components__panel-data-sheet';
+@import 'custom/05-components/_components__panel-protection';
+@import 'custom/05-components/_components__social-network';
+@import 'custom/05-components/_components__buttons';
+@import 'custom/05-components/_components__main-navigation';
+@import 'custom/05-components/_components__calendar';
+@import 'custom/05-components/_components__pagination';
+@import 'custom/05-components/_components__video';
+@import 'custom/05-components/_components__video-detalle';
+@import 'custom/05-components/_components__menu-block';
+@import 'custom/05-components/components__imagen-detalle';
+@import 'custom/05-components/components__rss';
+@import 'custom/05-components/components__login';
+
+/*----------------------------------------------------------
+//     # PAGINA NO ENCONTRADA (404)
+// --------------------------------------------------------*/
+
+@import 'custom/05-components/_components__page';
+
+/*----------------------------------------------------------
+//     # PORTLETS
+// --------------------------------------------------------*/
+
+@import 'custom/06-portlets/_asset-search-module';
+@import 'custom/06-portlets/_rating';
+
+/*----------------------------------------------------------
+//     # LAYOUTS
+// --------------------------------------------------------*/
+
+@import 'custom/07-layouts/_common';
+
+/*----------------------------------------------------------
+//     # COLOR SCHEMES
+// --------------------------------------------------------*/
+
+
+/*@import 'custom/09-color_schemes/_xxx';*/
+
+
+/*----------------------------------------------------------
+//     # TRUMPS
+// --------------------------------------------------------*/
+
+@import 'custom/10-trumps/_trumps__float';
+@import 'custom/10-trumps/_trumps__font-size';
+@import 'custom/10-trumps/_trumps__hide';
+@import 'custom/10-trumps/_trumps__margin';
+@import 'custom/10-trumps/_trumps__maxwidth';
+@import 'custom/10-trumps/_trumps__padding';
+@import 'custom/10-trumps/_trumps__position';
+@import 'custom/10-trumps/_trumps__text-align';
+@import 'custom/10-trumps/_trumps__text-transform';
+@import 'custom/10-trumps/_trumps__colors';
+
+/*----------------------------------------------------------
+//     # UNDEVELOPED ELEMENTS
+// --------------------------------------------------------*/
+
+@import 'custom/10-trumps/_trumps__undeveloped';
+
+/*
+	Rating stars style (modify this section)
+*/
+
+.content-metadata-asset-addon-entry.content-metadata-ratings {
+    text-align: center !important;
+}
+
+.rating-element.icon-star {
+    color: #ffe680;
+}
+
+.rating-element.icon-star-empty {
+    color: #ffe680;
+}
+
+.evr-main-content {
+    min-height: 240px !important;
+}
+
+@import 'custom/11-components-repositorio/_repositorio__control-panel';
+@import 'custom/11-components-repositorio/_repositorio__login';
+
+/*----------------------------------------------------------
+//     # EXTERNAL LIBS
+// ----------------------------------------------------------*/
+
+// Lineas temporales para solucionar el problema. Añadida la carpeta "libs" dentro de css
+// para solucionar el problema de manera temporal.
+@import 'libs/slick-carousel/slick/slick-theme.scss';
+@import 'libs/slick-carousel/slick/slick.scss';
+@import 'libs/jquery-bootstrap-scrolling-tabs/src/scss/jquery.scrolling-tabs.scss';
+@import 'libs/jssocials/styles/jssocials.scss';
+// Lineas comentadas con el problema
+// @import '../../node_modules/slick-carousel/slick/slick-theme.scss';
+// @import '../../node_modules/slick-carousel/slick/slick.scss';
+// @import '../../node_modules/jquery-bootstrap-scrolling-tabs/src/scss/jquery.scrolling-tabs.scss';
+// @import '../../node_modules/jssocials/styles/jssocials.scss';
+// @import '../../node_modules/jssocials/styles/jssocials-theme-classic.scss';

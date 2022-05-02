@@ -1,0 +1,15 @@
+@if ($include__asset-publisher == true){
+	.portlet-asset-publisher{
+		.asset-abstract{
+			position: relative;
+		}
+		.portlet-body > div > div.h2{display: none}
+		.header-back-to{
+			display: none;
+
+			+ .header-title{
+				display: none;
+			}
+		}
+	}
+}

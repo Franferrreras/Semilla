@@ -1,0 +1,9 @@
+/*------------------------------------
+        # COMPONENT WRAPPER
+	------------------------------------*/
+
+@include media-query(lg) {
+	#wrapper{
+		padding-top:rem(7);
+	}
+}

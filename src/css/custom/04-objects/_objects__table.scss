@@ -1,0 +1,32 @@
+@if ($include__table == true){
+    .table{
+        thead {}
+        tbody{}
+
+        tr{
+            th{
+                &:first-child{
+
+                }
+
+                &:last-child{
+
+                }
+            }
+            td{
+                &:first-child{
+
+                }
+
+                &:last-child{
+
+                }
+            }
+        }
+    }
+
+    @include media-query(md) {}
+    @include media-query(sm) {}
+
+}
+

@@ -1,0 +1,100 @@
+.scheduler-base-views{
+    display: none;
+}
+
+#_com_liferay_calendar_web_portlet_CalendarPortlet_calendarListContainer{
+    display: none;
+}
+
+.yui3-calendar-weekday{
+    color: $wf__primary-color !important; /*#2D8542;*/
+}
+
+.yui3-calendarnav-nextmonth{
+    color: $wf__primary-color !important;
+}
+
+.yui3-skin-sam .calendar-portlet .yui3-calendar-day.lfr-current-day{
+	 background-color: $wf__primary-color !important;
+	 border: 0px solid #FFFFFF;
+}
+
+.calendar-add-event-btn{
+    background-color: $wf__primary-color !important;
+}
+
+.scheduler-view-agenda-info-biggie{
+    color: $wf__primary-color !important;
+}
+
+.scheduler-view-agenda-info-label-biggie{
+    color: $wf__primary-color !important;
+}
+
+.scheduler-view-agenda-header-extra{
+    color:$wf__primary-color !important;
+    
+}
+
+.scheduler-view-agenda-event-color{
+	background-color:#000000 !important;
+}
+
+
+.div_padre_calendario {
+    .col-md-3 {
+        .table-horario-establecido {
+            background-color: white;
+            box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2); 
+            #tbody_table_establecido tr td {
+                    padding: rem(4) rem(12)!important;
+                    font-size: 0.9rem;
+            }
+        }
+    }
+    
+    .month-container.col-xs-12.col-md-4{
+        margin-bottom: rem(25)!important;
+        
+    }
+    .month {
+        background-color: white;
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+    }
+    .calendar {
+        background-color: color(grey-20);
+    }
+    .day div {
+        width: rem(22);
+        height: rem(22);
+        margin-bottom: rem(5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.725rem !important;
+        margin-left: rem(4);
+        margin-right: rem(4);
+    
+    }
+    .month-title {
+        background-color: color(green-3);
+        color: white;
+        font-size: rem(14)!important;
+        font-style: italic;
+    }
+    .day-header {
+        font-size: rem(12)!important;
+        color: color(grey-14)!important;
+        padding: rem(5)!important;
+    }
+    .td_verde {
+        color: white;
+        font-size: 1.1rem !important;
+        font-style: italic;
+        text-align: center;
+        padding: 5px 10px;
+    }
+
+    
+}
+

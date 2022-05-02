@@ -1,0 +1,71 @@
+///*------------------------------------------------------------
+//    #COLORS
+//-------------------------------------------------------------*/
+$color-map: ( 
+	primary: $wf__primary-color, 
+	primary_hover: $wf__primary-color-hover,
+	secondary: $wf__secondary-color, 
+	therciary: $wf__therciary-color, 
+	background: $wf__background-color, 
+	bg_section: $wf__bg_section-color,
+	
+	grey-1			: 	#D3D3D3,  /*form control border, titles*/
+	grey-2			: 	#818A91,  /*form control color*/
+	grey-3			: 	#7B7B7B,  /*subtitle */
+	grey-4			: 	#F0F0F0,
+	grey-5			: 	#555555,
+	grey-6			: 	#D8D8D8,//**//  /* accordion borders, filter form control border */
+	grey-7			: 	#666666,
+	grey-8			: 	#F4F4F4,
+	grey-9			: 	#2B2B2B,//**//
+	grey-10			: 	#EFF4FA,
+	grey-11			: 	#F5F5F5,
+	grey-12			:	#515151,
+	grey-13			:	#f1f1f1,
+	grey-14			:	#9B9B9B,
+	grey-15			:	#979797,
+	grey-16			:	#333333,
+	grey-17			:	#F7FBF8,
+	grey-18			:	#444444,
+	grey-19			:	#232323,
+	grey-20			:	#F1F5F2,
+	grey-21			:	#515151,
+	grey-22			:	#9F9F9F,
+	grey-23			:	#c9c9c9,
+	grey-24			:	#AAAAAA,
+	grey-25			:	#E4E4E4, /* Referencial Space borde */
+	grey-26			:	#acacac,		
+	green-1			:	#B1CBBC,
+	green-2			:	#C4DDCA,
+	green-3			:	#087021,
+	yellow-1		:	#FFCC00,
+	orange-1		:	#FF9500,
+
+	black			: 	#000, 
+	white			: 	#fff, 
+	background-tabs	: 	#DDEADE,
+	background-maps	: 	#F6F8F7,
+
+
+	/*messages*/
+
+	error			: 	$wf__error-color, 
+	warning			: 	$wf__warning-color, 
+	success			: 	$wf__success-color,
+
+	/* text */
+
+	text-default	: 	$wf__text-default-color, 
+	text-twitter	: 	$wf__text-twitter,
+	text-light		: 	#999,
+
+	blue			: 	#2BA5DA,
+	blue-10			: 	#4358A7,
+	blue-dark		: 	#3B5998,
+
+	pink			: 	#C42D91,
+	red				: 	#EC2E38,
+	yellow			: 	#FDCE66,
+	green			:   #78AC84
+
+);

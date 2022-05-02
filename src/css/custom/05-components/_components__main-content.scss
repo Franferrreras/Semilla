@@ -1,0 +1,41 @@
+/*------------------------------------
+        # COMPONENT MAIN CONTENT
+	------------------------------------*/
+
+.evr-main-content{
+	.portlet-title-text{
+		position:absolute;
+		left:-9999px;
+		font-size:0;
+		opacity: 0;
+	}
+	.portlet-content{
+		padding:0;
+		border:0;
+	}
+	.portlet{
+		margin:0;
+	}
+	&__sticky{
+		padding-top: rem(127);
+	}
+}
+.controls-visible.has-control-menu{
+	.evr-main-content{
+		&__sticky{
+			padding-top: rem(140);
+		}
+	}
+}
+
+@include media-query(lg) {
+	
+	.controls-visible.has-control-menu{
+		.evr-main-content{
+			&__sticky{
+				padding-top: 0;
+			}
+		}
+	}
+}
+	

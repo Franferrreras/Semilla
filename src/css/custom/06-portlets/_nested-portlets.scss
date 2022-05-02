@@ -1,0 +1,36 @@
+
+	.portlet-nested-portlets{
+		.portlet-content{
+			padding: 0;
+		}
+
+		.columns-3{
+			.row{
+				margin: 0 auto;
+
+				> div{
+					padding: 0;
+
+					.portlet{
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+	}
+
+
+@media(max-width:768px){
+	.portlet-nested-portlets{
+		.columns-3{
+			> div{
+				> div:nth-child(even){
+					> div{
+						display: flex;
+						flex-direction: column-reverse;
+					}
+				}
+			}
+		}
+	}
+}

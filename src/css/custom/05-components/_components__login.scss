@@ -1,0 +1,178 @@
+.popup-vv {
+    top: 50%!important;
+    transform: translate(-50%, -50%);
+    left: 50%!important;
+    margin: 0;
+    margin-top: 0;
+}
+.evr-visitform__question-count span {
+    display: block;
+    margin-bottom: 12px;
+}
+.language-entry-short-text {
+    font-size: 25px;
+    vertical-align: middle;
+}
+.modal-header .close > span, .modal-header .modal-primary-action-button > span {
+    font-size: 25px;
+    opacity: inherit;
+}
+@include media-query(sm){
+    .portlet-login input[type="text"], .portlet-login input[type="password"] {
+        width: 100%!important;
+    }
+    .portlet-login .portlet {
+        padding-left: 20px!important;
+        padding-right: 20px!important;
+        padding-top: 20px!important;
+    }
+    
+    .portlet-login {
+        width: 100%!important;
+        max-width: 100%!important;
+    }
+    .navigation {
+        margin-bottom: 25px!important;
+    }
+    .evr-visitform__block--vertical {
+        label.control-label {
+            position: relative;
+        }
+    }
+    .modal-footer {
+        position: relative;
+    }
+    .evr-visitform__block--middle {
+        >span {
+            margin-top: 0;
+        }
+    }
+    .evr-visitform__block--middle {
+        align-items: flex-end!important;
+    }
+    .evr-main-content #portlet_com_liferay_login_web_portlet_LoginPortlet a.signed-in{
+        color: inherit;
+        text-decoration: none;
+        cursor: inherit;
+        pointer-events: none;
+    }
+    .evr-main-content #portlet_com_liferay_login_web_portlet_LoginPortlet .portlet-body{
+        cursor: default;
+    }
+    .popup-vv {
+        width: 93% !important;
+        top: 50% !important;
+        transform: translateY(-50%);
+        height: min-content;
+        top: 50%!important;
+        left: 50%!important;
+        transform: translate(-50%,-50%)!important;
+        max-height: 100%!important;
+    }
+    
+    .evr-visitform {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    .modal-body {
+        bottom: 0px; 
+        top: 0px; 
+        padding: 0; 
+        position: relative;
+    }
+    div#yui_patched_v3_18_1_1_1649332720365_206 .modal-content {
+        top: 0!important;
+        height: 100%!important;
+    }
+    
+    .closed #wrapper {
+        margin-top: 0 !important;
+    }
+    .evr-main-content__sticky {
+        padding-top: 7.9375rem!important;
+    }
+    .evr-caminame__col:first-child {
+        margin-bottom: 15px;
+    }
+    .evr-caminame.evr-caminame_web.evr-links__config {
+        margin-left: 15px;
+    }
+    .evr-caminame__jssocials {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .evr-visitform__question-count a {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    .evr-visitform__info-photografy.evr-visitform__block--horizontal {
+        .evr-visitform__block--middle label.control-label {
+            position: relative!important;
+        }
+    }
+    
+    .evr-main-content .evr-caminame_mobile .evr-caminame__col {
+        margin-bottom: 15px;
+        padding-left: 5px;
+    }
+    section.evr-caminame.evr-caminame_mobile {
+        display: flex !important;
+        justify-content: end;
+        flex-wrap: wrap;
+    }
+    .evr-main-content #portlet_new-password {
+        margin: 0px 40%;
+        }
+        @media (max-width: 1200px) {
+        .evr-main-content #portlet_new-password {
+        margin: 0px 33%;
+        }
+        }
+        @media (max-width: 768px) {
+        .evr-main-content #portlet_new-password {
+        margin: 0px 10%;
+        }
+        }
+        .evr-main-content #portlet_new-password .btn-primary{
+        background-color: rgba(8, 112, 33, 0.85);
+        border-color: rgba(8, 112, 33, 0.85);
+        }
+        body.controls-visible.open #wrapper{
+        margin-top: 0px!important;
+        padding-left: 0px!important;
+        }
+        
+        
+        
+        .evr-main-content #portlet_com_liferay_login_web_portlet_LoginPortlet a.signed-in{
+        color: inherit;
+        text-decoration: none;
+        cursor: inherit;
+        pointer-events: none;
+        }
+        .evr-main-content #portlet_com_liferay_login_web_portlet_LoginPortlet .portlet-body{
+        cursor: default;
+        }
+        .content-espacio {
+            .evr-seccion__privada {
+                .evr-caminame__col {
+                    width: 60px;
+                }
+            }
+            
+        }
+        .evr-caminame__jssocials {
+            display: flex;
+            flex-direction: column;
+        }
+        .content-equipamiento {
+            .evr-seccion__privada {
+                .evr-caminame__col {
+                    width: 60px;
+                }
+            }
+        }
+        
+}

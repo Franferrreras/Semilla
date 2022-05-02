@@ -1,0 +1,75 @@
+	.portlet-login {
+		margin-left: auto;
+		margin-right: auto;
+		width: 600px;
+		.btn-default { background-color : $wf__primary-color;
+		color: $wf__background-color !important;
+		border-radius: 3px;
+		width: 100%;
+		
+	}
+	
+	.icon-monospaced.portlet-icon-back.text-default { 
+		display: none !important;
+	}
+	
+	@include media-query(sm) {
+		.portlet-login {
+			margin-left: auto;
+			margin-right: auto;
+			width: auto !important;
+			height: auto !important;
+			.portlet {
+				padding-left: 0px;
+				padding-right: 0px;
+				padding-top: 0px;
+				padding: 25px;
+			}
+		}
+		input[type="text"], input[type="password"] {
+			width: 100%;
+		}
+	}
+	
+	button:hover {
+		background-color: $wf__primary-color-hover;
+	}
+	
+	.portlet {
+		padding-left: 100px;
+		padding-right: 100px;
+		padding-top: 55px;
+	}
+	
+	input[type="text"], input[type="password"] {
+		height: 50px;
+		width: 399px;
+		border-radius: 5px;
+	}
+	
+	input[type="text"]:focus, input[type="password"]:focus {
+		border: 1px solid $wf__primary-color;
+	}
+	
+		/*
+		*	Add icon to labels
+		*/
+	
+		label[for=_com_liferay_login_web_portlet_LoginPortlet_login]:before {
+			content: "\f2c0";
+			font-family: FontAwesome;
+		}
+		
+		label[for=_com_liferay_login_web_portlet_LoginPortlet_password]:before {
+			content: "\f023";
+			font-family: FontAwesome;
+		}
+	}
+	
+	@include media-query(xs) {
+		.portlet-login{
+			.btn-lg {
+				font-size: 14px !important; 	
+			}
+		}
+	}

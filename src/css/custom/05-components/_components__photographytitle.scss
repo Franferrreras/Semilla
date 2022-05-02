@@ -1,0 +1,103 @@
+////
+/// Photographytitle component
+///
+/// Description of the component
+///
+/// @access public
+/// @author Dfront Specialist Team
+/// @group components
+/// @name .#{$wf__ns}Photographytitle
+/// @since version 1.0.0
+////
+
+.evr-photographytitle {
+    display: flex;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+
+        &.maxwidth {
+
+            >div {
+                display: flex;
+            }
+        }
+
+        select {
+            min-width: 220px;
+        }
+    }
+
+    &__information {
+        height: 250px;
+        width: 100%;
+    }
+
+    &__title {
+        font-family: $ns-font-alternative;
+        font-size: rem(49);
+        letter-spacing: 1.9px;
+        margin-bottom: rem(16);
+        word-spacing: 1rem;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__txt {
+        font-size: rem(16);
+        line-height: rem(26);
+        word-spacing: 0.1rem;
+        width: 81%;
+        letter-spacing: 0.02rem;
+        margin-bottom: rem(15);
+    }
+
+    &__item {
+        background-size: cover;
+    }
+
+    &__figure {
+        align-self: flex-start;
+        width: 400px;
+    }
+
+}
+
+@include media-query(sm) {
+    .pasaporte_module section .width_texto {
+        width: 50%;
+    }
+    .evr-photographytitle__txt {
+        width: 100%;
+    }
+
+    .evr-photographytitle__content.maxwidth {
+        margin: 0;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+
+        >div {
+            // max-width: 381px;
+            flex-wrap: wrap;
+            display: flex;
+        }
+
+    }
+    .evr-photographytitle__figure.width_imagen img {
+        width: 100%!important;
+        margin-bottom: 30px;
+    }
+
+
+    .text-right.width_boton {
+        width: 100%;
+
+        &:nth-child(2){
+            padding: rem(7) 0 0 !important;
+        }
+    }
+}
+

@@ -1,0 +1,26 @@
+@if ($include__maxwidth==true) {
+    /*------------------------------------
+     # TRUMP MAXWIDTH
+    ------------------------------------*/
+
+
+    .maxwidth {
+        max-width: calc(#{rem($maxwidth)} + #{rem(30)});
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 rem(15);
+
+        &--inner {
+            max-width: calc(#{rem($maxwidth-inner)} + #{rem(30)});
+        }
+    }
+
+    @include media-query(lg) {
+        .maxwidth{
+            padding:0;
+        }
+    }
+    /*------------------------------------
+     # END TRUMP MAXWIDTH
+    ------------------------------------*/
+}

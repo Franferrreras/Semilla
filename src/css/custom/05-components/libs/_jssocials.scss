@@ -1,0 +1,118 @@
+//colors
+$jssocials-share_color_0: #acacac;
+$jssocials-share_color_1: #939393;
+$jssocials-share_color_2: #f5f5f5;
+$jssocials-share_color_3: #e8e8e8;
+
+.jssocials-shares {
+  margin: 0.2em 0;
+  * {
+    box-sizing: border-box;
+  }
+}
+.jssocials-share {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0.3em 0.6em 0.3em 0;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.jssocials-share-logo {
+  width: 1em;
+  vertical-align: middle;
+  font-size: 1.5em;
+}
+.jssocials-share-link {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  padding: .5em .6em;
+  color: $jssocials-share_color_0;
+  -webkit-transition: background 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out;
+  transition: background 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out;
+  &.jssocials-share-link-count {
+    padding-top: .2em;
+    .jssocials-share-count {
+      display: block;
+      font-size: .6em;
+      margin: 0 -.5em -.8em -.5em;
+    }
+  }
+  &.jssocials-share-no-count {
+    padding-top: .5em;
+    .jssocials-share-count {
+      height: 1em;
+    }
+  }
+  &:hover {
+    border: 2px solid $jssocials-share_color_1;
+    color: $jssocials-share_color_1;
+  }
+  &:focus {
+    border: 2px solid $jssocials-share_color_1;
+    color: $jssocials-share_color_1;
+  }
+  &:active {
+    border: 2px solid $jssocials-share_color_1;
+    color: $jssocials-share_color_1;
+  }
+}
+.jssocials-share-label {
+  padding-left: 0.3em;
+  vertical-align: middle;
+}
+.jssocials-share-count-box {
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+  cursor: default;
+  position: relative;
+  height: 2.5em;
+  padding: 0 .3em;
+  margin-left: 0.4em;
+  background: $jssocials-share_color_2;
+  border-radius: 0.3em;
+  -webkit-transition: background 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out;
+  transition: background 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out;
+  &.jssocials-share-no-count {
+    display: none;
+  }
+  &:hover {
+    background: $jssocials-share_color_3;
+    &:after {
+      border-color: transparent $jssocials-share_color_3 transparent transparent;
+    }
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0.75em;
+    left: -0.4em;
+    width: 0;
+    height: 0;
+    border-width: 0.5em 0.5em 0.5em 0;
+    border-style: solid;
+    border-color: transparent $jssocials-share_color_2 transparent transparent;
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: background 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out;
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: background 200ms ease-in-out, color 200ms ease-in-out, border-color 200ms ease-in-out;
+  }
+  .jssocials-share-count {
+    line-height: 2.5em;
+    color: $jssocials-share_color_0;
+  }
+}
+.jssocials-share-count {
+  line-height: 1.5em;
+  vertical-align: middle;
+}
+img.jssocials-share-logo {
+  width: auto;
+  height: 1em;
+}

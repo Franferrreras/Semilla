@@ -1,0 +1,16 @@
+////
+/// Box sizing
+///
+/// You do not need no to care about this
+////
+html {
+    box-sizing: border-box;
+}
+
+* {
+    &,
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
+}

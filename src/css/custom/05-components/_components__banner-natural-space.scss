@@ -1,0 +1,135 @@
+////
+/// banner-natural-space component
+///
+/// Description of the component
+///
+/// @access public
+/// @author Dfront Specialist Team
+/// @group components
+/// @name .#{$wf__ns}example
+/// @since version 1.0.0
+////
+.evr-banner-natural-space {
+    width: 100%;
+    font-size: 0;
+    height: rem(300);
+    background-color: color($wf__background-color);
+    display: flex;
+    justify-content: flex-start;
+
+    &__logo{
+        max-width:33.33%;
+        display: flex;
+        align-items: flex-end;
+        font-size: rem(14);
+        position: relative;
+        background-image: url("@theme_image_path@/prueba/green_tree.jpg");
+        &:before{
+            display: block;
+            content: "";
+            background-color: color(primary, 0.7);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+    &__carrusel{
+        display: inline-block;
+        width: 80%;
+        height: 100%;
+        font-size: rem(14);
+        position: relative;
+        right: rem(0);
+        padding-left: rem(5);
+    }
+    &__fig{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: rem(150);
+        transform: rotate(-45deg);
+        &--normal{
+            transform: rotate(0);
+        }
+    }
+    &__img-logo{
+        width: 100%;
+        height: auto;
+    }
+    &__text-logo{
+        display: block;
+        padding: 0 rem(20);
+        color: color($wf__background-color);
+        z-index: 0;
+        height: rem(80);
+        margin-bottom: rem(10);
+        overflow: hidden;
+    }
+    &__span-natural-space{
+        display: block;
+        text-transform: uppercase;
+        font-size: rem(11);
+        display: inline-block;
+    }
+    &__span-title{
+        font-size: rem(18);
+        display: inline-block;
+        width: 100%;
+        padding-top: rem(10);
+        height: auto;
+        overflow: hidden;
+        word-break: break-word;
+    }
+
+}
+@include media-query(md){
+    .evr-banner-natural-space {
+        &__logo{
+            width: 25%;
+        }
+        &__carrusel{
+            width: 75%;
+        }
+    }
+}
+
+@include media-query(sm){
+    .evr-banner-natural-space {
+        height: rem(500);
+        flex-direction: column;
+        margin-left: -15px;
+        width: calc(100% + 30px);
+        
+        &__logo{
+                width: 100%;
+                height: rem(183);
+                display: flex;
+                align-items: center;
+                padding-left: rem(20);
+        }
+        &__carrusel{
+            width: 100%;
+            height: calc( 100% - 183px);
+            padding-top: 5px;
+            padding-left: 0;
+        }
+        &__fig{
+            position: static;
+            width: rem(120);
+            transform: rotate(-20deg);
+        }
+        &__text-logo{
+            width: calc(100% - 170px);
+            font-weight: bold;
+        }
+        &__span-natural-space{
+            font-size: rem(20);
+        }
+        &__span-title{
+            font-size: rem(30);
+        }
+}
+}

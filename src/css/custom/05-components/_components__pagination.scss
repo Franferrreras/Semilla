@@ -1,0 +1,85 @@
+///Pagination component
+///
+/// Description of the component
+///
+/// @access public
+/// @author Dfront Specialist Team
+/// @group components
+/// @since version 1.0.0
+////
+
+.lfr-pagination {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+
+    &-config {
+        display: none;
+    }
+
+    &-buttons li{
+        a {
+            padding: 2px 8px;
+            margin: 0 2px;
+            font-size: 16px;
+            line-height: 18px;
+            color: color(secondary);
+
+            background-color: white;
+            border-radius: 1.5rem;
+            box-shadow: 0rem 0.125rem 0.25rem 0.0625rem color(grey-25);
+            border: none;
+            color: $wf__primary-color ;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            position: relative;
+            &:hover,&:focus {
+                background-color: $wf__primary-color ;
+                color: color(white);
+            }
+        }
+    }
+
+    .search-results {
+        order: 3;
+        font-family: OpenSans;
+        color: color(secondary);
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@include media-query(md) {
+	.lfr-pagination {
+
+        flex-direction: column;
+
+        .lfr-pagination-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 12px 0;
+
+            li{
+                width: auto;
+
+                &, &.first, &.last {
+                    display: inline-block;
+                }
+
+                a {
+                    margin: 8px 5px;
+                    padding: 2px 8px;
+                }
+            }
+        }
+    
+        .search-results {
+            display: block;
+            margin-left: 0;
+        }
+    }
+}

@@ -1,0 +1,166 @@
+////
+/// Ficha técnica de tabs component
+///
+/// Description of the component
+///
+/// @access public
+/// @author Dfront Specialist Team
+/// @group components
+/// @name .#{$wf__ns}example
+/// @since version 1.0.0
+////
+.#{$ns}panel-data-sheet {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        // margin-top: rem(20);
+        align-items: flex-start;
+    }
+
+    &__list-item {
+        flex: 0 1 auto;
+        width: calc(90% / 3);
+        margin-right: 5%;
+        margin-bottom: 15px;
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+
+    &__list-container {
+        background-color: color(white);
+        /* @include box-shadow(1px 1px 5px 0 rgba(0, 0, 0, 0.15)); */
+        padding: rem(16);
+        background-image: url("${images_folder}/icons/bullet_ul.jpg") 0.1em 1.8em no-repeat;
+
+        &--style {
+            margin-top: rem(10);
+        }
+    }
+
+    &__ico {
+        color: color(primary);
+    }
+
+    &__fig {
+        display: inline-block;
+        max-width: rem(18);
+        width: 100%;
+    }
+
+    &__list-title {
+        font-family: $wf__font--assistant-bold;
+        font-weight: bold;
+        margin-left: rem(5);
+        font-size: rem(16);
+        line-height: rem(21);
+        color: rgba(8,112,33,0.85);
+    }
+
+    &__list-span {
+        display: block;
+        font-size: rem(16);
+        line-height: rem(30);
+        color: color(grey-22);
+        font-weight: 600;
+        font-family: $wf__font--default;
+
+    }
+
+    &__list-lnk {
+        color: color(primary);
+        font-size: rem(14);
+        font-family: $wf__font--assistant-Semibold;
+        line-height: rem(18);
+        font-weight: 600;
+        margin-right: rem(10)
+    }
+
+    &__list-iconList {
+        display: flex;
+    }
+
+    &__list-icon {
+        display: block;
+        font-size: rem(16);
+        line-height: rem(30);
+        color: color(grey-22);
+        font-weight: 600;
+        font-family: $wf__font--default;
+        position: relative;
+        padding-left: rem(25);
+        margin-left: rem(10);
+
+        &--bike:before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: rem(20);
+            height: rem(20);
+            background-image: url("/medioambiente/portal/o/ventana-theme/images/componente_tabs/bike.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &--bus:before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: rem(20);
+            height: rem(20);
+            background-image: url("/medioambiente/portal/o/ventana-theme/images/componente_tabs/bus.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &--car:before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: rem(20);
+            height: rem(20);
+            background-image: url("/medioambiente/portal/o/ventana-theme/images/componente_tabs/car.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+@include media-query(md) {
+    .#{$ns}panel-data-sheet {
+        &__list-item {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+
+
+
+
+@include media-query(sm) {
+    .#{$ns}panel-data-sheet {
+
+        &__list {
+            flex-direction: column;
+        }
+
+        &__list-item {
+            width: 100%;
+            margin-top: rem(10);
+        }
+
+        &__list-title {
+            font-size: rem(14);
+            line-height: rem(18);
+        }
+    }
+}

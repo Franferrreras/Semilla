@@ -1,0 +1,20 @@
+@if ($include__badge == true){
+
+    .badge{
+        /*Example: */
+        /* border-radius: rem(8);
+        background-color: color(secondary);
+        text-align: center;
+        color: color(white);
+        font-weight: 500;
+        line-height: 1em;
+        letter-spacing: 1px;
+        margin-bottom: rem(10); */
+
+        &.badge-sm{
+            /*Example: */
+            /* font-size: rem(12);
+            padding: rem(5) rem(7) rem(2.5) rem(7); */
+        }
+    }
+}

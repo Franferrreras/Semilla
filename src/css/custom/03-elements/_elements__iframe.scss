@@ -1,0 +1,27 @@
+@if ($include__iframe==true) {
+
+/*------------------------------------
+    # ELEMENT IFRAME
+------------------------------------*/
+
+iframe{
+    width: 100%;
+    border:none;
+    float: left;
+    clear: both;
+}
+
+.aspect-ratio.aspect-ratio-16-to-9{
+	> iframe {
+	    height: 100%;
+	    display: block;
+	    float: none;
+	    position: absolute;
+	}
+}
+
+/*------------------------------------
+    # END ELEMENT IFRAME
+------------------------------------*/
+
+}

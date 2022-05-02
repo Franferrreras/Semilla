@@ -1,0 +1,58 @@
+@if ($include__loaders == true){
+
+    .loading-icon,
+    .loadingmask-message .loadingmask-message-content {
+        animation: loading-icon 1.7s infinite ease;
+    }
+
+    @keyframes loading-icon {
+        0% {
+            @include trailing-shadow(0, -0.83em, $wf__primary-color);
+
+            transform: rotate(0);
+        }
+
+        2%, 96% {
+            @include trailing-shadow(0, -0.83em);
+        }
+
+        10% {
+            @include trailing-shadow(
+                (0, -0.087em, -0.173em, -0.256em, -0.338em),
+                (-0.83em, -0.825em, -0.812em, -0.789em, -0.758em)
+            );
+        }
+
+        25% {
+            @include trailing-shadow(
+                (0, -0.338em, -0.555em, -0.671em, -0.719em),
+                (-0.83em, -0.758em, -0.617em, -0.488em, -0.415em)
+            );
+        }
+
+        40% {
+            @include trailing-shadow(
+                (0, -0.377em, -0.645em, -0.775em, -0.82em),
+                (-0.83em, -0.74em, -0.522em, -0.297em, -0.13em),
+                $wf__primary-color
+            );
+        }
+
+        60% {
+            @include trailing-shadow(
+                (0, -0.087em, -0.173em, -0.256em, -0.297em),
+                (-0.83em, -0.825em, -0.812em, -0.789em, -0.775em)
+            );
+        }
+
+        100% {
+            @include trailing-shadow(0, -0.83em);
+
+            transform: rotate(360deg);
+        }
+    }
+
+    @include media-query(md) {}
+    @include media-query(sm) {}
+
+}

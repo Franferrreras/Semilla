@@ -1,0 +1,50 @@
+/*------------------------------------
+        # COMPONENT TITLE
+	------------------------------------*/
+	
+.evr-title{
+	position:relative;
+	margin:rem(10) 0 0;
+	padding-bottom: rem(16);
+	color: color(grey-12);	
+	font-size: rem(22);	
+	font-weight: bold;	
+	line-height: 28px;	
+	text-align: center;
+	position: relative;
+	&:after{
+		content:"";
+		position: absolute;
+		bottom: 0;
+		left:50%;
+		transform: translate(-50%, 0);
+		width: rem(46);
+		height: rem(13);
+		background: url("@theme_image_path@/icons/guion.png") no-repeat center center;
+	}
+}
+
+@include media-query(lg) {
+	.evr-title{
+		margin-top: rem(12);
+		padding-bottom: rem(12);
+		font-size: rem(18);
+		line-height: 23px;
+		&:after{
+			width: rem(35);
+			height: rem(10);
+			background-size: 100%;
+		}
+	}
+}
+
+@include media-query(sm) {
+	.evr-title{
+		margin-top: rem(21);
+		padding-bottom: rem(7);
+		&:after{
+			width: rem(28);
+			height: rem(8);
+		}
+	}
+}

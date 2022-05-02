@@ -1,0 +1,45 @@
+.#{$ns}article-mini {
+    @include box-shadow(3px 3px 10px color(black, 0.11));
+
+    &__container {
+        font-size: 0;
+        padding: rem(10) rem(10);
+    }
+    &__fig {
+        position: relative;
+        display: inline-block;
+        width: rem(80);
+        height: rem(80);
+        background-color: color(grey-1);
+        vertical-align: top;
+        overflow: hidden;
+        @include border-radius(2px);
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: auto;
+            height: 100%;
+            @include transform(translateX(-50%));
+        }
+    }
+    &__body {
+        display: inline-block;
+        width: calc(100% - 80px);
+        padding: rem(8) 0 0 rem(10);
+        vertical-align: top;
+    }
+    &__time {
+        display: block;
+        font-size: rem(12);
+        line-height: 1.2;
+        color: color(grey-3);
+        margin-bottom: rem(10);
+    }
+    &__txt {
+        font-size: rem(12);
+        line-height: 1.4;
+        color: color(grey-3);
+    }
+}

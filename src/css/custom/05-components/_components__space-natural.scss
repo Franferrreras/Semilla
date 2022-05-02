@@ -1,0 +1,97 @@
+////
+/// Space Natural component
+///
+/// Description of the component
+///
+/// @access public
+/// @author Dfront Specialist Team
+/// @group components
+/// @name .#{$wf__ns}example
+/// @since version 1.0.0
+////
+.evr-space-natural {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    &__btn{
+        background: transparent;
+        border: 1px solid color(grey-25);
+        width: calc(100% / 3);
+        padding: rem(20);
+        text-align: center;
+        color: color(primary);
+        font-size: rem(30);
+        margin-right: rem(30);
+        &:last-child{
+            margin: 0;
+        }
+        &:hover,
+        &:focus,
+        &:active{
+            text-decoration: none;
+        }
+    }
+    
+    &__fig{
+        display: inline-block;
+        height: rem(41);
+        width: rem(32);
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    &__span{
+        font-family: $wf__font--alternative;
+        font-size: rem(40);
+        line-height: rem(40);
+        letter-spacing: rem(0.4);
+    }
+
+    &__wrapper{
+        padding: rem(15) 0;
+    }
+}
+
+@include media-query(lg){
+    .evr-space-natural {
+        &__span{
+            font-size: rem(30);
+        }
+    }
+}
+
+@include media-query(md){
+    .evr-space-natural {
+        &__btn{
+            font-size:rem(25);
+            margin-right: rem(25);
+        }
+        &__span{
+            font-size: rem(25);
+        }
+    }
+}
+
+
+@include media-query(sm){
+    .evr-space-natural {
+        flex-direction: column;
+
+        &__span{
+            font-size: rem(40);
+        }
+        &__btn{
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: rem(10);
+        }        
+    }
+}

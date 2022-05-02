@@ -1,0 +1,12 @@
+@if ($include__figcaption==true) {
+
+    .figcaption{
+
+        .h2{
+
+        }
+    }
+
+    @include media-query(md) {}
+    @include media-query(sm) {}
+}

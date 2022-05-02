@@ -1,0 +1,217 @@
+/*------------------------------------
+        # COMPONENT BANNER
+	------------------------------------*/
+
+.evr-banner{
+	position:relative;
+	margin:0 rem(-15);
+	&__triangle{
+		overflow: hidden;
+		&:after,&:before{
+			height: rem(56);
+			width: calc(100% + 10px);
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			background: center center / 100% rem(55) no-repeat transparent;
+		}
+		&--bottom-right{
+			&:after{
+				content: "";
+				left: rem(-10);
+				bottom:rem(-1);
+				background-image:url("@theme_image_path@/triangulo-derecho.png");
+				background-position-y: 100%;
+			}
+		}
+		&--bottom-left{
+			&:after{
+				content: "";
+				right: rem(-10);
+				bottom:rem(-2);
+				background-image:url("@theme_image_path@/triangulo-izquierdo.png");
+				background-position-y: 100%;
+				transform: scaleY(-1);
+			}
+		}
+		&--top-left{
+			&:before{
+				content: "";
+				top:rem(-2);
+				background-image:url("@theme_image_path@/triangulo-izquierdo.png");
+				background-position-y: 100%;
+				z-index:1;
+			}
+		}
+		&--top-right{
+			&:before{
+				content: "";
+				left: rem(-10);
+				top:rem(-1);
+				background-image:url("@theme_image_path@/triangulo-derecho.png");
+				background-position-y: 100%;
+				transform: scaleY(-1);
+				z-index:1;
+			}
+		}
+	}
+	&__item{
+		position: relative;
+		overflow: hidden;
+		background-size: cover;
+		transition: background-size .5s ease;
+		background-position-y: 0 !important;
+		background-repeat:no-repeat;
+		height:36vw !important;
+		display: flex!important;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-position: center;
+	}
+	&--slider{
+		.slick-track {
+			height: 36vw!important;
+		}
+		.evr-banner{
+			&__item{
+				height:rem(706);
+				&:after{
+					content: "";
+					position: absolute;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					background-color: color(black, 0.3);
+				}
+			}
+		}
+	}
+	.slick-arrow{
+		position: absolute;
+		top: 50%;
+		padding:0;
+		// margin-top: rem(-38);
+		width:rem(36);
+		height:rem(77);
+		border: 0;
+		text-indent: -9999px;
+		z-index: 1;
+		&.slick-prev{
+			left: rem(50);
+			background:url("@theme_image_path@/icons/arrow_left.png") no-repeat center center;
+		}
+		&.slick-next{
+			right: rem(50);
+			background:url("@theme_image_path@/icons/arrow_right.png") no-repeat center center;
+		}
+	}
+	&__link{
+		position: relative;
+		display: block;
+		// padding-top: rem(226);
+		color:color(white);
+		z-index: 1;
+		&:hover,&:focus{
+			color:color(white);
+			text-decoration: none;
+		}
+	}
+	&__title{
+		margin: 0;
+		color: color(white);
+		font-family: BillyOhio;
+		font-size: rem(80);
+		line-height: 122px;
+		text-align: center;
+		padding: 0 25px;
+	}
+	&__cont-img{
+		margin: 0 auto;
+		width: rem(107);
+		height: rem(111);
+	}
+}
+@include media-query(md) {
+	.evr-banner{
+		&__title{
+			font-size: rem(45);
+		}
+	}
+}
+@include media-query(lg) {
+	.evr-banner{
+		&__item{
+			height: rem(307);
+		}
+		.slick-arrow{
+			width: rem(16);
+			height: rem(38);
+			&.slick-prev{
+				left:rem(12);
+				background-size: 100%;
+			}
+			&.slick-next{
+				right:rem(12);
+				background-size: 100%;
+			}
+		}
+		&--slider{
+			.evr-banner{
+				&__item{
+					height:rem(500);
+				}
+			}
+		}
+		// &__link{
+		// 	padding-top: rem(162);
+		// }
+		&__cont-img{
+			width: rem(69);
+			height: rem(72);
+		}
+		&__title{
+			font-size: rem(60);
+    		line-height: rem(88);
+		}
+	}
+}
+@include media-query(sm) {
+	.evr-banner{
+		&__item{
+			height: 60vw!important;
+		}
+		.slick-arrow{
+			width: rem(10);
+			height: rem(24);
+			&.slick-prev{
+				left:rem(17);
+			}
+			&.slick-next{
+				right:rem(17);
+			}
+		}
+		&--slider{
+			.evr-banner{
+				&__item{
+					height:rem(351);
+				}
+			}
+			.slick-track {
+				height: 66vw!important;
+			}
+		}
+		// &__link{
+		// 	padding-top: rem(90);
+		// }
+		&__cont-img{
+			width: rem(55);
+			height: rem(58);
+		}
+		&__title{
+			font-size: rem(35);
+			line-height: rem(50);
+		}
+	}
+}

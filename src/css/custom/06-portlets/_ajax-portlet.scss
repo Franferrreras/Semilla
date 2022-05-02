@@ -1,0 +1,7 @@
+@if ($include__ajax == true){
+	.ajax-portlet{
+		.fix-wrapper-menu header{
+		margin-top:rem(25);
+		}
+	}
+}

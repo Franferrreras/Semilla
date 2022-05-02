@@ -1,0 +1,39 @@
+.#{$ns}input-search {
+    font-size: 0;
+    &__ipt {
+        display: inline-block;
+        width: calc(100% - 50px);
+        height: rem(45);
+        font-size: rem(16);
+        line-height: 1.2;
+        padding: rem(8) rem(12);
+        color: color(black);
+        vertical-align: top;
+        border: 1px solid color(primary,0.5);
+        border-right: 0;
+        @include border-radius(4px,'top-left');
+        @include border-radius(4px,'bottom-left');
+        &:hover, &:focus, &:active {
+            border: 1px solid color(primary);
+            border-right: 0;
+        }
+    }
+    &__btn {
+        position: relative;
+        display: inline-block;
+        width: rem(50);
+        height: rem(45);
+        vertical-align: top;
+        text-align: center;
+        border: 0;
+        background-color: color(primary);
+        @include border-radius(4px,'top-right');
+        @include border-radius(4px,'bottom-right');
+        &:hover, &:focus, &:active {
+            background-color: color(primary_hover);
+        }
+    }
+    &__btn-icon {
+        display: inline-block;
+    }
+}

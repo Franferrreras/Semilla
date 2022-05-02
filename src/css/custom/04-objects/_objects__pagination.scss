@@ -1,0 +1,122 @@
+$pagination: true;
+
+@if ($pagination == true){
+
+    $pagination-color: color(primary);
+    $pagination-border-color: color(primary);
+    $pagination-bg-color: transparent;
+
+        .pagination-bar > * {
+            float: none !important;
+            display: flex;
+            text-align: center;
+            margin: rem(15) auto 0 auto;
+            justify-content: center;
+
+        }
+
+        .pagination{
+            & > li{
+                margin: 0 rem(2);
+                &:first-child{
+                    padding-right: rem(70);
+                    a{
+                        border-radius: 0;
+                        padding: rem(7) rem(12);
+                        border: rem(1) solid color(primary);
+                        color: color(white);
+                        background: color(primary);
+                        width: auto;
+                        &:hover{
+                            background: color(secondary);
+                            border: rem(1) solid color(secondary);
+                        }
+                    }
+                }
+                &:last-child{
+                    padding-left: rem(70);
+                    a{
+                        border-radius: 0;
+                        padding: rem(7) rem(12);
+                        border: rem(1) solid color(primary);
+                        color: color(white);
+                        background: color(primary);
+                        width: auto;
+                        &:hover{
+                            background: color(secondary);
+                            border: rem(1) solid color(secondary);
+                        }
+                    }
+                }
+                & > a{
+                    border-radius: rem(100);
+                    border: none;
+                    color: color(secondary);
+                    float: none;
+                    display: inline-block;
+                    padding: 0;
+                    width: rem(34);
+                    height: rem(34);
+                    vertical-align: middle;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                &.page_number{
+                    > a.btn.btn-pagination{
+                        background: transparent;
+                    }
+                    &.active{
+                        > a, > a:hover, > a:focus, > span, > span:hover, > span:focus {
+                            z-index: 3;
+                            color: color(white);
+                            background-color: $pagination-bg-color;
+                            border:none;
+                            cursor: default;
+                            border: rem(1) solid color(primary);
+                            color:color(primary);
+                            margin-top: -rem(-1);
+                        }
+                    }  
+                }
+                &.disabled{
+                    > a, > a:hover, > a:focus, > span, > span:hover, > span:focus {
+                        border: rem(1) solid color(grey-5);
+                        color: color(grey-1);
+                        background: color(white);
+                    }
+                }
+            }
+
+            button{
+                border: rem(2) solid color(white);
+                border-radius: rem(2);
+                font-size: rem(16);
+                box-shadow: 0 0 rem(10) 0 rgba(0, 44, 88, 0.1);
+                color: color(primary);
+                background-color: color(white);
+
+                &.disabled{
+                    background-color: color(grey-5);
+                    border: solid rem(1) color(grey-5);
+                    box-shadow:none;
+                }
+            }
+        }
+        
+        @include media-query('sm'){
+            .pagination{
+                & > li{
+                    &:first-child{
+                        display:none;
+                    }
+                    &:last-child{
+                        display: none;
+                    }
+                }
+            }
+        }
+    
+}
+

@@ -1,0 +1,44 @@
+////
+/// Carrusel player component
+///
+/// Description of the component
+///
+/// @access public
+/// @author Dfront Specialist Team
+/// @group components
+/// @name .#{$wf__ns}example
+/// @since version 1.0.0
+////
+.evr-carrusel-player {
+    display: flex;
+    bottom: 0;
+    position: absolute;
+    padding: rem(20) rem(40);
+    &__btn{
+        background: transparent;
+        border: none;
+        color: color(white);
+        width: rem(20);
+        cursor: pointer;
+        &[data-button-state="deactive"] {
+            display:none;
+        }
+    }
+}
+@include media-query(sm){
+    .evr-carrusel-player {
+        width: 100%;
+        justify-content: space-around;
+            &__btn{
+                font-size: rem(30);
+                width: auto;
+                padding-left: rem(27);
+                &[data-button-state="deactive-mobile"] {
+                    display:none;
+                }
+                &--style{
+                    margin-right: auto;    
+                }
+            }
+    }
+}

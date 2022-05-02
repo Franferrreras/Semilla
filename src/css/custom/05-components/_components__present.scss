@@ -1,0 +1,324 @@
+/*------------------------------------
+        # COMPONENT PRESENT
+	------------------------------------*/
+
+.evr-present {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    .row {
+        display: flex;
+    }
+    &__item {
+        min-height: rem(480);
+        height: 100%;
+        font-size: 0;
+        background-color: color(white);
+        box-shadow: 0 0 20px 1px color(black, 0.2);
+
+        &--inline {
+            min-height: auto;
+            display: flex;
+            margin-bottom: rem(30);
+
+            .evr-present {
+                &__cont-img {
+                    display: inline-block;
+                    width: calc(50% - 15px);
+                    // height: rem(224);
+                    // min-height: 14rem;
+                    vertical-align: top;
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                &__container {
+                    display: inline-block;
+                    width: calc(50% + 15px);
+                    vertical-align: top;
+                    padding: 20px;
+                    padding-left: 35px;
+                }
+                p {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    &__cont-img {
+        width: 100%;
+        // height: rem(145);
+        background-repeat: no-repeat;
+        background-size: cover;
+        // min-height: 14rem;
+    }
+
+    &__container {
+        padding: rem(38) rem(35) rem(25);
+        width: 100%;
+    }
+
+    &.pairs {
+        display: flex;
+        justify-content: space-between;
+
+        & .evr-present__item {
+            width: 48%;
+            height: initial;
+        }
+    }
+
+    &__title {
+        color: #515151;
+        font-size: 1.375rem;
+        font-weight: bold;
+        line-height: 28px;
+        text-align: left;
+        margin-bottom: rem(15);
+
+    }
+
+    &__subtitle {
+        color: #9b9b9b;
+        font-size: 1.375rem;
+        font-weight: bold;
+        line-height: 28px;
+    }
+
+    &__text,
+    p {
+        margin: 0.4375rem auto 1.4375rem;
+        // width: 20.125rem;
+        color: #515151;
+        font-family: opensans;
+        font-size: 1.125rem;
+        line-height: 24px;
+        text-align: left;
+
+    }
+}
+
+.vv-actualidad {
+    padding-bottom: rem(165);
+
+    .portlet-column-last {
+        .evr-present__item--inline {
+            min-height: rem(690);
+
+            .evr-present__cont-img {
+                width: 100%;
+                // height: 14vw;
+            }
+
+            .evr-present__container {
+                width: 100%;
+            }
+        }
+    }
+
+    .portlet-column--separate {
+        .portlet-boundary {
+            &:first-child {
+                margin-bottom: rem(25);
+            }
+        }
+    }
+
+    .evr-highlighted {
+        &__triangle {
+            .maxwidth {
+                >.portlet-layout {
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    .portlet-column-last {
+        .portlet-column-content {
+            height: 100%;
+
+            .portlet-boundary {
+                height: 100%;
+
+                .portlet {
+                    height: 100%;
+
+                    .portlet-content {
+                        height: 100%;
+
+                        .portlet-content-container {
+                            height: 100%;
+
+                            .portlet-body {
+                                height: 100%;
+
+                                .journal-content-article {
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(lg) {
+    .evr-present {
+        &__item {
+            min-height: rem(352);
+
+            &--inline {
+                min-height: auto;
+            }
+        }
+
+        &__container {
+            padding: rem(17) rem(23);
+        }
+
+        &__title {
+            margin-bottom: rem(2);
+            font-size: rem(16);
+            line-height: 21px;
+        }
+
+        &__subtitle {
+            margin-bottom: rem(7);
+            font-size: rem(14);
+            line-height: 18px;
+        }
+
+        &__text,
+        p {
+            font-size: rem(12);
+            line-height: 20px;
+        }
+
+        // &__cont-img {
+        // 	height: rem(89);
+        // }
+    }
+
+    .vv-actualidad {
+        padding-bottom: rem(108);
+
+        .portlet-column-last {
+            .evr-present__item--inline {
+                min-height: rem(410);
+
+                // .evr-present__cont-img {
+                // 	height: rem(167);
+                // }
+            }
+        }
+
+        .portlet-column--separate {
+            .portlet-boundary {
+                &:first-child {
+                    margin-bottom: rem(10);
+                }
+            }
+        }
+    }
+}
+
+@include media-query(sm) {
+    .evr-present {
+        .row {
+            flex-direction: column;
+        }
+        &__item {
+            margin-bottom: rem(25);
+            min-height: auto;
+
+            &--inline {
+                display: block;
+                .evr-present {
+                    &__cont-img {
+                        width: 100%;
+                        height: 10rem;
+                        background-size: cover;
+                        background-position: center;
+                    }
+
+                    &__container {
+                        width: 100%;
+                        padding: rem(12) rem(19);
+                    }
+                }
+            }
+        }
+
+        &__title {
+            margin-bottom: rem(8);
+            padding-right: rem(80);
+            font-size: rem(14);
+            line-height: 16px;
+        }
+
+        &__subtitle {
+            position: absolute;
+            margin: 0;
+            top: rem(12);
+            right: rem(16);
+            font-size: rem(11);
+            line-height: 16px;
+        }
+
+        &__container {
+            position: relative;
+            padding: rem(12) rem(19);
+        }
+
+        &__text,
+        p {
+            line-height: 22px;
+        }
+
+        &__cont-img {
+            width: 100%;
+            height: 10rem;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    // .portlet-dropzone.portlet-column-content.portlet-column-content-last .evr-present{
+    // 	padding: 0 15px;
+    // }
+    .vv-actualidad {
+        padding-bottom: rem(83);
+
+        .portlet-column--separate {
+            .portlet-boundary {
+                &:first-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        .portlet-column-last {
+            .evr-present__item--inline {
+                min-height: auto;
+                margin-top: rem(25);
+
+                .evr-present__cont-img {
+                    height: rem(80);
+                }
+            }
+        }
+
+        .evr-highlighted {
+            &__triangle {
+                .maxwidth {
+                    >.portlet-layout {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

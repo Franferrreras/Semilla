@@ -1,0 +1,22 @@
+.#{$ns}article-related {
+    &__title {
+        display: block;
+        font-size: rem(14);
+        line-height: 1.2;
+        font-weight: bold;
+        margin-bottom: rem(20);
+    }
+    &__container {
+        display: block;
+        width: 100%;
+    }
+    &__btn-collapse {
+        display: none;
+    }
+}
+
+@include media-query(sm) {
+    .#{$ns}article-related__btn-collapse {
+        display: block;
+    }
+}

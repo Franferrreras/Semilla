@@ -1,0 +1,40 @@
+div.score.taglib-ratings .rating-content .rating-element {
+	color: #ffe680;
+	font-size: 2em;
+}
+
+.score.taglib-ratings{
+    float: unset !important;
+}
+
+.evr-ratings{
+    text-align:center;
+    padding-bottom: 4em;
+}
+
+span.ratingMediaVotosText {
+	font-size: 85%;
+	vertical-align: sub
+}
+
+.evr-social-actions{
+display: none;
+}
+
+.evr-rating__footer{
+    text-align:center;
+    margin-top: 1rem;
+}
+
+.evr-rating__lnk-footer {
+    color: #087021;
+    text-align: center;
+    span {
+        letter-spacing: 0.75px;
+        font-weight: bold;
+    }
+}
+
+.evr-top-rating-title {
+	text-align: center;
+}

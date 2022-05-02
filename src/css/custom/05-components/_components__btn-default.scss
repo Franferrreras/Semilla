@@ -1,0 +1,89 @@
+.#{$ns}btn-default {
+    display: inline-block;
+    height: rem(45);
+    border: 1.5px solid color(primary);
+    margin-bottom: rem(30);
+    @include border-radius(3px);
+
+    &:hover,&:focus, &:active {
+        cursor: pointer;
+        background-color: color(primary);
+        border-color: color(primary_hover);
+    }
+
+    &__txt {
+        font-size: rem(16);
+        font-weight: 600;
+        line-height: rem(22);
+        color: color(primary);
+    }
+
+    /**
+     * Modifiers: colors
+     */
+
+    &--light {
+        background-color: color(white);
+        .#{$ns}btn-default__txt {
+            color: color(primary);
+        }
+        &:hover,&:focus, &:active {
+            .#{$ns}btn-default__txt {
+                color: color(white) !important;
+            }
+        }
+    }
+    &--light-no-focus{
+        &:focus{
+            background-color: white;
+            .#{$ns}btn-default__txt {
+                color: color(primary) !important;
+            }
+        }
+    }
+    &--primary {
+        background-color: color(primary);
+        .#{$ns}btn-default__txt {
+            color: color(white);
+        }
+        &:hover,&:focus, &:active {
+            background-color: color(primary_hover);
+        }
+    }
+
+    /**
+     * Modifiers: others
+     */
+
+    &--block {
+        display: block;
+        width: 100%;
+    }
+    &--center {
+        text-align: center;
+    }
+    &--margin{
+        margin-bottom: rem(15);
+    }
+
+     /**
+     * DISABLED STYLES
+     */
+    .evr-btn-default:disabled {
+        filter: opacity(0.5);
+        cursor: not-allowed;
+    }
+    .evr-btn-default:disabled:hover {
+        border-color: #087021;
+    }
+    .evr-btn-default--primary:disabled:hover {
+        background-color: #087021;
+    }
+    .evr-btn-default--light:disabled:hover {
+        background-color: white;
+    }
+    .evr-btn-default--light:disabled:hover span.evr-btn-default__txt {
+        color: #087021 !important;
+    }
+
+}

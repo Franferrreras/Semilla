@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>ico_checkbox_active</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M3.86207844,8.88536853 L0.542435582,5.63391004 C0.342997663,5.43856851 0.342997663,5.1218444 0.542435582,4.92648333 L1.26467735,4.21905663 C1.46411527,4.02369556 1.78750115,4.02369556 1.98693907,4.21905663 L4.2232093,6.40937507 L9.01305096,1.71793472 C9.21248887,1.52259319 9.53587476,1.52259319 9.73531267,1.71793472 L10.4575544,2.42536142 C10.6569924,2.62070295 10.6569924,2.93742705 10.4575544,3.13278812 L4.58434016,8.88538807 C4.38488229,9.0807296 4.06151636,9.0807296 3.86207844,8.88536853 L3.86207844,8.88536853 Z" id="path-1"></path>
+    </defs>
+    <g id="6.-Espacio-personal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="6.4-formulario-v2" transform="translate(-335.000000, -744.000000)">
+            <g id="ico_checkbox_active" transform="translate(335.000000, 744.000000)">
+                <g id="ico/check-box/no-seleccionado" stroke="#087021" stroke-width="0.5">
+                    <rect id="Rectangle-Copy-16" x="0.25" y="0.25" width="18.5" height="18.5" rx="2"></rect>
+                </g>
+                <g id="ico/check-box/seleccionado" transform="translate(4.000000, 4.000000)">
+                    <g id="ico/check-box/check">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Path" fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <g id="Colores/principal" mask="url(#mask-2)" fill="#087021" fill-rule="nonzero">
+                            <g transform="translate(0.000000, -0.392857)" id="Rectangle">
+                                <rect x="0" y="0" width="11" height="12"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

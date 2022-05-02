@@ -1,0 +1,90 @@
+////
+/// Collage component
+///
+/// Description of the component
+///
+/// @access public
+/// @author Dfront Specialist Team
+/// @group components
+/// @name .#{$wf__ns}Visitcollage
+/// @since version 1.0.0
+////
+
+.evr-visitcollage {
+    display: flex;
+
+    &__title {
+        font-family: $ns-font-alternative;
+        font-size: 27px;
+        letter-spacing: 1.9px;
+        margin-top: 25px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__txt {
+        font-size: rem(16);
+        line-height: rem(26);
+    }
+
+    &__element {
+        padding-right: 20px;
+        padding-left: 21px;
+        padding-top: 33px;
+        padding-bottom: 45px;
+    }
+
+    &__elements {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__wrapper {
+        display: flex;
+        width: 31%;
+        margin-bottom: 29px;
+        box-shadow: 2px 1px 7px 0px #ede6ed;
+        // margin-right: 3.5%;
+
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__txt {
+        font-size: rem(16);
+        line-height: rem(26);
+    }
+
+    &__item {
+        width: 100%;
+        align-self: center;
+    }
+
+    &__figure {
+        width: 100%;
+        margin-right: 15px;
+        align-self: center;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+        
+    }
+}
+@include media-query(sm) { 
+    .evr-visitcollage {
+        &__wrapper {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+}

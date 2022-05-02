@@ -1,0 +1,175 @@
+////
+/// Search Map component
+///
+/// Description of the component
+///
+/// @access public
+/// @author Dfront Specialist Team
+/// @group components
+/// @name .#{$wf__ns}example
+/// @since version 1.0.0
+////
+.#{$ns}search-map{
+    background-color: color(background-maps);
+
+    &__container{
+        border-bottom: 1px solid color(grey-2);
+    }
+    &__flex {
+        padding: rem(15);
+    }
+
+    &__col-container{
+        margin-bottom: rem(30);
+    }
+
+    &__container-checkbox{
+        display: block;
+        text-align: end;
+        padding: rem(10) 0;
+    }
+
+    &__checkbox{
+        display:none;    
+        & + label {
+            cursor:pointer;
+            display:inline-block;
+            padding-left: 2.5rem;
+            position: relative;
+            
+            &:before {
+                content: "";
+                display:inline-block;
+                width: 1.4rem;
+                height: 1.4rem;
+                position: absolute;
+                left: 0.25rem;
+                margin:-1px 4px 0 0;
+                vertical-align:middle;
+                background-color: color(white);
+                border: solid 1px color(primary,0.5);
+            }
+            &:hover,
+            &:focus {
+                color: color(primary);
+                &:before {
+                    border-color: color(primary);
+                }
+            }
+        }
+        &:checked + label {
+            &:before {
+                border-color:color(primary);
+            }
+            &:after {
+                content: "";
+                display:inline-block;
+                position: absolute;
+                left: 0.7rem;
+                top: 0.1rem;
+                width: 0.5rem;
+                height: 1rem;
+                border-right: solid 2px color(primary);
+                border-bottom: solid 2px color(primary);
+                transform: rotate(45deg);
+            }
+            &:hover,
+            &:focus {
+                color: color(black);
+                &:before {
+                    border-color: color(black);
+                }
+            }
+        }
+    }
+
+    &__container-buttons{
+        margin-top: rem(30);
+    }
+
+    &__container-btn-hidden{
+        &:before{
+            content: "";
+            display: block;
+            border: 1px solid color(grey-2);
+            width: 100%;
+            margin: rem(15) 0;
+        }
+    }
+
+    &__btn-hidden{
+        color: color(primary);
+        padding: rem(15);
+        
+
+        &:before{
+            content: "";
+            display: inline-block;
+            margin-right: rem(5);
+            height: rem(7);
+            width: rem(7);
+            border: 1px solid #087021;
+            border-width: 2px 2px 0 0;
+            transform: rotate(-45deg);
+        }
+
+        &--active{
+            &:before{
+                margin-bottom: 3px;
+                transform: rotate(135deg);
+            }
+        }
+    }
+    
+    &__btn-text{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    &__gramma-map {
+        overflow: hidden;
+        iframe {
+            height: 56vw;
+            margin-top: rem(25);
+            margin-bottom: rem(25);
+        }
+    }
+}
+@include media-query(md){
+    .#{$ns}search-map {
+        &__gramma-map {
+            iframe {
+                padding: rem(25);
+            }
+        }
+    }
+}
+@include media-query(sm){
+    .#{$ns}search-map {
+        &__container-buttons{
+            margin-top: 0;
+        }
+        &__container-checkbox{
+            text-align: initial;
+            padding: 0;
+        }
+        &__gramma-map {
+            iframe {
+                margin: 0;
+                height: 135vw;
+            }
+        }
+    }
+    .portlet-boundary_AssetSearchPlugin_ .evr-search-map--background, .portlet-boundary_AssetSearchPlugin_ .evr-article-layout--background, .evr-section .evr-search-map--background, .evr-section .evr-article-layout--background {
+        padding-top: 0!important;
+    }
+    .portlet-boundary_AssetSearchPlugin_ .evr-search-map__flex-wrap, .portlet-boundary_AssetSearchPlugin_ .evr-article-layout__flex-wrap, .evr-section .evr-search-map__flex-wrap, .evr-section .evr-article-layout__flex-wrap {
+        margin-bottom: 20px!important;
+    }
+    .portlet-boundary_AssetSearchPlugin_ .evr-search-map__flex-wrap-button {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .portlet-boundary_AssetSearchPlugin_ .evr-search-map__flex-wrap-button, .portlet-boundary_AssetSearchPlugin_ .evr-article-layout__flex-wrap-button, .evr-section .evr-search-map__flex-wrap-button, .evr-section .evr-article-layout__flex-wrap-button {
+        flex-wrap: nowrap!important;
+    }
+}

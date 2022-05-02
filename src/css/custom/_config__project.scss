@@ -1,0 +1,274 @@
+///*-------------------------------------------------------------------------
+//   #SETTINGS CONFIG
+//--------------------------------------------------------------------------*/
+
+/* 
+All "$include__" are set to "false". To include a file, It must be changed to "true".
+Todos los "$include__" están configurados a "false". Para incluir un archivo, debe cambiarse a "true".
+*/
+
+
+//  CONTENT THIS FILE:
+
+//      # NAMESPACE - We do not use namespace in liferay projects.
+//      # BRAND COLORS
+///     # CONFIG - FONTS
+//      # IMAGES PATH
+//      # CONTROLLING THE HEADER SPACE - .control-menu AND #wrapper
+//      # HEADINGS | FONT-SIZE DEFAULT
+//      # CONFIG - RESPONSIVE TYPE AND MEDIAQUERIES
+//      # INCLUDE ELEMENTS
+//      # INCLUDE OBJECTS
+//      # INCLUDE COMPONENTS
+//      # INCLUDE PORTLETS
+//      # INCLUDE TRUMPS
+
+
+
+/*-------------------------------------------------------------------------
+//      # NAMESPACE
+//------------------------------------------------------------------------*/
+
+/* 
+    We do not use namespace for each project.
+    We always use evr- for all Everis classes.
+    So, them not will be confused with the ones we inherited from the Liferay "Styled" theme.
+    Neither do we limit with dfront-.
+
+    No usamos namespace para cada proyecto. 
+    Usamos siempre evr- para todas las clases de everis. 
+    Así no se confundiran con las que heredamos del theme "Styled" de Liferay.
+    Tampoco acotamos con dfront- ya que nuestras clases deben aplicar tambien a los portlets incluidos en el producto.
+*/
+
+
+
+/*-------------------------------------------------------------------------
+//      # BRAND COLORS
+//------------------------------------------------------------------------*/
+
+$wf__background-color      :    #fff;
+$wf__bg_section-color     :    #f3f7fa;
+
+
+
+$wf__primary-color         :    #087021;
+$wf__primary-color-hover   :    #094525;
+$wf__secondary-color       :    #000000;
+$wf__therciary-color       :    #515151;
+
+
+/*messages*/
+$wf__error-color           :    #d06575;
+$wf__warning-color         :    #cfa962;
+$wf__info-color            :    #6fadd3;
+$wf__success-color         :    #85bd6e;
+
+/*text */
+$wf__text-default-color    :    rgb(100,100,100);
+$wf__text-twitter          :    #00ACF7;
+
+
+/*-----------------------------------------------------
+///     # CONFIG - FONTS
+///---------------------------------------------------*/
+
+$wf__font--default          : "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$wf__font--bold             : "OpenSansBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$wf__font--light            : "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$wf__font--alternative      : "BillyOhio", Helvetica, Arial, sans-serif;
+$wf__font--sans             : "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$wf__font--sans-bold        : "OpenSansBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$wf__font--fa               : "fontawesome-alloy";
+$wf__font--assistant        : 'Assistant';
+$wf__font--assistant-bold   : 'Assistant-Bold';
+$wf__font--assistant-Semibold   : 'Assistant-Semibold';
+
+
+
+$wf__base-font-size            :    16;
+$wf__base-line-height          :    1.5;
+$wf__base-font-family          :    $wf__font--default;
+$wf__base-typography-color     :    $wf__text-default-color;
+$wf__base-path-font            :    "fonts/";
+
+
+/*-------------------------------------------------------------------------
+//      # IMAGES PATH
+//------------------------------------------------------------------------*/
+
+
+
+$wf__image-path-custom         :    "@theme_image_path@/custom/";
+$wf__image-path-icons          :    "@theme_image_path@/icons/";
+$wf__image-path-images         :    "@theme_image_path@/custom/images/";
+
+
+
+/*-------------------------------------------------------------------------
+//      # CONTROLLING THE HEADER SPACE - .control-menu AND #wrapper
+//--------------------------------------------------------------------------*/
+
+$wf__header-height             :    rem(40);
+$wf__xl-header-height          :    rem(40);
+$wf__lg-header-height          :    rem(89);
+$wf__md-header-height          :    rem(89);
+$wf__sm-header-height          :    rem(64);
+
+$wf__custom-wpr-margin-top     :    rem(0);
+$wf__admin-wpr-margin-top      :    rem(65);
+$wf__sm-admin-wpr-margin-top   :    rem(48);
+
+
+/*----------------------------------------------
+//    # HEADINGS | FONT-SIZE DEFAULT
+//----------------------------------------------*/
+
+$wf__h1: 36 !default;
+$wf__h2: 30 !default;
+$wf__h3: 26 !default;
+$wf__h4: 20 !default;
+$wf__h5: 13 !default;
+$wf__h6: 11 !default;
+
+
+/*-----------------------------------------------------
+///     # CONFIG - RESPONSIVE TYPE AND MEDIAQUERIES
+///---------------------------------------------------*/
+
+$wf__mobile-first       : false;
+
+$wf__x-small      :     320;
+$wf__small        :     768;
+$wf__medium       :     920;
+$wf__large        :     1199;
+$wf__min-large    :     1280;
+$wf__max-large    :     3500;
+
+$maxwidth         :     1170;
+$maxwidth-inner   :     1350;
+
+$include__grid-nora : false;
+
+/*-------------------------------------------------------------------------
+//      # INCLUDE ELEMENTS
+//------------------------------------------------------------------------*/
+
+$include__a                     :   true   !default;
+$include__body                  :   true   !default;
+$include__figure                :   true   !default;
+$include__headings              :   true   !default;
+$include__hr                    :   true   !default;
+$include__html                  :   true   !default;
+$include__iframe                :   true   !default;
+$include__image                 :   true   !default;
+$include__lists                 :   true   !default;
+$include__table                 :   true   !default;
+
+
+/*-------------------------------------------------------------------------
+//      # INCLUDE OBJECTS
+//------------------------------------------------------------------------*/
+
+$include__badge                 :   false   !default;
+$include__banner                :   false   !default;
+$include__box                   :   false   !default;
+$include__buttons               :   true   !default;
+$include__calendar-yui          :   true   !default;
+$include__calendar              :   true   !default;
+$include__carousel              :   false   !default;
+$include__carousel-fade         :   false   !default;
+$include__card                  :   false   !default;
+$include__debug-css             :   false   !default;
+$include__dropdown              :   false   !default;
+$include__figcaption            :   false   !default;
+$include__form-controls         :   false   !default;
+$include__label                 :   false   !default;
+$include__loaders               :   false   !default;
+$include__modal                 :   false   !default;
+$include__navbar                :   false   !default;
+$include__navigation            :   false   !default;
+$include__pagination            :   true   !default;
+$include__portlet               :   true   !default;
+$include__quote                 :   false   !default;
+$include__search-facet          :   false   !default;
+$include__search-sugest         :   false   !default;
+$include__sidebar               :   false   !default;
+$include__sidenav               :   false   !default;
+$include__site-title            :   true   !default;
+$include__table                 :   false   !default;
+$include__tabs                  :   true   !default;
+$include__taglib                :   false   !default;
+$include__wrapper               :   true   !default;
+
+
+/*-------------------------------------------------------------------------
+//      # INCLUDE COMPONENTS
+//------------------------------------------------------------------------*/
+
+$include__daterangepicker       :   true    !default;
+
+$include__maxwidth              :   true    !default;
+$include__overlay               :   false    !default;
+$include__slick                 :   true    !default;
+
+
+/*-------------------------------------------------------------------------
+//      # INCLUDE PORTLETS
+//--------------------------------------------------------------------------*/
+
+$include__ajax                      :   false    !default;
+$include__asset-publisher           :   true    !default;
+$include__breadcrumbs               :   true    !default;
+$include__forms-display             :   false    !default;
+$include__forms                     :   false    !default;
+$include__forum                     :   false    !default;
+$include__message-boards            :   false    !default;
+$include__search                    :   false    !default;
+$include__site-map                  :   false    !default;
+$include__user-segment-cd           :   false    !default;
+
+
+
+
+
+///*-----------------------------------------------------
+///     # INCLUDE TRUMPS
+///-----------------------------------------------------*/
+
+
+    
+/*Include trumps for float*/
+$include__trumps--float : false !default;
+
+/*Include trump for font-size*/
+$include__trumps--font-size: false !default;
+/*config array with font-size number*/
+    $wf__trumps-fs : 12,16,18,24;
+
+/*Include trump for hide in base to breakpoints*/
+$include__trumps--hide : true !default;
+
+/*Include trump for margin*/
+$include__trump--margin : false !default;
+/*config init and end iteration with steps*/
+    $wf__trumps-margin-init : 0;
+    $wf__trumps-margin-steps: 5;
+    $wf__trumps-margin-end : 10;
+
+/*Include trump for padding*/
+$include__trump--padding : false !default;
+/*config init and end iteration with steps*/
+    $wf__trumps-padding-init : 0;
+    $wf__trumps-padding-steps: 5;
+    $wf__trumps-padding-end : 10;
+
+/*include trump for position*/
+$include__trump--position : false !default;
+
+/*include trump for text align*/
+$include__trump--text-align : false !default;
+
+/*include trump for text transform*/
+$include__trump--text-transform : false !default;
+

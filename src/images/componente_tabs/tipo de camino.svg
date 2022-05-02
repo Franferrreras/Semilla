@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>ico/tipo de camino</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ico/tipo-de-camino" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M10,14.5 L11,14.5 L10,14.5 Z" id="Path" stroke="#5C966A"></path>
+        <path d="M12,14.5 L13,14.5 L12,14.5 Z" id="Path" stroke="#5C966A"></path>
+        <path d="M14,13.5 L15,13.5 L14,13.5 Z" id="Path" stroke="#5C966A"></path>
+        <path d="M11,12.5 L12,12.5 L11,12.5 Z" id="Path" stroke="#5C966A"></path>
+        <path d="M9,11.5 L10,11.5 L9,11.5 Z" id="Path" stroke="#5C966A"></path>
+        <path d="M7.01221645,3.54327335 C9.1842363,4.35304199 9.55538821,5.32133676 9.50936369,6.21251071 C9.43293764,7.6949443 9.11752185,8.42759212 10.4543443,9.18594687 C10.9644143,9.47300771 11.5606219,9.72150814 12.1952537,9.93573265 C16.3803929,11.0411311 18.981975,11.5666952 20,11.512425" id="Path" stroke="#5C966A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <polygon id="Path" stroke="#5C966A" stroke-width="0.5649273" fill="#5C966A" stroke-linejoin="round" points="15 4 18.1233902 4 19 5.02493075 18.1233902 6 15 6"></polygon>
+        <polygon id="Path" stroke="#5C966A" stroke-width="0.5649273" fill="#5C966A" stroke-linejoin="round" points="14.8356587 2 11.8406865 2 11 3.03047091 11.8406865 4 14.8356587 4"></polygon>
+        <path d="M15,10 L15,1 L15,10 Z" id="Path" stroke="#5C966A" stroke-width="1.5" stroke-linejoin="round"></path>
+        <path d="M11.0668917,20.1696658 C7.84179693,18.7000857 4.74379739,16.9520137 2.86270321,15.0497001 C1.82398455,14.0128535 1.26831228,12.9845758 1.08336969,12.0205656 C0.593567391,9.46272494 2.36487829,8.43873179 3.71014564,7.30762639 C6.22418261,5.19537275 4.42120346,4.33419023 3.44244335,4" id="Path" stroke="#5C966A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    </g>
+</svg>

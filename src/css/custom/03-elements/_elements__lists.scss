@@ -1,0 +1,33 @@
+@if ($include__lists==true) {
+    /*------------------------------------
+    # ELEMENT LISTS
+-------------------------------------*/
+
+    ul, ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        list-style-position: inside;
+
+        /*li {
+            position: relative;
+            padding-bottom: rem(10);
+            margin-bottom: rem(10);
+            color: color(black);
+            font-family: $wf__font--default;
+            font-size: rem(16);
+        }*/
+        
+        li {
+		> ul,
+		> ol {
+			margin-bottom 	:  	0;
+		}
+}
+    }
+
+
+    /*------------------------------------
+    # END ELEMENT LISTS
+    -------------------------------------*/
+}

@@ -1,0 +1,29 @@
+.portlet-language{
+	.language-entry-short-text {
+	    padding: 0 rem(10);
+	    border-right: 1px solid color(secondary);
+	    color: color(secondary);
+	    font-size: rem(14);
+	    &:nth-child(2){
+	    	padding-left: 0;
+	    }
+	    &:last-child{
+	    	padding-right: 0;
+	    	border-right: 0;
+	    }
+	}
+	span.language-entry-short-text{
+		font-weight: bold;
+	}
+	a.language-entry-short-text{
+		&:hover{
+			color: color(primary);
+		}
+	}
+}
+
+@include media-query(lg) {
+	.portlet-language{
+		margin-top: rem(10);
+	}
+}

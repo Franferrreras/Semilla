@@ -1,0 +1,165 @@
+////
+/// Collage Resultados Mapa component
+///
+/// Description of the component
+///
+/// @access public
+/// @author Dfront Specialist Team
+/// @group components
+/// @name .#{$wf__ns}example
+/// @since version 1.0.0
+////
+.popupCompatibility{
+    z-index: 1 !important;
+}
+.yui3-skin-sam .yui3-widget-mask {
+	z-index: 1 !important;
+}
+
+.#{$ns}article-collage-map{
+    height: 100%;
+    // margin-bottom: rem(30)!important;
+    // margin-top: rem(30);
+    @include box-shadow(0 0 10px color(black, 0.1));
+
+    &__container {
+        padding: rem(6) rem(6);
+        height: 100%;
+    }
+    &__collection {
+        position: relative;
+        font-size: 0;
+        overflow: hidden;
+        max-height: rem(225);
+        &--primary {
+            height: rem(500);
+        }
+    }
+    &__container-ico{
+        position: absolute;
+        top: rem(25);
+        right: rem(22);
+        z-index: 1;
+    }
+    &__ico{
+        font-size: rem(14);
+        color: color(white);
+        display: inline-block;
+	    	vertical-align: top;
+        &:first-child{
+          margin-right: rem(4)
+				}
+				input[type="checkbox"] {
+					&:checked + label {
+						&::before {
+							background: url(/o/ventana-theme/images/ico_checkbox_active.svg);
+							background-repeat: no-repeat;
+						}
+					}
+				}
+        }
+    &__ico-disability {
+        display: flex;
+        justify-content: flex-end;
+        figure{
+            margin-left: 0.4rem;
+        }
+    }
+		&__container-ico-primary {
+			display: flex;
+			justify-content: space-between;
+			position: absolute;
+			margin: 0.5rem 0.6rem 0rem 0.6rem;
+			width: -webkit-fill-available;
+		}
+		&__stars {
+			display: flex;
+		}
+		&__element {
+			margin-right: 0.4rem;
+		}
+		&__input {
+			padding: 0;
+			height: initial;
+			width: initial;
+			margin-bottom: 0;
+			display: none;
+			cursor: pointer;
+		}
+		&__label {
+            background: #FFF;
+            opacity: 0.5;
+			position: relative;
+			cursor: pointer;
+			&::before {
+        content: '';
+        background: url(/o/ventana-theme/images/ico_checkbox_inactive.svg);
+        background-repeat: no-repeat;
+        width: 19px;
+        height: 19px;
+        display: inline-block;
+        position: relative;
+        vertical-align: text-top;
+        cursor: pointer;
+			}
+		}
+    &__container-accesible{
+        position: absolute;
+        //bottom: rem(25);
+        right: rem(27);
+    }
+    &__accesible-ico{
+        font-size: rem(20);
+        color: color(primary);
+        display: inline-block;
+        vertical-align: top;
+       // &:first-child{
+            //margin-right: rem(10)
+       // }
+    }
+    &__thumb {
+        vertical-align: top;
+        overflow: hidden;
+        max-width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__body {
+        padding: rem(22) rem(0);
+    }
+    &__tag {
+        display: block;
+        font-size: rem(12);
+        font-weight: bold;
+        line-height: 1.7;
+        color: color(grey-9);
+    }
+    &__title {
+        display: block;
+        font-size: rem(16);
+        font-weight: bold;
+        line-height: 2.2;
+        color: color(primary);
+    }
+    &__time {
+        display: block;
+        font-size: rem(14);
+        line-height: 1.9;
+        color: color(grey-9);
+    }
+    
+}
+.evr-imagen-detalle__table-icons.evr-imagen-detalle__table-icons--align-row {
+    display: flex;
+}
+.evr-imagen-detalle__table-cel {
+    width: rem(50);
+    height: rem(50);
+    border-radius: 100%;
+    margin-right: rem(20);
+}

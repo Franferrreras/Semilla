@@ -1,0 +1,24 @@
+@if ($include__portlet == true){
+	.portlet{
+		  > .portlet-topper{
+		    z-index: 5;
+		  }
+
+		  .visible-interaction{
+		  	position: absolute;
+		  	transition: all 0.5s ease;
+		  	opacity: 0;
+		  }
+
+		  &:active .visible-interaction, &:hover .visible-interaction, &:focus .visible-interaction, &.active .visible-interaction, &:active .visible-interaction-button, &:hover .visible-interaction-button, &:focus .visible-interaction-button, &.active .visible-interaction-button {
+		    display: inherit;
+		    z-index: 9;
+		    background: rgba(255,255,255,0.9);
+		    right: rem(15);
+		    top: rem(10);
+		    border-radius: 100%;
+		    opacity: 1;		    
+		}
+
+	}
+}

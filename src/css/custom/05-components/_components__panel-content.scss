@@ -1,0 +1,110 @@
+////
+/// Contenido de tabs component
+///
+/// Description of the component
+///
+/// @access public
+/// @author Dfront Specialist Team
+/// @group components
+/// @name .#{$wf__ns}example
+/// @since version 1.0.0
+////
+.#{$ns}panel-content{
+    background-color: color(grey-20);
+    padding: rem(20) 0;
+
+    &__title{
+        font-family: $wf__font--assistant-Semibold;
+        display: block;
+        font-size: rem(16);
+        line-height: rem(21);
+        color: color(grey-5);
+        font-weight: 600;
+        letter-spacing: normal;
+
+
+        &:after{
+            content: "";
+            border: 1px solid color(primary);
+            display: block;
+            margin: rem(10) 0;
+        }
+    }
+    
+    &__paragraph{
+        font-size: rem(16);
+        line-height: rem(30);
+        color: color(grey-5);
+        font-family: $wf__font--default;
+    }
+
+    &__container-lnk{
+        display: block;
+        text-align: end;
+        margin: rem(10) 0;
+    }
+
+    &__lnk{
+        color: color(primary);
+        &:hover,&:focus,&:active {
+            text-decoration: none;
+        }
+    }
+    &__txt{
+        display: inline-block;
+        font-weight: 600;
+    }
+    &__cross{
+        margin-left: rem(5);
+        display: inline-block;
+        position: relative;
+        background: color(primary);
+        width: rem(2);
+        height: rem(10);
+
+        &:after {
+            content: "";
+            position: absolute;
+            background: color(primary);
+            width: rem(2);
+            height: rem(10);
+            left: 0;
+            top: 0;
+            @include transform(rotate(90deg));
+        }
+    }
+    &__container-out{
+    	margin-top: rem(80);
+    }
+}
+.evr-natural-espace-paragraph {
+    p {
+        overflow: auto;
+        
+        img {
+            float: right;
+            padding: 0 0 rem(8) rem(16);
+        }
+    }
+    .portlet-asset-publisher .asset-full-content img {
+        padding-left: 15px;
+    }
+}
+
+@include media-query(sm){
+    .#{$ns}panel-content{
+
+        iframe {
+            margin: 0!important;
+            padding: 0 25px!important;
+        }
+        &__title{
+            font-size: rem(14);
+            line-height: rem(18);
+            padding-top: rem(20);
+        }
+        &__container-out{
+    	margin-top: rem(25);
+    	}
+    }
+}

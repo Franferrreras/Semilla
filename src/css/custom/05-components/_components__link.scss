@@ -1,0 +1,25 @@
+.#{$ns}link {
+    font-size: 0;
+
+    &__icon {
+        display: inline-block;
+        vertical-align: top;
+        width: rem(8);
+        margin-right: rem(8);
+        font-size: rem(18);
+        line-height: 1.2;
+        color: color(primary);
+    }
+    &__txt {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% - 16px);
+        font-size: rem(14);
+        line-height: 1.4;
+        color: color(primary);
+    }
+
+    &:hover, &:focus, &:active {
+        text-decoration: underline;
+    }
+}

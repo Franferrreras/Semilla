@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>ico/tobogan</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ico/tobogan" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#5C966A" fill="#5C966A" x="0.5" y="18.5" width="3" height="1"></rect>
+        <rect id="Rectangle" stroke="#5C966A" fill="#5C966A" x="16.5" y="18.5" width="3" height="1"></rect>
+        <rect id="Rectangle" stroke="#5C966A" fill="#5C966A" x="6.5" y="12.5" width="7" height="2" rx="1"></rect>
+        <path d="M8.02674834,1.11700074 L8.02674834,13.1170007" id="Path-5" stroke="#5C966A" stroke-width="1.5" stroke-linecap="round"></path>
+        <path d="M12,1.11700074 L12,13.1170007" id="Path-5" stroke="#5C966A" stroke-width="1.5" stroke-linecap="round"></path>
+        <path d="M2,18.8829993 L3.80118439,2.77770973 C3.91439125,1.7654706 4.77024288,1 5.78879276,1 L14.2112072,1 C15.2297571,1 16.0856087,1.7654706 16.1988156,2.77770973 L18,18.8829993 L18,18.8829993" id="Path-3" stroke="#5C966A" stroke-width="2"></path>
+    </g>
+</svg>

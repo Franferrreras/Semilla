@@ -1,0 +1,18 @@
+@if ($include__quote == true){
+
+    .portlet-asset-publisher .quote, .portlet-message-boards .quote, .portlet-trash .quote {
+        /*background: #FFF url(@theme_image_path@/custom/message_boards/quoteleft.png) left top no-repeat;
+        padding: rem(10) 0 0 rem(10);
+        margin-bottom: rem(15);*/
+
+        .quote-content {
+            /*background: transparent url(@theme_image_path@/custom/message_boards/quoteright.png) right bottom no-repeat;
+            padding: rem(10) rem(30) rem(10) rem(35);*/
+            > span {
+                display: block;
+            }
+        }
+    }
+}
+
+

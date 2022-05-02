@@ -1,0 +1,20 @@
+////
+/// Visit component
+///
+/// Description of the component
+///
+/// @access public
+/// @author Dfront Specialist Team
+/// @group components
+/// @name .#{$wf__ns}Visit
+/// @since version 1.0.0
+////
+
+.evr-visit {
+    &__title {
+        font-family: $ns-font-alternative;
+        font-size: rem(49);
+        letter-spacing: 0.2px;
+    }
+        
+}

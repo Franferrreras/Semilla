@@ -1,0 +1,377 @@
+$formControls: true;
+
+@if ($formControls==true) {
+
+    input::-ms-clear {
+        display: none;
+    }
+
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    .uneditable-input {
+
+        &,
+        &.form-control {
+            /*min-height: rem(40);
+            border: rem(1) solid color(grey-1);
+            color: color(grey-2);
+            font-family: $wf__font--alternative;
+            font-size: rem(16);
+            line-height: rem(23);
+            background-color: color(white);
+            box-shadow: 0 0 rem(10) 0 rgba(0, 44, 88, 0.1);
+            border-radius: 0;*/
+            @include transition(all 0.5s ease);
+
+            &:hover {
+                outline: none;
+                /*border: rem(1) solid color(secondary);
+                box-shadow: 0 0 rem(10) 0 rgba(0, 44, 88, 0.1) !important;*/
+            }
+
+            &:focus {
+                /*border: rem(1) solid color(secondary);
+                box-shadow: none !important;*/
+            }
+
+            &::placeholder {
+                /*color: color(grey-1);*/
+            }
+
+            &.disabled,
+            &[disabled] {
+                /*border: rem(1) solid color(grey-1);
+                color: color(grey-1);
+                background: color(background);*/
+            }
+
+            &.has-error {
+                border: rem(1) solid color(error) !important;
+            }
+
+            /*&.datepicker {
+                color: color(text-gray);
+                line-height: normal;
+                width: 100%;
+                background: url(#{$wf__image-path-icons}forms/calendar.svg) 95% center no-repeat;
+                background-size: rem(30);
+
+                span {
+                    height: auto;
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding-top: rem(3);
+                    padding-right: rem(10);
+                }
+
+            }*/
+        }
+
+    }
+
+    /*input[type="date"],
+    input[type="date"].form-control {
+        background: url("#{$wf__image-path-icons}forms/calendar.svg") no-repeat calc(100% - #{rem(15)}) center #fff;
+        padding-right: rem(40);
+    }*/
+
+
+    textarea,
+    textarea.form-control {
+        min-height: rem(135);
+    }
+
+    select,
+    select.form-control {
+        min-height: rem(40);
+        color: color(grey-2);
+        border-radius: 0;
+        border: rem(1) solid color(grey-1);
+        box-shadow: 0 0 rem(10) 0 rgba(0, 44, 88, 0.1) !important;
+        line-height: normal;
+        font-size: rem(16);
+        padding-left: rem(15);
+
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -ms-appearance: none;
+
+        &::-ms-expand {
+          display: none;
+        }
+
+        background: color(white);
+        @include transition(all 0.5s ease);
+
+        &:hover {
+            outline: none;
+            border: rem(1) solid color(secondary);
+            box-shadow: 0 0 rem(10) 0 rgba(0, 44, 88, 0.1) !important;
+        }
+
+        &:focus {
+            border: rem(1) solid color(secondary);
+            box-shadow: none !important;
+        }
+
+        &.disabled,
+        &[disabled] {
+            border: rem(1) solid color(grey-1);
+            color: color(grey-1);
+            background: color(background);
+        }
+    }
+
+    input[type="file"],
+    input[type="file"].form-control {
+        height: auto;
+        /*border-radius: 0;
+        max-width: 100%;
+        white-space: normal;
+        min-height: rem(40);
+        border-radius: 0;
+        border: rem(1) solid color(primary);
+        box-shadow: none;
+        width: auto;*/
+        @include transition(all 0.5s ease);
+
+        &:hover {
+            outline: none;
+            /*border: rem(1) solid color(secondary);
+            background: color(secondary);
+            color: color(white);
+            box-shadow: none;*/
+        }
+
+        &:focus {
+            /*border: rem(1) solid color(secondary);
+            background: color(secondary);
+            color: color(white);
+            box-shadow: none;*/
+        }
+
+        &.has-error {
+            border: rem(1) solid color(error) !important;
+        }
+    }
+
+
+
+    /*.input-checkbox-wrapper {
+        input[type="checkbox"] {
+            display: none;
+        }
+    }*/
+
+    /*label>.input-checkbox-wrapper>input[type="checkbox"] {
+        display: block;
+    }*/
+
+    /*.fieldset .radio {
+        input[type="radio"] {
+            display: none;
+        }
+    }*/
+
+    /*table th.month,*/
+    .input-select-wrapper  {
+        position: relative;
+
+        &:after {
+            display: inline-block;
+            content: "\f107";
+            width: auto;
+            height: auto;
+            position: absolute;
+            transition-duration: 0.6s;
+            font-family: fontawesome-alloy;
+            font-size: rem(22);
+            color: color(primary);
+            right: rem(20);
+            bottom: 4px;
+            line-height: rem(30);
+            background: color(white);
+            pointer-events: none;
+        }
+
+        &.open {
+            &:after {
+                -webkit-transform: rotate(-180deg);
+                -moz-transform: rotate(-180deg);
+                -ms-transform: rotate(-180deg);
+                -o-transform: rotate(-180deg);
+                transform: rotate(-180deg);
+            }
+        }
+    }
+
+    /*.input-group-container.has-addon {
+
+        input[type="text"],
+        input[type="password"],
+        input[type="datetime"],
+        input[type="datetime-local"],
+        input[type="date"],
+        input[type="month"],
+        input[type="time"],
+        input[type="week"],
+        input[type="number"],
+        input[type="email"],
+        input[type="url"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="color"],
+        .uneditable-input {
+            border-right: 0 !important;
+            box-shadow: rem(15) 0 0px rem(-2) #fff, 0 0 rem(10) 0 rgba(0, 44, 88, 0.1) !important;
+
+            &:focus~.input-group-addon {
+                border-color: color(white);
+            }
+        }
+
+        &:hover {
+            .input-group-addon {
+                border-color: color(secondary);
+            }
+        }
+
+    }
+
+    .input-group-addon {
+        background: color(white);
+        border-radius: 0;
+        @include transition(all 0.5s ease);
+
+        .icon-calendar {
+            background: url("#{$wf__image-path-icons}forms/calendar.svg") no-repeat calc(100% - #{rem(5)}) center #fff;
+            width: rem(30);
+            height: rem(20);
+            display: block;
+
+            &:before {
+                display: none;
+            }
+        }
+    }*/
+
+    /*.quantity {
+        position: relative;
+        float: left;
+        width: 100%;
+
+        * {
+            @include transition(all 0.5s ease);
+        }
+
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        input:focus {
+            outline: 0;
+        }
+
+        .quantity-nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: rem(20);
+            height: auto;
+            vertical-align: middle;
+            position: absolute;
+            transition-duration: 0.6s;
+            right: 0;
+            top: rem(2);
+            color: color(primary);
+        }
+
+        .quantity-button {
+            position: relative;
+            cursor: pointer;
+            border-left: 1px solid color(grey-5);
+            width: 100%;
+            height: rem(18);
+            *height: rem(16);
+            padding: 5px 0;
+            text-align: center;
+            color: color(primary);
+            font-size: rem(18);
+            font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            line-height: 9px;
+        }
+
+        .quantity-button.quantity-up {
+            border-bottom: 1px solid color(grey-5);
+        }
+
+        .quantity-button.quantity-down {
+            font-size: rem(20);
+        }
+
+    }*/
+
+    /*input[type="number"] {
+
+        &:hover,
+        &:focus {
+            &~.quantity-nav {
+                .quantity-button {
+                    border-left: 1px solid color(secondary);
+                }
+
+                .quantity-button.quantity-up {
+                    border-bottom: 1px solid color(secondary);
+                }
+            }
+
+        }
+    }*/
+
+}
+
+/*.left.calendar .month {
+    &:after {
+        right: rem(15);
+    }
+}
+
+.right.calendar .month {
+    &:after {
+        right: rem(20);
+    }
+
+    &:before {
+        left: 43%;
+    }
+
+
+}*/
+
+
+@include media-query(sm) {}

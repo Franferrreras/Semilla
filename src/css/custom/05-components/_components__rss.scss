@@ -1,0 +1,103 @@
+.evr-rss {
+    &__list-container {
+        padding: 1.25rem;
+        position: relative;
+    }
+    &__list-item {
+        width: 100%;
+    }
+    &__block {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: rem(40);
+    }
+    &__list-title {
+        display: block;
+        font-size: rem(18);
+        font-weight: 600;
+        line-height: 1.1875rem;
+        letter-spacing: -0.3px;
+        margin-bottom: 0.5rem;
+        color: color(primary);
+        padding-left: rem(10);
+
+        &:before{
+            content: "";
+            width: rem(20);
+            height: rem(20);
+            background-image: url("/medioambiente/portal/o/ventana-theme/images/rss-square-solid.svg");
+            background-size: 18px;
+            background-repeat: no-repeat;
+            top: 44%;
+            left: 0;
+            position: absolute;
+            transform: translate(0, -50%);
+        }
+    }
+}
+.columns-3 {
+    .col-md-4.portlet-column {
+        display: flex;
+        justify-content: center;
+        margin-bottom: rem(70);
+    }
+    .evr_home-facebook {
+        iframe {
+            position: static!important;
+            visibility: visible!important;
+            display: inline-block!important;
+            width: 400px!important;
+            height: 440px!important;
+            padding: 0px!important;
+            border: none!important;
+            max-width: 100%!important;
+            min-width: 180px!important;
+            margin-top: 0px!important;
+            margin-bottom: 0px!important;
+            min-height: 200px!important;
+        }
+        ._2p3a {
+            min-width: 100%!important;
+            width: 100%!important;
+        }
+        .row-fluid.text-center {
+            margin-left: 0!important;
+        }
+        .uiScaledImageContainer._2zfr {
+           width: 100%!important; 
+        }
+        .scaledImageFitHeight.img {
+            left: 0!important;
+        }
+        .uiScaledImageContainer .scaledImageFitHeight {
+            height: 100%!important;
+        }
+        .fb-page.fb_iframe_widget {
+            >span {
+                width: 100%!important;
+                height: 100%!important;
+            }
+        }
+    }
+}
+#facebook {
+    div, a {
+        max-width: 100%;
+    }
+    ._1dro._2ph- .lfloat {
+        max-width: calc(100% - 60px);
+    }
+    ._1drp, ._1drq {
+        max-width: 100% !important;
+    }
+}
+
+@include media-query(sm){
+    .evr-rss {
+        &__list-title {
+            font-size: rem(16);
+        }
+    }
+}

@@ -1,0 +1,15 @@
+
+@if ($include__banner == true){
+
+	#banner{
+	    
+	}
+
+	.has-control-menu #banner{
+		
+	}
+
+	@include media-query(md) {}
+    @include media-query(sm) {}
+
+}

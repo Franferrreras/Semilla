@@ -1,0 +1,96 @@
+/*------------------------------------
+        # COMPONENT HIGHLIGHTED
+	------------------------------------*/
+
+.evr-highlighted{
+	&:after{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -15px;
+		width: calc(100% + 30px);
+		height: 100%;
+		z-index: 0;
+		background-color: color(grey-13);
+	}
+	&__btn{
+		background-image: url(http://www.reservatuvisita.es/sites/default/files/rs_media/slide2.jpg);
+    	background-position: 80% 28%;
+	}
+	
+	&__triangle{
+		&:after,&:before{
+			height: rem(55);
+			width: 100%;
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			background: center center / 100% rem(55) no-repeat transparent;
+		}
+		&--bottom-right{
+			&:after{
+				content: "";
+				bottom:rem(-1);
+				left: rem(-15);
+				width: calc(100% + 30px);
+				background-image:url("@theme_image_path@/triangulo-derecho.png");
+				background-position-y: 100%;
+				z-index: 1;
+			}
+		}
+		&--bottom-left{
+			&:after{
+				content: "";
+				bottom:rem(-2);
+				left: rem(-15);
+				width: calc(100% + 30px);
+				background-image:url("@theme_image_path@/triangulo-izquierdo.png");
+				background-position-y: 100%;
+				transform: scaleY(-1);
+				z-index: 1;
+			}
+		}
+		&--top-left{
+			&:before{
+				content: "";
+				top:0;
+				left: rem(-15);
+				width: calc(100% + 30px);
+				background-image:url("@theme_image_path@/triangulo-izquierdo.png");
+				background-position-y: 100%;
+				z-index:1;
+			}
+		}
+		&--top-right{
+			&:before{
+				content: "";
+				top:0;
+				left: rem(-15);
+				width: calc(100% + 30px);
+				background-image:url("@theme_image_path@/triangulo-derecho.png");
+				background-position-y: 100%;
+				transform: scaleY(-1);
+				z-index:1;
+			}
+		}
+	}
+	.evr-title{
+		padding-top: rem(123);
+	}
+	.portlet-column.portlet-column-first.col-sm-8.col-xs-12 {
+		padding: 0;
+	}
+	a {
+		text-decoration: none;
+	}
+}
+
+
+@include media-query(sm) {
+	.evr-highlighted{
+		.evr-title{
+			padding-top: rem(37);
+		}
+	}
+}

@@ -1,0 +1,613 @@
+@if ($include__calendar-yui == true){
+    //colors
+    $color_0: #000;
+    $color_1:  gray;
+    $color_2: #f2f2f2;
+    $color_3: #f9f9f9;
+    $color_4: #ccc;
+    $color_5: #fff;
+    $color_6: #06c;
+    $color_7: #a6a6a6;
+    $color_8: #b3d4ff;
+    $color_9: #dcdef5;
+    $color_10: #758fbb;
+    $color_11: white;
+
+    //fonts
+    $font_0: FreeSans;
+    $font_1: Arimo;
+    $font_2: Droid Sans;
+    $font_3: Helvetica;
+    $font_4: Arial;
+    $font_5: sans-serif;
+
+    //@extend-elements
+    //original selectors
+    //.yui3-u-1, .yui3-u-1-1, .yui3-u-1-2, .yui3-u-1-3, .yui3-u-2-3, .yui3-u-1-4, .yui3-u-3-4, .yui3-u-1-5, .yui3-u-2-5, .yui3-u-3-5, .yui3-u-4-5, .yui3-u-5-5, .yui3-u-1-6, .yui3-u-5-6, .yui3-u-1-8, .yui3-u-3-8, .yui3-u-5-8, .yui3-u-7-8, .yui3-u-1-12, .yui3-u-5-12, .yui3-u-7-12, .yui3-u-11-12, .yui3-u-1-24, .yui3-u-2-24, .yui3-u-3-24, .yui3-u-4-24, .yui3-u-5-24, .yui3-u-6-24, .yui3-u-7-24, .yui3-u-8-24, .yui3-u-9-24, .yui3-u-10-24, .yui3-u-11-24, .yui3-u-12-24, .yui3-u-13-24, .yui3-u-14-24, .yui3-u-15-24, .yui3-u-16-24, .yui3-u-17-24, .yui3-u-18-24, .yui3-u-19-24, .yui3-u-20-24, .yui3-u-21-24, .yui3-u-22-24, .yui3-u-23-24, .yui3-u-24-24
+    %extend_1 {
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        letter-spacing: normal;
+        word-spacing: normal;
+        vertical-align: top;
+        text-rendering: auto;
+    }
+
+    //original selectors
+    //.yui3-skin-sam .yui3-calendarnav-prevmonth, .yui3-skin-sam .yui3-calendarnav-nextmonth
+    %extend_2 {
+        width: 0;
+        height: 0;
+        padding: 0;
+        margin: 0;
+        border: 10px solid transparent;
+        position: absolute;
+        font-size: 0;
+        line-height: 0;
+        _border-left-color: $color_11;
+        _border-top-color: $color_11;
+        _border-right-color: $color_11;
+        _border-bottom-color: $color_11;
+        _filter: chroma(color=white);
+    }
+
+
+    .yui3-g {
+        letter-spacing: -0.31em;
+        *letter-spacing: normal;
+        *word-spacing: -0.43em;
+        text-rendering: optimizespeed;
+        font-family: $font_0, $font_1, $font_2, $font_3, $font_4, $font_5;
+        word-spacing: -0.43em;
+        [class *= "yui3-u"] {
+            font-family: $font_5;
+        }
+    }
+    .yui3-u {
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        letter-spacing: normal;
+        word-spacing: normal;
+        vertical-align: top;
+        text-rendering: auto;
+    }
+    .yui3-u-1 {
+        @extend %extend_1;
+        width: 100%;
+    }
+    .yui3-u-1-1 {
+        @extend %extend_1;
+        width: 100%;
+    }
+    .yui3-u-1-2 {
+        @extend %extend_1;
+        width: 50%;
+        *width: 49.9690%;
+    }
+    .yui3-u-1-3 {
+        @extend %extend_1;
+        width: 33.3333%;
+        *width: 33.3023%;
+    }
+    .yui3-u-2-3 {
+        @extend %extend_1;
+        width: 66.6667%;
+        *width: 66.6357%;
+    }
+    .yui3-u-1-4 {
+        @extend %extend_1;
+        width: 25%;
+        *width: 24.9690%;
+    }
+    .yui3-u-3-4 {
+        @extend %extend_1;
+        width: 75%;
+        *width: 74.9690%;
+    }
+    .yui3-u-1-5 {
+        @extend %extend_1;
+        width: 20%;
+        *width: 19.9690%;
+    }
+    .yui3-u-2-5 {
+        @extend %extend_1;
+        width: 40%;
+        *width: 39.9690%;
+    }
+    .yui3-u-3-5 {
+        @extend %extend_1;
+        width: 60%;
+        *width: 59.9690%;
+    }
+    .yui3-u-4-5 {
+        @extend %extend_1;
+        width: 80%;
+        *width: 79.9690%;
+    }
+    .yui3-u-5-5 {
+        @extend %extend_1;
+        width: 100%;
+    }
+    .yui3-u-1-6 {
+        @extend %extend_1;
+        width: 16.6667%;
+        *width: 16.6357%;
+    }
+    .yui3-u-5-6 {
+        @extend %extend_1;
+        width: 83.3333%;
+        *width: 83.3023%;
+    }
+    .yui3-u-1-8 {
+        @extend %extend_1;
+        width: 12.5000%;
+        *width: 12.4690%;
+    }
+    .yui3-u-3-8 {
+        @extend %extend_1;
+        width: 37.5000%;
+        *width: 37.4690%;
+    }
+    .yui3-u-5-8 {
+        @extend %extend_1;
+        width: 62.5000%;
+        *width: 62.4690%;
+    }
+    .yui3-u-7-8 {
+        @extend %extend_1;
+        width: 87.5000%;
+        *width: 87.4690%;
+    }
+    .yui3-u-1-12 {
+        @extend %extend_1;
+        width: 8.3333%;
+        *width: 8.3023%;
+    }
+    .yui3-u-5-12 {
+        @extend %extend_1;
+        width: 41.6667%;
+        *width: 41.6357%;
+    }
+    .yui3-u-7-12 {
+        @extend %extend_1;
+        width: 58.3333%;
+        *width: 58.3023%;
+    }
+    .yui3-u-11-12 {
+        @extend %extend_1;
+        width: 91.6667%;
+        *width: 91.6357%;
+    }
+    .yui3-u-1-24 {
+        @extend %extend_1;
+        width: 4.1667%;
+        *width: 4.1357%;
+    }
+    .yui3-u-2-24 {
+        @extend %extend_1;
+        width: 8.3333%;
+        *width: 8.3023%;
+    }
+    .yui3-u-3-24 {
+        @extend %extend_1;
+        width: 12.5000%;
+        *width: 12.4690%;
+    }
+    .yui3-u-4-24 {
+        @extend %extend_1;
+        width: 16.6667%;
+        *width: 16.6357%;
+    }
+    .yui3-u-5-24 {
+        @extend %extend_1;
+        width: 20.8333%;
+        *width: 20.8023%;
+    }
+    .yui3-u-6-24 {
+        @extend %extend_1;
+        width: 25%;
+        *width: 24.9690%;
+    }
+    .yui3-u-7-24 {
+        @extend %extend_1;
+        width: 29.1667%;
+        *width: 29.1357%;
+    }
+    .yui3-u-8-24 {
+        @extend %extend_1;
+        width: 33.3333%;
+        *width: 33.3023%;
+    }
+    .yui3-u-9-24 {
+        @extend %extend_1;
+        width: 37.5000%;
+        *width: 37.4690%;
+    }
+    .yui3-u-10-24 {
+        @extend %extend_1;
+        width: 41.6667%;
+        *width: 41.6357%;
+    }
+    .yui3-u-11-24 {
+        @extend %extend_1;
+        width: 45.8333%;
+        *width: 45.8023%;
+    }
+    .yui3-u-12-24 {
+        @extend %extend_1;
+        width: 50%;
+        *width: 49.9690%;
+    }
+    .yui3-u-13-24 {
+        @extend %extend_1;
+        width: 54.1667%;
+        *width: 54.1357%;
+    }
+    .yui3-u-14-24 {
+        @extend %extend_1;
+        width: 58.3333%;
+        *width: 58.3023%;
+    }
+    .yui3-u-15-24 {
+        @extend %extend_1;
+        width: 62.5000%;
+        *width: 62.4690%;
+    }
+    .yui3-u-16-24 {
+        @extend %extend_1;
+        width: 66.6667%;
+        *width: 66.6357%;
+    }
+    .yui3-u-17-24 {
+        @extend %extend_1;
+        width: 70.8333%;
+        *width: 70.8023%;
+    }
+    .yui3-u-18-24 {
+        @extend %extend_1;
+        width: 75%;
+        *width: 74.9690%;
+    }
+    .yui3-u-19-24 {
+        @extend %extend_1;
+        width: 79.1667%;
+        *width: 79.1357%;
+    }
+    .yui3-u-20-24 {
+        @extend %extend_1;
+        width: 83.3333%;
+        *width: 83.3023%;
+    }
+    .yui3-u-21-24 {
+        @extend %extend_1;
+        width: 87.5000%;
+        *width: 87.4690%;
+    }
+    .yui3-u-22-24 {
+        @extend %extend_1;
+        width: 91.6667%;
+        *width: 91.6357%;
+    }
+    .yui3-u-23-24 {
+        @extend %extend_1;
+        width: 95.8333%;
+        *width: 95.8023%;
+    }
+    .yui3-u-24-24 {
+        @extend %extend_1;
+        width: 100%;
+    }
+    #yui3-css-stamp {
+        &.cssgrids {
+            display: none;
+        }
+        &.skin-sam-calendar-base {
+            display: none;
+        }
+        &.skin-sam-calendarnavigator {
+            display: none;
+        }
+        &.skin-sam-calendar {
+            display: none;
+        }
+        &.skin-sam-aui-datepicker {
+            display: none;
+        }
+    }
+    .yui3-calendar-pane {
+        width: 100%;
+    }
+    .yui3-calendar-grid {
+        width: 100%;
+    }
+    .yui3-calendar-column-hidden {
+        display: none;
+    }
+    .yui3-calendar-hidden {
+        display: none;
+    }
+    .yui3-skin-sam {
+        z-index: 9999 !important;
+        .yui3-calendar-content {
+            padding: 10px;
+            color: $color_0;
+            border: 1px solid $color_1;
+            background: $color_2;
+            filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_3',endcolorstr='$color_2',gradienttype=0);
+            background: linear-gradient(top,$color_3 0,$color_2 100%);
+            //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+            border-radius: 5px;
+        }
+        .yui3-calendar-grid {
+            padding: 5px;
+            border-collapse: collapse;
+        }
+        .yui3-calendar-header {
+            padding-bottom: 10px;
+        }
+        .yui3-calendar-header-label {
+            margin: 0;
+            font-size: 1em;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+        }
+        .yui3-calendar-day {
+            padding: 5px;
+            border: 1px solid color(white);
+            background: color(white);
+            text-align: center;
+            font-weight: bold;
+            border-radius: rem(5);
+            vertical-align: middle !important;
+            &:hover {
+                background: color(primary);
+                color: $color_5 !important;
+                
+            }
+        }
+        .yui3-calendar-prevmonth-day {
+            padding: 5px;
+            border: 1px solid color(white);
+            background: $color_5;
+            text-align: center;
+            color: $color_7;
+        }
+        .yui3-calendar-nextmonth-day {
+            padding: 5px;
+            border: 1px solid color(white);
+            background: $color_5;
+            text-align: center;
+            color: $color_7;
+        }
+        .yui3-calendar-selection-disabled {
+            color: $color_7;
+            background: $color_4;
+            &:hover {
+                color: $color_7;
+                background: $color_4;
+            }
+        }
+        .yui3-calendar-weekday {
+            font-weight: bold;
+        }
+        .yui3-calendar-day-selected {
+            background-color: color(white) !important;
+            color: color(primary);
+            position: relative;
+            &:before{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 2.5rem;
+                height: 2.5rem;
+                border: 1px solid color(primary);
+                border-radius: 200px;
+                padding-bottom: 100%;
+                margin-top: -8px;
+                margin-left: -2px;
+                padding: 0;
+            }
+            &.yui3-calendar-day-highlighted {
+                background-color: $color_10;
+            }
+        }
+        .yui3-calendar-left-grid {
+            margin-right: 1em;
+        }
+        [dir="rtl"] {
+            .yui3-calendar-left-grid {
+                margin-right: auto;
+                margin-left: 1em;
+            }
+            .yui3-calendar-right-grid {
+                margin-left: auto;
+                margin-right: 1em;
+            }
+            .yui3-calendarnav-nextmonth {
+                left: 0;
+                right: auto;
+                border-right-color: $color_0;
+                border-left-color: transparent;
+                &:hover {
+                    border-right-color: color(secondary);
+                }
+                &.yui3-calendarnav-month-disabled {
+                    cursor: default;
+                    border-right-color: $color_4;
+                    border-left-color: transparent;
+                    &:hover {
+                        cursor: default;
+                        border-right-color: $color_4;
+                        border-left-color: transparent;
+                    }
+                }
+            }
+            .yui3-calendarnav-prevmonth {
+                left: auto;
+                right: 0;
+                border-left-color: $color_0;
+                border-right-color: transparent;
+                &:hover {
+                    border-left-color: color(secondary);
+                }
+                &.yui3-calendarnav-month-disabled {
+                    cursor: default;
+                    border-left-color: $color_4;
+                    border-right-color: transparent;
+                    &:hover {
+                        cursor: default;
+                        border-left-color: $color_4;
+                        border-right-color: transparent;
+                    }
+                }
+            }
+        }
+        .yui3-calendar-right-grid {
+            margin-left: 1em;
+        }
+        .yui3-calendar-day-highlighted {
+            background-color: $color_9;
+        }
+        .yui3-calendarnav-prevmonth {
+            @extend %extend_2;
+            /*border-right-color: $color_0;*/
+            left: 0;
+            margin-left: -10px;
+            /*&:hover {
+                border-right-color: color(secondary);
+            }*/
+            &.yui3-calendarnav-month-disabled {
+                cursor: default;
+                border-right-color: $color_4;
+                border-left-color: transparent;
+                &:hover {
+                    cursor: default;
+                    border-right-color: $color_4;
+                    border-left-color: transparent;
+                }
+            }
+        }
+        .yui3-calendarnav-nextmonth {
+            @extend %extend_2;
+            /*border-left-color: transparent;*/
+            right: 0;
+            margin-right: -10px;
+            /*&:hover {
+                border-left-color: color(secondary);
+            }*/
+            &.yui3-calendarnav-month-disabled {
+                cursor: default;
+    /*            border-left-color: $color_4;
+                border-right-color: transparent;*/
+                opacity: 0.5;
+                &:hover {
+                    cursor: default;
+    /*                border-left-color: $color_4;
+                    border-right-color: transparent;*/
+                }
+            }
+        }
+    }
+    .yui3-calendar-header {
+        text-align: center;
+        position: relative;
+        width: 100%;
+    }
+    .yui3-calendar-header-label {
+        display: inline;
+    }
+    .yui3-calendarnav-prevmonth {
+        cursor: pointer;
+    }
+    .yui3-calendarnav-nextmonth {
+        cursor: pointer;
+    }
+    .yui3-calendar-day {
+        cursor: pointer;
+    }
+    .yui3-calendar-selection-disabled {
+        cursor: default;
+    }
+    .yui3-calendar-prevmonth-day {
+        cursor: default;
+    }
+    .yui3-calendar-nextmonth-day {
+        cursor: default;
+    }
+    .datepicker-popover {
+        .yui3-calendar-content {
+            border: 0;
+            background: 0;
+            padding: 0;
+        }
+        &.popover {
+            max-width: none;
+            &.top > .arrow {
+                border-top-color: color(grey-2);
+            }
+        }
+    }
+    .opera-only :-o-prefocus {
+        word-spacing: -0.43em;
+    }
+    [dir="rtl"] .yui3-skin-sam {
+        .yui3-calendar-left-grid {
+            margin-right: auto;
+            margin-left: 1em;
+        }
+        .yui3-calendar-right-grid {
+            margin-left: auto;
+            margin-right: 1em;
+        }
+        .yui3-calendarnav-nextmonth {
+            left: 0;
+            right: auto;
+            border-right-color: $color_0;
+            border-left-color: transparent;
+            &:hover {
+                border-right-color: color(secondary);
+            }
+            &.yui3-calendarnav-month-disabled {
+                cursor: default;
+                border-right-color: $color_4;
+                border-left-color: transparent;
+                &:hover {
+                    cursor: default;
+                    border-right-color: $color_4;
+                    border-left-color: transparent;
+                }
+            }
+        }
+        .yui3-calendarnav-prevmonth {
+            left: auto;
+            right: 0;
+            border-left-color: $color_0;
+            border-right-color: transparent;
+            &:hover {
+                border-left-color: color(secondary);
+            }
+            &.yui3-calendarnav-month-disabled {
+                cursor: default;
+                border-left-color: $color_4;
+                border-right-color: transparent;
+                &:hover {
+                    cursor: default;
+                    border-left-color: $color_4;
+                    border-right-color: transparent;
+                }
+            }
+        }
+    }
+    .yui3-calendar-content:hover {
+        .yui3-calendar-day {
+        }
+        .yui3-calendar-prevmonth-day {
+        }
+        .yui3-calendar-nextmonth-day {
+        }
+    }
+
+}

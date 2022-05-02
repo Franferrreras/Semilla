@@ -1,0 +1,52 @@
+////
+/// Infoca twitter component
+///
+/// Description of the component
+///
+/// @access public
+/// @author Dfront Specialist Team
+/// @group components
+/// @name .#{$wf__ns}example
+/// @since version 1.0.0
+////
+
+.#{$ns}infoca-twitter{
+    padding: rem(10) rem(30);
+    border-left: 1px solid rgba(151,151,151,0.34);
+
+    &__fig{
+        display: inline-block;
+        color:color(text-twitter);
+        background-color:transparent;
+    }
+
+    &__title{
+        display: inline-block;
+        padding-left: rem(5);
+        color: color(text-twitter);
+        font-weight: 600;
+        line-height: rem(19);
+    }
+
+    &__text{
+        padding: rem(5) 0;
+        font-size: rem(12);
+        line-height: rem(16);
+        overflow: hidden;
+        color: color(grey-16);
+    }
+}
+
+@include media-query(md){
+    .#{$ns}infoca-twitter{
+        border-left: none;
+    }
+}
+
+@include media-query(sm){
+    .#{$ns}infoca-twitter{
+        border-top: 1px solid rgba(151,151,151,0.34);
+        border-left: none;
+        padding: rem(10) 0;
+    }
+}

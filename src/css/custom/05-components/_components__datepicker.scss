@@ -1,0 +1,145 @@
+.#{$ns}datepicker {
+    #Datepickk  {
+        border: 1.5px solid color(green);
+        padding: rem(10) 0;
+        @include border-radius(4px);
+        /* Header Datepicker - Days and months */
+        .d-header {
+            background: transparent;
+            margin-bottom: rem(10);
+            @include border-radius(4px,'top-left');
+            @include border-radius(4px,'top-right');
+            i {
+                &:hover {
+                    background: transparent;
+                }
+                &:before {
+                    border-right-color: color(primary) !important;
+                    border-left-color: color(primary) !important;
+                }
+                &:after {
+                    border-right-color: color(white) !important;
+                    border-left-color: color(white) !important;
+                }
+            }
+            p {
+                font-size: rem(14);
+                color: color(primary);
+            }   
+        }
+        /* Header Datepicker - Weeks */
+        .d-week {
+            background: transparent;
+            & > div p {
+                margin: 0;
+                color: color(secondary);
+                font-size: rem(14);
+            }
+        }
+        /* Header Datepicker - Calendar */
+        .d-calendar {
+            background: transparent;
+        }
+        /* Header Datepicker - Days Table (active and today) */
+        .d-table {
+            input+label {
+                font-size: rem(14);
+                padding: rem(10);
+                padding: 0;
+                height: rem(47);
+                transform: none;
+                transform: scale(0.7);
+                -ms-transform: scale(0.7);
+                font-size: rem(20);
+                border-radius: 50%;
+                height: rem(48);
+                color: color(secondary);
+                &:before {
+                    transform: none;
+                    -ms-transform: none;
+                    background: color(white);
+                    border-radius: 50%;
+                    width: 94%;
+                    height: 93%;
+                    left: rem(1.5);
+                    top: rem(1.5);
+                }
+                &.today {
+                    color: color(white);
+                    background: color(green);
+                    pointer-events: auto;
+                    &:before {
+                        background: color(green);
+                    }
+                    text {
+                        color: color(white);
+                        font-weight: bold;
+                        &:before {
+                            display: none;
+                        }
+                    }
+                }
+                &[data-legend-id] {
+                    pointer-events: auto;
+                }
+            }
+            input:checked+label {
+                background: color(primary) !important;
+                &:before {
+                    background: color(primary) !important;
+                }
+                text {
+                    color: color(white);
+                    font-weight: bold;
+                }
+                &.today {
+                    background: color(primary);
+                    &:before {
+                        width: 94%;
+                        height: 93%;
+                    }
+                    text {
+                        color: color(white);
+                    }
+                }
+            }
+        }
+        /* Header Datepicker - Months and Years */
+        .d-month-picker.d-show {
+            display: none;
+        }
+        .d-month, .d-year {
+            cursor: default;
+        }
+        .d-year {
+            margin-left: rem(4);
+        }
+    }
+}
+
+@include media-query(lg){
+    .#{$ns}datepicker {
+        #Datepickk  {
+            margin: 0 auto;
+            max-width: rem(345);
+        }
+    }
+}
+
+@include media-query(sm){
+    .#{$ns}datepicker {
+        #Datepickk  {
+            margin: 0 auto;
+            max-width: rem(345);
+        }
+    }
+}
+
+@include media-query(xs){
+    .#{$ns}datepicker {
+        #Datepickk  {
+            margin: 0 auto;
+            max-width: rem(345);
+        }
+    }
+}

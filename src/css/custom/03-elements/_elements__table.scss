@@ -1,0 +1,56 @@
+@if ($include__table==true) {
+
+    /*------------------------------------
+    # ELEMENT TABLE
+-------------------------------------*/
+    table {
+        border: none;
+        margin-bottom: rem(11);
+
+        thead {}
+
+        tbody {}
+
+        tr {
+            color: color(therciary);
+            font-family: $wf__font--default;
+            font-size: rem(16);
+            line-height: rem(24);
+            border-bottom: 2px solid color(bg_section);
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            height: rem(60);
+
+            th {
+                border: none;
+                color: color(therciary);
+                font-family: $wf__font--bold;
+                font-size: rem(16);
+                padding: rem(5);
+                line-height: rem(24);
+
+                &:first-child {}
+
+                &:last-child {}
+            }
+
+            td {
+                border: none;
+                color: color(therciary);
+                font-family: $wf__font--default;
+                font-size: rem(16);
+                padding: rem(5);
+                line-height: rem(24);
+
+                &:first-child {}
+
+                &:last-child {}
+            }
+        }
+    }
+
+    /*------------------------------------
+    # END ELEMENT TABLE
+-------------------------------------*/
+}

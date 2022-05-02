@@ -1,0 +1,123 @@
+////
+/// Modal component
+///
+/// Description of the component
+///
+/// @access public
+/// @author Dfront Specialist Team
+/// @group components
+/// @name .#{$wf__ns}modal-add
+/// @since version 1.0.0
+////
+
+.#{$ns}modal-add {
+
+  &__title {
+    font-family: $wf__font--light !important;
+    display: block;
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    border-bottom: 1px solid color(grey-6);
+  }
+  &__input-search {
+    margin: 0rem 1rem;
+      span {
+        background: color(primary);
+        border-radius: 2px;
+        button {
+          display: flex;
+          padding: 0px 10px;
+          width: 44px;
+        }
+      }
+  }
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 1rem 0rem;
+  }
+  &__galery {
+    display: flex;
+    div {
+      div {
+        div:nth-child(1) {
+          width: auto;
+          div {
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes showModal{
+    from{transform:scale(.5) translateY(-15px);}
+    80%{transform:scale(1.03) translateY(0);}
+    to{transform:scale(1);}
+  }
+  .modal-msg{
+   display:block;
+   position:absolute;
+   top:0;left:0;right:0;bottom:0;
+   background:rgba(#000,.3);
+   display:none;
+   &__content{
+    position: relative;
+    width: 800px;
+    margin: 25vh auto;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    padding: 2rem 0rem;
+    }//.modal
+    &__close{
+      text-decoration:none;
+      color:silver;
+      font-size:1.2em;
+      &:hover{
+        color:gray;
+      }
+      &:after{
+        content:"✖";
+        position:absolute;
+        right:6px;top:3px;
+      }   
+    }
+    &:target{
+      .modal-msg__content{
+       animation:showModal .3s ease;
+      }    
+      display:block;
+    }
+  }//.overlay
+
+}
+#modal {
+  .yui3-widget.modal-dialog.yui3-widget-positioned.yui3-widget-stacked.yui3-widget-modal {
+    z-index: 1!important;
+  }
+}
+
+
+  // stylish links
+  .wrapper-links{
+    margin:5vh 0;
+    text-align:center;
+    ul > li{
+      display:inline-block;
+      a{
+        text-decoration:none;
+        padding:5px 10px;
+        background:rgba(green,.8);
+        color:#fff;
+        &:active{
+          color:rgba(#fff,.5);
+          background:rgba(green,1);
+        }
+      }
+    }
+  }

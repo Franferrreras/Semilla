@@ -1,0 +1,242 @@
+@if ($include__forum == true){
+    .portlet-message-boards {
+        .splitter {
+            padding: rem(40);
+            font-size: rem(24);
+            background-color: color(primary);
+            color: color(white);
+        }
+        .list-group-item {
+            margin: rem(24) 0;
+            border: 0;
+            display: block;
+            box-shadow: 0 3px 10px 0 color(grey-2);
+            height: auto;
+            &>div {
+                border: 0;
+            }
+        }
+        .user-icon {
+            display: table;
+            height: rem(68);
+            width: rem(68);
+            span {
+                display: table-cell;
+                vertical-align: middle;
+                font-family: $wf__font--default;
+                font-size: rem(32);
+                color: color(white);
+                line-height: rem(32);
+            }
+        }
+        .text-default {
+            font-family: $wf__font--default;
+            font-size: rem(14);
+            color: color(text-default);
+            line-height: rem(14);
+        }
+        .list-group-item-field {
+            .dropdown {
+                span {
+                    margin-bottom: rem(36);
+                }
+            }
+        }
+        .list-group-item-content {
+            // display: inline-block;
+            padding-bottom: rem(20);
+            padding-top: rem(20);
+            a {
+                font-family: $wf__font--default;
+                font-size: rem(16);
+                color: color(black-2);
+                line-height: rem(24);
+            }
+            h4 {
+                margin-bottom: 0;
+                width: calc(100% - 100px);
+                max-width: rem(600);
+            }
+            .h6 {
+                display: none;
+                font-size: rem(14);
+                font-family: $wf__font--default;
+                color: color(grey-2);
+                &:first-of-type {
+                    display: inline-block;
+                    position: absolute;
+                    right: rem(-55);
+                    bottom: rem(15);
+                    text-align: right;
+                    width: rem(150);
+                    z-index: 1;
+                    margin-right: rem(24);
+                    margin-left: rem(5);
+                    &:before {
+                        content: '\f075';
+                        font-family: $wf__font--fa;
+                        font-size: rem(18);
+                        color: color(primary);
+                    }
+                }
+            }
+        }
+        .taglib-header {
+            border: none;
+            .header-back-to {
+                margin-bottom: rem(20);
+            }
+            .header-title {
+                display: block;
+                padding: rem(40) rem(24);
+                background-color: color(text-gray);
+                color: color(white);
+                white-space: normal;
+            }
+            .hide-accessible {
+                display: inline-block;
+                vertical-align: middle;
+                position: relative !important;
+                transform: scale(1);
+                font-family: $wf__font--light;
+                line-height: rem(20);
+                font-size: rem(16);
+                padding: rem(12) rem(5);
+            }
+        }
+        /* Specific class for a thread */
+        .card-tab-group {
+            margin: 0 rem(72);
+            width: calc(100% - 144px);
+        }
+        .list-group-card {
+            h4 {
+                display: none;
+            }
+            .panel-body {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding-left: rem(120);
+                display: inline-block;
+                width: calc(100% - 48px);
+                min-width: rem(200);
+                overflow: hidden;
+                height: rem(140);
+                overflow-y: auto;
+            }
+            .card-row-padded {
+                padding-bottom: 0;
+                font-family: $wf__font--default;
+                color: color(black-2);
+            }
+            .card-col-content {
+                vertical-align: bottom;
+                h5,
+                &>span:nth-of-type(2) {
+                    display: inline-block;
+                }
+                &>span:nth-of-type(1),
+                &>span:nth-of-type(3),
+                &>span:nth-of-type(4) {
+                    display: none;
+                }
+                h5.message-user-display {
+                    width: 80%;
+                }
+            }
+            .user-icon {
+                display: table;
+                width: rem(90);
+                height: rem(90);
+                margin-bottom: rem(72);
+            }
+            .taglib-flags {
+                display: none;
+            }
+            .glyphicon-thumbs-down {
+                display: none;
+            }
+            .glyphicon-thumbs-up {
+                &:before {
+                    background-size: contain;
+                    width: rem(28);
+                }
+            }
+            .social-interaction {
+                position: relative;
+                &>div {
+                    position: absolute;
+                    left: rem(-100);
+                    bottom: 0;
+                    width: auto;
+                }
+            }
+        }
+        .thread-container {
+            .btn {
+                display: block;
+                max-width: rem(300);
+                white-space: normal;
+                margin: 0 auto;
+            }
+        }
+        .thread-controls {
+            display: none;
+        }
+        .navbar {
+            .navbar-collapse ul {
+                display: none;
+            }
+        }
+        #breadcrumb {
+            display: none;
+        }
+    }
+
+    @include media-query(sm) {
+        .portlet-message-boards {
+            .splitter {
+                padding: rem(15);
+                font-size: rem(16);
+            }
+            .taglib-header {
+                .header-title {
+                    padding: rem(15);
+                    font-size: rem(16);
+                }
+            }
+            .list-group-item {
+                &>.list-group-item-field:first-of-type {
+                    display: none;
+                }
+            }
+            .list-group-item-content {
+                padding-left: rem(24);
+                a {
+                    font-size: rem(14);
+                    line-height: rem(14);
+                }
+            }
+            /* Specific class for a thread */
+            .card-tab-group {
+                margin: 0;
+                width: 100%;
+            }
+            .list-group-card {
+                .card-col-content {
+                    padding-top: rem(144);
+                }
+                .card-row-padded {
+                    font-size: rem(14);
+                }
+                .list-group-card-icon {
+                    visibility: hidden;
+                }
+                .panel-body {
+                    padding-left: rem(24);
+                }
+            }
+        }
+    }
+}

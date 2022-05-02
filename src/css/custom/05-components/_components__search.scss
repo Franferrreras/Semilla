@@ -1,0 +1,154 @@
+/*------------------------------------
+        # COMPONENT SEARCH
+	------------------------------------*/
+
+.evr-search {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: rem(27);
+
+	.lfr-ddm-field-group-inline {
+		margin-bottom: 0;
+		margin-left: rem(15);
+	}
+
+	&__content {
+		position: absolute;
+		z-index: 20;
+		left: 50%;
+		background: color(white);
+		box-shadow: 0 2px 4px 0 color(black, 0.54);
+		opacity: 1;
+		transform: translate(-50%, 0);
+		width: 100%;
+		height: 120px;
+		top: 100%;
+
+		.portlet-title-text {
+			display: none!important;
+		}
+	}
+
+	&__icon-search.open {
+		position: relative;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 42px;
+			left: -2px;
+			height: 2px;
+			width: 25px;
+			background: white;
+		}
+	}
+
+	&__icon-search {
+		padding: 0;
+		width: rem(20);
+		height: rem(20);
+		color: color(white);
+		vertical-align: middle;
+		border: 0;
+		background: none;
+
+		.lexicon-icon-search {
+			width: rem(20);
+			height: rem(20);
+			vertical-align: top;
+		}
+	}
+
+	&__icon-search-close {
+		position: absolute;
+		width: rem(50);
+		height: rem(50);
+		background: 0;
+		border: 0;
+		z-index: 6;
+		right: 3%;
+		top: 50%;
+		transform: translate(0%, -50%);
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: rem(10);
+			left: 50%;
+			transform: translate(-50%, 0);
+			background: rgb(8, 112, 33);
+			width: rem(3);
+			height: rem(25);
+			transform: rotate(45deg);
+		}
+
+		&:after {
+			position: absolute;
+			top: rem(10);
+			left: 50%;
+			transform: translate(-50%, 0);
+			content: "";
+			background: rgb(8, 112, 33);
+			width: rem(3);
+			height: rem(25);
+			transform: rotate(135deg);
+		}
+	}
+
+	form {
+		fieldset {
+			div {
+				&:first-child {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					padding: 50px 25px 50px;
+					margin: 0;
+					background-color: color(white);
+
+					.form-group.form-group-inline.input-text-wrapper {
+						width: 70%;
+						height: rem(40);
+						display: block;
+						justify-content: initial;
+						margin: 0;
+						padding: 0;
+
+						input {
+							border: 0;
+							box-shadow: none;
+							border-bottom: 1px solid color(black);
+							border-radius: 0;
+							color: color(black);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.icon-monospaced {
+		width: rem(32);
+		height: rem(32);
+		color: color(primary);
+
+		.lexicon-icon {
+			width: auto;
+			height: auto;
+			padding: 0;
+			color: color(primary);
+
+		}
+	}
+
+	.lfr-icon-item {
+		display: block;
+		color: color(primary);
+	}
+}
+
+@include media-query(sm) {
+	.evr-search {
+		/* display: none; */
+	}
+}

@@ -1,0 +1,49 @@
+////
+/// Separatortitle component
+///
+/// Description of the component
+///
+/// @access public
+/// @author Dfront Specialist Team
+/// @group components
+/// @name .#{$wf__ns}Separatortitle
+/// @since version 1.0.0
+////
+
+.evr-separatortitle {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 15px;
+        padding-bottom: 0.4rem;
+        border-bottom: 1.5px solid color(grey-20);
+        margin-top: rem(20);
+    }
+ 
+    &__img {
+        width: 20px!important;
+        height: 20px!important;
+        margin-right: 5px;
+
+    }
+    
+    &__figure {
+        margin-left: 8px;
+        align-self: center;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 0.6px;
+        color: color(primary);
+        &--small {
+            font-size: 12px;
+        }
+    }
+
+    &__elements {
+        display: flex;
+    }
+
+}

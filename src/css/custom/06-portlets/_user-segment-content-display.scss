@@ -1,0 +1,8 @@
+@if ($include__user-segment-cd == true){
+	.user-segment-content-display-portlet{
+	    .container-fluid-1280.content-container{
+	        overflow: visible;
+	        padding: 0;
+	    }
+	}
+}

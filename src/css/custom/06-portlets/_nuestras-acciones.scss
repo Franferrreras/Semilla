@@ -1,0 +1,88 @@
+.portlet-boundary_nuestrasaccionesmodule_ {
+    .evr-actions {
+        .lfr-google-maps__ctn {
+            max-width: rem(390);
+            width: 390px;
+            background: white;
+            padding: 20px 15px 15px 15px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+            .jssocials-share-link {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        .gm-ui-hover-effect {
+            img {
+                margin: 0 !important;
+            }
+        }
+
+        .gm-style .gm-style-iw {
+            top: 17px !important;
+        }
+
+        &__figure {
+            width: rem(360);
+            height: rem(120);
+            position: relative;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        &__container-rrss {
+            .evr-social-actions__jssocial-default {
+                width: 50%;
+                display: inline-block;
+                vertical-align: middle;
+
+                .jssocials-share {
+                    margin-right: 5px;
+
+                    &:last-child {}
+                }
+            }
+
+            .btn.btn-primary {
+                width: 50%;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+        }
+
+        &__title {
+            color: #000000;
+            font-family: $wf__font--sans-bold;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 24px;
+        }
+
+        &__subtitle {
+            color: #000000;
+            font-family: $wf__font--sans;
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        &__link {
+            color: #E20613;
+            font-family: $wf__font--sans;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 18px;
+        }
+
+        &__container-rrss-button {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,411 @@
+//colors
+$jssocials-share_color-minima_0: #00aced;
+$jssocials-share_color-minima_1: #0087ba;
+$jssocials-share_color-minima_2: #3b5998;
+$jssocials-share_color-minima_3: #2d4373;
+$jssocials-share_color-minima_4: #dd4b39;
+$jssocials-share_color-minima_5: #c23321;
+$jssocials-share_color-minima_6: #007bb6;
+$jssocials-share_color-minima_7: #005983;
+$jssocials-share_color-minima_8: #cb2027;
+$jssocials-share_color-minima_9: #9f191f;
+$jssocials-share_color-minima_10: #3490f3;
+$jssocials-share_color-minima_11: #0e76e6;
+$jssocials-share_color-minima_12: #eb4823;
+$jssocials-share_color-minima_13: #c93412;
+$jssocials-share_color-minima_14: #29a628;
+$jssocials-share_color-minima_15: #1f7d1e;
+$jssocials-share_color-minima_16: #2ca5e0;
+$jssocials-share_color-minima_17: #1c88bd;
+$jssocials-share_color-minima_18: #25af00;
+$jssocials-share_color-minima_19: #1a7c00;
+$jssocials-share_color-minima_20: #7b519d;
+$jssocials-share_color-minima_21: #61407b;
+$jssocials-share_color-minima_22: #ef4056;
+$jssocials-share_color-minima_23: #e9132e;
+$jssocials-share_color-minima_24: #0084ff;
+$jssocials-share_color-minima_25: #006acc;
+$jssocials-share_color-minima_26: #45668e;
+$jssocials-share_color-minima_27: #344d6c;
+$jssocials-share_color-minima_28: #444;
+$jssocials-share_color-minima_29: #efefef;
+
+.jssocials-share-link {
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+  border-radius: rem(50);
+  border: rem(1) solid color(white);
+  background: color(white);
+  &:hover{
+    border: rem(1) solid color(white);
+  }
+  &.jssocials-share-link-count .jssocials-share-count {
+    font-size: .5em;
+  }
+}
+.jssocials-share-label {
+  font-size: 0.8em;
+  color: $jssocials-share_color-minima_28;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+}
+.jssocials-share-count-box {
+  margin-left: 0.3em;
+  border: 1px solid $jssocials-share_color-minima_29;
+  border-radius: 0.3em;
+  .jssocials-share-count {
+    line-height: 1.8em;
+    font-size: 0.8em;
+    color: $jssocials-share_color-minima_28;
+  }
+}
+.jssocials-share-twitter .jssocials-share-link {
+  color: $jssocials-share_color-minima_0;
+  border-color: $jssocials-share_color-minima_0;
+  .jssocials-share-label {
+    color: $jssocials-share_color-minima_0;
+  }
+  &:hover {
+    color: $jssocials-share_color-minima_1;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_1;
+    }
+  }
+  &:focus {
+    color: $jssocials-share_color-minima_1;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_1;
+    }
+  }
+  &:active {
+    color: $jssocials-share_color-minima_1;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_1;
+    }
+  }
+}
+.jssocials-share-facebook .jssocials-share-link {
+  color: $jssocials-share_color-minima_2;
+  border-color: $jssocials-share_color-minima_2;
+  .jssocials-share-label {
+    color: $jssocials-share_color-minima_2;
+  }
+  &:hover {
+    color: $jssocials-share_color-minima_3;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_3;
+    }
+  }
+  &:focus {
+    color: $jssocials-share_color-minima_3;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_3;
+    }
+  }
+  &:active {
+    color: $jssocials-share_color-minima_3;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_3;
+    }
+  }
+}
+.jssocials-share-googleplus .jssocials-share-link {
+  color: $jssocials-share_color-minima_4;
+  border-color: $jssocials-share_color-minima_4;
+  .jssocials-share-label {
+    color: $jssocials-share_color-minima_4;
+  }
+  &:hover {
+    color: $jssocials-share_color-minima_5;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_5;
+    }
+  }
+  &:focus {
+    color: $jssocials-share_color-minima_5;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_5;
+    }
+  }
+  &:active {
+    color: $jssocials-share_color-minima_5;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_5;
+    }
+  }
+}
+.jssocials-share-linkedin .jssocials-share-link {
+  color: $jssocials-share_color-minima_6;
+  border-color: $jssocials-share_color-minima_6;
+  .jssocials-share-label {
+    color: $jssocials-share_color-minima_6;
+  }
+  &:hover {
+    color: $jssocials-share_color-minima_7;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_7;
+    }
+  }
+  &:focus {
+    color: $jssocials-share_color-minima_7;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_7;
+    }
+  }
+  &:active {
+    color: $jssocials-share_color-minima_7;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_7;
+    }
+  }
+}
+.jssocials-share-pinterest .jssocials-share-link {
+  color: $jssocials-share_color-minima_8;
+  border-color: $jssocials-share_color-minima_8;
+  .jssocials-share-label {
+    color: $jssocials-share_color-minima_8;
+  }
+  &:hover {
+    color: $jssocials-share_color-minima_9;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_9;
+    }
+  }
+  &:focus {
+    color: $jssocials-share_color-minima_9;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_9;
+    }
+  }
+  &:active {
+    color: $jssocials-share_color-minima_9;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_9;
+    }
+  }
+}
+.jssocials-share-email .jssocials-share-link {
+  color: $jssocials-share_color-minima_10;
+  border-color: $jssocials-share_color-minima_10;
+  .jssocials-share-label {
+    color: $jssocials-share_color-minima_10;
+  }
+  &:hover {
+    color: $jssocials-share_color-minima_11;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_11;
+    }
+  }
+  &:focus {
+    color: $jssocials-share_color-minima_11;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_11;
+    }
+  }
+  &:active {
+    color: $jssocials-share_color-minima_11;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_11;
+    }
+  }
+}
+.jssocials-share-stumbleupon .jssocials-share-link {
+  color: $jssocials-share_color-minima_12;
+  border-color: $jssocials-share_color-minima_12;
+  .jssocials-share-label {
+    color: $jssocials-share_color-minima_12;
+  }
+  &:hover {
+    color: $jssocials-share_color-minima_13;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_13;
+    }
+  }
+  &:focus {
+    color: $jssocials-share_color-minima_13;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_13;
+    }
+  }
+  &:active {
+    color: $jssocials-share_color-minima_13;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_13;
+    }
+  }
+}
+.jssocials-share-whatsapp .jssocials-share-link {
+  color: $jssocials-share_color-minima_14;
+  border-color: $jssocials-share_color-minima_14;
+  .jssocials-share-label {
+    color: $jssocials-share_color-minima_14;
+  }
+  &:hover {
+    color: $jssocials-share_color-minima_15;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_15;
+    }
+  }
+  &:focus {
+    color: $jssocials-share_color-minima_15;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_15;
+    }
+  }
+  &:active {
+    color: $jssocials-share_color-minima_15;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_15;
+    }
+  }
+}
+.jssocials-share-telegram .jssocials-share-link {
+  color: $jssocials-share_color-minima_16;
+  border-color: $jssocials-share_color-minima_16;
+  .jssocials-share-label {
+    color: $jssocials-share_color-minima_16;
+  }
+  &:hover {
+    color: $jssocials-share_color-minima_17;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_17;
+    }
+  }
+  &:focus {
+    color: $jssocials-share_color-minima_17;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_17;
+    }
+  }
+  &:active {
+    color: $jssocials-share_color-minima_17;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_17;
+    }
+  }
+}
+.jssocials-share-line .jssocials-share-link {
+  color: $jssocials-share_color-minima_18;
+  border-color: $jssocials-share_color-minima_18;
+  .jssocials-share-label {
+    color: $jssocials-share_color-minima_18;
+  }
+  &:hover {
+    color: $jssocials-share_color-minima_19;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_19;
+    }
+  }
+  &:focus {
+    color: $jssocials-share_color-minima_19;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_19;
+    }
+  }
+  &:active {
+    color: $jssocials-share_color-minima_19;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_19;
+    }
+  }
+}
+.jssocials-share-viber .jssocials-share-link {
+  color: $jssocials-share_color-minima_20;
+  border-color: $jssocials-share_color-minima_20;
+  .jssocials-share-label {
+    color: $jssocials-share_color-minima_20;
+  }
+  &:hover {
+    color: $jssocials-share_color-minima_21;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_21;
+    }
+  }
+  &:focus {
+    color: $jssocials-share_color-minima_21;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_21;
+    }
+  }
+  &:active {
+    color: $jssocials-share_color-minima_21;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_21;
+    }
+  }
+}
+.jssocials-share-pocket .jssocials-share-link {
+  color: $jssocials-share_color-minima_22;
+  border-color: $jssocials-share_color-minima_22;
+  .jssocials-share-label {
+    color: $jssocials-share_color-minima_22;
+  }
+  &:hover {
+    color: $jssocials-share_color-minima_23;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_23;
+    }
+  }
+  &:focus {
+    color: $jssocials-share_color-minima_23;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_23;
+    }
+  }
+  &:active {
+    color: $jssocials-share_color-minima_23;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_23;
+    }
+  }
+}
+.jssocials-share-messenger .jssocials-share-link {
+  border-color: $jssocials-share_color-minima_24;
+  color: $jssocials-share_color-minima_24;
+  .jssocials-share-label {
+    color: $jssocials-share_color-minima_24;
+  }
+  &:hover {
+    color: $jssocials-share_color-minima_25;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_25;
+    }
+  }
+  &:focus {
+    color: $jssocials-share_color-minima_25;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_25;
+    }
+  }
+  &:active {
+    color: $jssocials-share_color-minima_25;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_25;
+    }
+  }
+}
+.jssocials-share-vkontakte .jssocials-share-link {
+  color: $jssocials-share_color-minima_26;
+  border-color: $jssocials-share_color-minima_26;
+  .jssocials-share-label {
+    color: $jssocials-share_color-minima_26;
+  }
+  &:hover {
+    color: $jssocials-share_color-minima_27;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_27;
+    }
+  }
+  &:focus {
+    color: $jssocials-share_color-minima_27;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_27;
+    }
+  }
+  &:active {
+    color: $jssocials-share_color-minima_27;
+    .jssocials-share-label {
+      color: $jssocials-share_color-minima_27;
+    }
+  }
+}

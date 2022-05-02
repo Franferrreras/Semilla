@@ -1,0 +1,38 @@
+@if ($include__sidenav == true){
+
+    .sidenav-fixed{
+        top: $wf__header-height;
+    }
+
+    .has-control-menu{
+        .sidenav-fixed {
+            top: $wf__admin-wpr-margin-top;
+            &.sidenav-under-header{
+                top: calc(#{$wf__sm-admin-wpr-margin-top} + #{$wf__header-height});
+            }
+            &.lfr-product-menu-panel{
+                top:0;
+            }
+        }
+        &.open{
+            .sidenav-fixed.sidenav-menu-slider.sidenav-under-header{
+
+                &.sidenav-right{
+
+                }
+            }
+        }
+    }
+
+    body.open{
+        .sidenav-fixed.sidenav-menu-slider{
+            &.sidenav-submenu-slider{
+                
+            }
+        }
+    }
+
+    @include media-query(md) {}
+    @include media-query(sm) {}
+
+}

@@ -1,0 +1,585 @@
+{
+	"bbox": [1821.2662, 3978560.0842, 725776.4449, 4309798.7274],
+	"maxExtent": [-122724.4636, 3871892.4050, 837708.6073, 4410071.2895],
+	"wmc": {
+		"url": "https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/resources/mapa_base.xml",
+		"nombre": "WMC Base"
+	},
+	"capasWFS": [{
+		"type": "WFS",
+		"style": {
+			"category": false,
+			"style": null
+		},
+		"name": "EENNPP",
+		"namespace": "EENNPP",
+		"legend": "Espacios Naturales Protegidos",
+		"geometry": "POLYGON",
+	  	"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_WFS_Patrimonio_Natural?",
+	 	"version": "1.1.0",
+	 	"getFeatureOutputFormat": "geojson",
+  		"describeFeatureTypeOutputFormat": "geojson",
+  		"visibility": true,
+  		"displayInLayerSwitcher": false
+	},{
+		"type": "GeoJSON",
+		"style": {
+			"category": false,
+			"style": {"fill": {"color": "#6ea900", "opacity": 0.8}, "stroke": {"color": "#515151", "width": 1}}
+		},
+		"name": "Parques Nacionales",
+		"extract": false,
+		"source": {   
+			"crs": {"properties": {"name": "EPSG:25830"}, "type": "name"},
+			"features": [],
+			"type": "FeatureCollection",
+			"selectable": true,
+			"sourceName": "EENNPP",
+			"share": {
+				"legend": "Espacios Naturales Protegidos",
+				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_WFS_Patrimonio_Natural?",
+				"version": "1.1.0",
+				"name": "EENNPP",
+				"namespace": "EENNPP",
+				"getFeatureOutputFormat": "geojson"
+			}
+		},
+		"geometry": "POLYGON",
+		"visibility": true,
+		"displayInLayerSwitcher": true
+	},{
+		"type": "GeoJSON",
+		"style": {
+			"category": false,
+			"style": {"fill": {"color": "#479ECB", "opacity": 0.8}, "stroke": {"color": "#515151", "width": 1}}
+		},
+		"name": "Parques Naturales",
+		"extract": false,
+		"source": {   
+			"crs": {"properties": {"name": "EPSG:25830"}, "type": "name"},
+			"features": [],
+			"type": "FeatureCollection",
+			"selectable": true,
+			"sourceName": "EENNPP",
+			"share": {
+				"legend": "Espacios Naturales Protegidos",
+				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_WFS_Patrimonio_Natural?",
+				"version": "1.1.0",
+				"name": "EENNPP",
+				"namespace": "EENNPP",
+				"getFeatureOutputFormat": "geojson"
+			}
+		},
+		"geometry": "POLYGON",
+		"visibility": true,
+		"displayInLayerSwitcher": true
+	},{
+		"type": "GeoJSON",
+		"style": {
+			"category": false,
+			"style": {"fill": {"color": "#ffaa01", "opacity": 0.8}, "stroke": {"color": "#515151", "width": 1}}
+		},
+		"name": "Parajes Naturales",
+		"extract": false,
+		"source": {   
+			"crs": {"properties": {"name": "EPSG:25830"}, "type": "name"},
+			"features": [],
+			"type": "FeatureCollection",
+			"selectable": true,
+			"sourceName": "EENNPP",
+			"share": {
+				"legend": "Espacios Naturales Protegidos",
+				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_WFS_Patrimonio_Natural?",
+				"version": "1.1.0",
+				"name": "EENNPP",
+				"namespace": "EENNPP",
+				"getFeatureOutputFormat": "geojson"
+			}
+		},
+		"geometry": "POLYGON",
+		"visibility": true,
+		"displayInLayerSwitcher": true
+	},{
+		"type": "GeoJSON",
+		"style": {
+			"category": false,
+			"style": {"fill": {"color": "#fe0000", "opacity": 0.8}, "stroke": {"color": "#515151", "width": 1}}
+		},
+		"name": "Reservas Naturales",
+		"extract": false,
+		"source": {   
+			"crs": {"properties": {"name": "EPSG:25830"}, "type": "name"},
+			"features": [],
+			"type": "FeatureCollection",
+			"selectable": true,
+			"sourceName": "EENNPP",
+			"share": {
+				"legend": "Espacios Naturales Protegidos",
+				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_WFS_Patrimonio_Natural?",
+				"version": "1.1.0",
+				"name": "EENNPP",
+				"namespace": "EENNPP",
+				"getFeatureOutputFormat": "geojson"
+			}
+		},
+		"geometry": "POLYGON",
+		"visibility": true,
+		"displayInLayerSwitcher": true
+	},{
+		"type": "GeoJSON",
+		"style": {
+			"category": false,
+			"style": {"fill": {"color": "#feff00", "opacity": 0.8}, "stroke": {"color": "#515151", "width": 1}}
+		},
+		"name": "Paisajes Protegidos",
+		"extract": false,
+		"source": {   
+			"crs": {"properties": {"name": "EPSG:25830"}, "type": "name"},
+			"features": [],
+			"type": "FeatureCollection",
+			"selectable": true,
+			"sourceName": "EENNPP",
+			"share": {
+				"legend": "Espacios Naturales Protegidos",
+				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_WFS_Patrimonio_Natural?",
+				"version": "1.1.0",
+				"name": "EENNPP",
+				"namespace": "EENNPP",
+				"getFeatureOutputFormat": "geojson"
+			}
+		},
+		"geometry": "POLYGON",
+		"visibility": true,
+		"displayInLayerSwitcher": true
+	},{
+		"type": "GeoJSON",
+		"style": {
+			"category": false,
+			"style": {"fill": {"color": "#894544", "opacity": 0.8}, "stroke": {"color": "#515151", "width": 1}}
+		},
+		"name": "Monumentos Naturales",
+		"extract": false,
+		"source": {   
+			"crs": {"properties": {"name": "EPSG:25830"}, "type": "name"},
+			"features": [],
+			"type": "FeatureCollection",
+			"selectable": true,
+			"sourceName": "EENNPP",
+			"share": {
+				"legend": "Espacios Naturales Protegidos",
+				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_WFS_Patrimonio_Natural?",
+				"version": "1.1.0",
+				"name": "EENNPP",
+				"namespace": "EENNPP",
+				"getFeatureOutputFormat": "geojson"
+			}
+		},
+		"geometry": "POLYGON",
+		"visibility": true,
+		"displayInLayerSwitcher": true
+	},{
+		"type": "GeoJSON",
+		"style": {
+			"category": false,
+			"style": {"fill": {"color": "#f779b8", "opacity": 0.8}, "stroke": {"color": "#515151", "width": 1}}
+		},
+		"name": "Reservas Naturales Concertadas",
+		"extract": false,
+		"source": {   
+			"crs": {"properties": {"name": "EPSG:25830"}, "type": "name"},
+			"features": [],
+			"type": "FeatureCollection",
+			"selectable": true,
+			"sourceName": "EENNPP",
+			"share": {
+				"legend": "Espacios Naturales Protegidos",
+				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_WFS_Patrimonio_Natural?",
+				"version": "1.1.0",
+				"name": "EENNPP",
+				"namespace": "EENNPP",
+				"getFeatureOutputFormat": "geojson"
+			}
+		},
+		"geometry": "POLYGON",
+		"visibility": true,
+		"displayInLayerSwitcher": true
+	},{
+		"type": "GeoJSON",
+		"style": {
+			"category": false,
+			"style": {"fill": {"color": "#000000", "opacity": 0.8}, "stroke": {"color": "#515151", "width": 1}}
+		},
+		"name": "Parques Periurbanos",
+		"extract": false,
+		"source": {   
+			"crs": {"properties": {"name": "EPSG:25830"}, "type": "name"},
+			"features": [],
+			"type": "FeatureCollection",
+			"selectable": true,
+			"sourceName": "EENNPP",
+			"share": {
+				"legend": "Espacios Naturales Protegidos",
+				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_WFS_Patrimonio_Natural?",
+				"version": "1.1.0",
+				"name": "EENNPP",
+				"namespace": "EENNPP",
+				"getFeatureOutputFormat": "geojson"
+			} 
+		},
+		"geometry": "POLYGON",
+		"visibility": true,
+		"displayInLayerSwitcher": true
+	},{
+		"type": "WFS",
+		"style": {
+			"category": true,
+			"categories": {
+				"attributeName": "FIGURA",
+				"values": [{
+					"name": "LIC",
+					"style": {"fill": {"pattern": {"name": "HATCH", "size": 2, "scale": 1, "spacing": 10, "rotation": 45, "color": "#4E4E4E"}}, "stroke": {"color": "#686868", "width": 2}}
+				},
+				{
+					"name": "ZEC",
+					"style": {"fill": {"pattern": {"name": "HATCH", "size": 2, "scale": 1, "spacing": 10, "rotation": 90, "color": "#704488"}}, "stroke": {"color": "#704488", "width": 2}}
+				},
+				{
+					"name": "ZEPA",
+					"style": {"fill": {"pattern": {"name": "HATCH", "size": 2, "scale": 1, "spacing": 10, "rotation": 135, "color": "#FF5500"}}, "stroke": {"color": "#A83800", "width": 2}}
+				}]
+			}
+		},
+		"name": "RedNatura2000",
+		"namespace": "RedNatura2000",
+		"legend": "Red Natura 2000",
+		"geometry": "POLYGON",
+	  	"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_WFS_Patrimonio_Natural?",
+	 	"version": "1.1.0",
+	 	"getFeatureOutputFormat": "geojson",
+  		"describeFeatureTypeOutputFormat": "geojson",
+  		"visibility": false,
+  		"displayInLayerSwitcher": true
+	},{
+		"type": "WFS",
+		"style": {
+			"category": false,
+			"style": {"fill": {"pattern": {"name": "CAPS", "size": 5, "color": "#45629D", "scale": 1.5, "spacing": 15, "rotation": 0}}, "stroke": {"color": "#45629D", "width": 3}}
+		},
+		"name": "humedales_ramsar",
+		"namespace": "humedales_ramsar",
+		"legend": "Sitios Ramsar",
+		"geometry": "POLYGON",
+	  	"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_WFS_Patrimonio_Natural?",
+	 	"version": "1.1.0",
+	 	"getFeatureOutputFormat": "geojson",
+  		"describeFeatureTypeOutputFormat": "geojson",
+  		"visibility": false,
+  		"displayInLayerSwitcher": true
+	},{
+		"type": "WFS",
+		"style": {
+			"category": false,
+			"style": {"stroke": {"color": "#A80084", "width": 3}}
+		},
+		"name": "patrimonio_humanidad",
+		"namespace": "patrimonio_humanidad",
+		"legend": "Patrimonios de la Humanidad",
+		"geometry": "POLYGON",
+	  	"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_WFS_Patrimonio_Natural?",
+	 	"version": "1.1.0",
+	 	"getFeatureOutputFormat": "geojson",
+  		"describeFeatureTypeOutputFormat": "geojson",
+  		"visibility": false,
+  		"displayInLayerSwitcher": true
+	},{
+		"type": "WFS",
+		"style": {
+			"category": false,
+			"style": {"fill": {"pattern": {"name": "DOT", "size": 3, "color": "#E6E600", "scale": 1, "spacing": 7, "rotation": 0}}, "stroke": {"color": "#E6E600", "width": 3}}
+		},
+		"name": "reservas_biosfera",
+		"namespace": "reservas_biosfera",
+		"legend": "Reservas de la Biosfera",
+		"geometry": "POLYGON",
+	  	"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_WFS_Patrimonio_Natural?",
+	 	"version": "1.1.0",
+	 	"getFeatureOutputFormat": "geojson",
+  		"describeFeatureTypeOutputFormat": "geojson",
+  		"visibility": false,
+  		"displayInLayerSwitcher": true
+	},{
+		"type": "WFS",
+		"style": {
+			"category": false,
+			"style": {"stroke": {"color": "#448970", "width": 3}}
+		},
+		"name": "ZEPIM",
+		"namespace": "ZEPIM",
+		"legend": "ZEPIM",
+		"geometry": "POLYGON",
+	  	"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_WFS_Patrimonio_Natural?",
+	 	"version": "1.1.0",
+	 	"getFeatureOutputFormat": "geojson",
+  		"describeFeatureTypeOutputFormat": "geojson",
+  		"visibility": false,
+  		"displayInLayerSwitcher": true
+	},{
+		"type": "WFS",
+		"style": {
+			"category": false,
+			"style": {"stroke": {"color": "#9D1F1B", "width": 3}}
+		},
+		"name": "geoparques",
+		"namespace": "geoparques",
+		"legend": "Geoparques",
+		"geometry": "POLYGON",
+	  	"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_WFS_Patrimonio_Natural?",
+	 	"version": "1.1.0",
+	 	"getFeatureOutputFormat": "geojson",
+  		"describeFeatureTypeOutputFormat": "geojson",
+  		"visibility": false,
+  		"displayInLayerSwitcher": true
+	},{
+		"type": "GeoJSON",
+		"style": {
+			"category": false,
+			"style": {"fill": {"color": "#200242", "width": 3.5}}
+		},
+		"name": "Carriles Cicloturista",
+		"extract": false,
+		"source": {   
+			"crs": {"properties": {"name": "EPSG:25830"}, "type": "name"},
+			"features": [],
+			"type": "FeatureCollection",
+			"selectable": true,
+			"sourceName": "senderos",
+			"share": {
+				"legend": "Senderos/Carriles Cicloturista",
+				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_WFS_Patrimonio_Natural?",
+				"version": "1.1.0",
+				"name": "senderos",
+				"namespace": "senderos",
+				"getFeatureOutputFormat": "geojson"
+			} 
+		},
+		"geometry": "LINE",
+		"visibility": true,
+		"displayInLayerSwitcher": true
+	},{
+		"type": "WFS",
+		"style": {
+			"category": true,
+			"categories": {
+				"attributeName": "DIFICULTAD",
+				"values": [{
+					"name": "Alta",
+					"style": {"stroke": {"color": "#d20000", "width": 5, "linedash": [1,6], "linedashoffset": 1, "linecap": "round", "linejoin": "round",  "miterlimit": 15}, "fill": {"color": "#ffffff", "width": 5, "opacity": 0.1}}
+				},
+				{
+					"name": "Media",
+					"style": {"stroke": {"color": "#ff7f00", "width": 5, "linedash": [1,6], "linedashoffset": 1, "linecap": "round", "linejoin": "round",  "miterlimit": 15}, "fill": {"color": "#ffffff", "width": 5, "opacity": 0.1}}
+				},
+				{
+					"name": "Baja",
+					"style": {"stroke": {"color": "#016d2f", "width": 5, "linedash": [1,6], "linedashoffset": 1, "linecap": "round", "linejoin": "round",  "miterlimit": 15}, "fill": {"color": "#ffffff", "width": 5, "opacity": 0.1}}
+				}]
+			}
+		},
+		"name": "senderos",
+		"namespace": "senderos",
+		"legend": "Senderos",
+		"geometry": "LINE",
+	  	"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_WFS_Patrimonio_Natural?",
+	 	"version": "1.1.0",
+	 	"getFeatureOutputFormat": "geojson",
+  		"describeFeatureTypeOutputFormat": "geojson",
+  		"visibility": true,
+  		"displayInLayerSwitcher": true
+	},{
+		"type": "GeoJSON",
+		"style": {
+			"category": false,
+			"style": {"icon": {"src": "https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/images/icons/centro_visitantes.png"}}
+		},
+		"name": "Centros de Visitantes",
+		"extract": false,
+		"source": {   
+			"crs": {"properties": {"name": "EPSG:25830"}, "type": "name"},
+			"features": [],
+			"type": "FeatureCollection",
+			"selectable": true,
+			"sourceName": "equipamientos_uso_publico",
+			"share": {
+				"legend": "Equipamientos de Uso Público",
+				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_WFS_Patrimonio_Natural?",
+				"version": "1.1.0",
+				"name": "equipamientos_uso_publico",
+				"namespace": "equipamientos_uso_publico",
+				"getFeatureOutputFormat": "geojson"
+			}
+		},
+		"geometry": "POINT",
+		"visibility": true,
+		"displayInLayerSwitcher": true
+	},{
+		"type": "GeoJSON",
+		"style": {
+			"category": false,
+			"style": {"icon": {"src": "https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/images/icons/punto_informacion.png"}}
+		},
+		"name": "Puntos de Información",
+		"extract": false,
+		"source": {   
+			"crs": {"properties": {"name": "EPSG:25830"}, "type": "name"},
+			"features": [],
+			"type": "FeatureCollection",
+			"selectable": true,
+			"sourceName": "equipamientos_uso_publico",
+			"share": {
+				"legend": "Equipamientos de Uso Público",
+				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_WFS_Patrimonio_Natural?",
+				"version": "1.1.0",
+				"name": "equipamientos_uso_publico",
+				"namespace": "equipamientos_uso_publico",
+				"getFeatureOutputFormat": "geojson"
+			}
+		},
+		"geometry": "POINT",
+		"visibility": true,
+		"displayInLayerSwitcher": true
+	},{
+		"type": "GeoJSON",
+		"style": {
+			"category": false,
+			"style": {"icon": {"src": "https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/images/icons/ecomuseo.png"}}
+		},
+		"name": "Ecomuseos",
+		"extract": false,
+		"source": {   
+			"crs": {"properties": {"name": "EPSG:25830"}, "type": "name"},
+			"features": [],
+			"type": "FeatureCollection",
+			"selectable": true,
+			"sourceName": "equipamientos_uso_publico",
+			"share": {
+				"legend": "Equipamientos de Uso Público",
+				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_WFS_Patrimonio_Natural?",
+				"version": "1.1.0",
+				"name": "equipamientos_uso_publico",
+				"namespace": "equipamientos_uso_publico",
+				"getFeatureOutputFormat": "geojson"
+			}
+		},
+		"geometry": "POINT",
+		"visibility": true,
+		"displayInLayerSwitcher": true
+	},{
+		"type": "WFS",
+		"cluster": {
+			"options": {
+				"ranges": [{
+					"min": 2,
+					"max": 10,
+					"style": {"fill": {"color": "#fc7e2a"}, "stroke": {"color": "#eec49ea3", "width": 6.5}, "radius": 15}
+				},
+				{
+					"min": 11,
+					"max": 20,
+					"style": {"fill": {"color": "#fc7e2a"}, "stroke": {"color": "#eec49ea3", "width": 6.5}, "radius": 20}
+				},
+				{
+					"min": 21,
+					"max": 100,
+					"style": {"fill": {"color": "#e65c00"}, "stroke": {"color": "#eec49ea3", "width": 6.5}, "radius": 25}
+				}
+				],
+				"animated": true,
+				"hoverInteraction": true,
+				"displayAmount": true,
+				"distance": 80,
+				"maxFeaturesToSelect": 100
+			},
+			"vendorParameters": {
+				"distanceSelectFeatures": 25,
+  				"convexHullStyle": {"fill": {"color": "#999999", "opacity": 0.6}, "stroke": {"color": "#787878", "width": 2, "linedash": [5,10], "linedashoffset": 1, "linecap": "square", "linejoin": "round", "miterlimit": 10}}
+			}
+		},
+		"style": {
+			"category": true,
+			"categories": {
+				"attributeName": "TIPOEQUIPA",
+				"values": [{
+					"name": "AREA RECREATIVA",
+					"style": {"icon": {"src": "https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/images/icons/area_recreativa.png"}}
+				},
+				{
+					"name": "AULA DE LA NATURALEZA",
+					"style": {"icon": {"src": "https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/images/icons/aula_naturaleza.png"}}
+				},
+				{
+					"name": "CAMPING",
+					"style": {"icon": {"src": "https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/images/icons/campamento.png"}}
+				},
+				{
+					"name": "CARRIL CICLOTURISTA",
+					"style": {"icon": {"src": "https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/images/icons/carril_cicloturismo.png"}}
+				},
+				{
+					"name": "CASA RURAL",
+					"style": {"icon": {"src": "https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/images/icons/casa_rural.png"}}
+				},
+				{
+					"name": "HOTEL DE MONTAÑA",
+					"style": {"icon": {"src": "https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/images/icons/hotel_montana.png"}}
+				},
+				{
+					"name": "JARDIN BOTANICO",
+					"style": {"icon": {"src": "https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/images/icons/jardin_botanico.png"}}
+				},
+				{
+					"name": "MIRADOR",
+					"style": {"icon": {"src": "https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/images/icons/mirador.png"}}
+				},
+				{
+					"name": "OBSERVATORIO",
+					"style": {"icon": {"src": "https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/images/icons/observatorio.png"}}
+				},
+				{
+					"name": "PARQUE DE FAUNA SILVESTRE",
+					"style": {"icon": {"src": "https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/images/icons/parque_fauna_silvestre.png"}}
+				},
+				{
+					"name": "REFUGIO",
+					"style": {"icon": {"src": "https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/images/icons/refugio.png"}}
+				},
+				{
+					"name": "REFUGIO-VIVAC",
+					"style": {"icon": {"src": "https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/images/icons/vivac.png"}}
+				},
+				{
+					"name": "SENDERO SEÑALIZADO",
+					"style": {"icon": {"src": "https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/images/icons/sendero.png"}}
+				},
+				{
+					"name": "ZONA ACAMPADA CONTROLADA",
+					"style": {"icon": {"src": "https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/images/icons/zona_acampada.png"}}
+				}]
+			}
+		},
+		"name": "equipamientos_uso_publico",
+		"namespace": "equipamientos_uso_publico",
+		"legend": "Equipamientos (agrupados)",
+		"geometry": "POINT",
+	  	"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_WFS_Patrimonio_Natural?",
+	 	"version": "1.1.0",
+	 	"getFeatureOutputFormat": "geojson",
+  		"describeFeatureTypeOutputFormat": "geojson",
+  		"visibility": true,
+  		"displayInLayerSwitcher": true
+	}],
+	"zoomSenderos": 4,
+	"zoomClusterEquipamientos": 5,
+	"zoomFiltro": 4,
+	"capaBaseActiva": 2,
+	"zoomFichaEquipamientos": 6
+}

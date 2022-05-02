@@ -1,0 +1,222 @@
+/*------------------------------------
+        # COMPONENT HEADER
+    ------------------------------------*/
+.evr-header{
+	&__block{
+		display: inline-block;
+		vertical-align: top;
+		&:first-child{
+			margin-top: rem(9);
+			margin-right: rem(41);
+			width: rem(285);
+			height: rem(62);
+			transition: all 0.5s ease;
+		}
+		&:last-child{
+			width: rem(688);
+			height: rem(80);
+			transition: all 0.5s ease;
+		}
+	}
+	&__logo{
+		margin:0;
+		line-height: 30px;
+		& .logo {
+			display: inline;
+		}
+	}
+	&__logo--no-text{
+        font-size: 0;
+    }
+	&__container{
+		position: relative;
+		margin:rem(48) rem(-15) 0;
+		background-color:color(primary, 0.85);
+
+		.maxwidth--inner {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+	&__img-mobile{
+		display:none;
+	}
+	&__user{
+		display: flex;
+		padding: 0.3125rem 0;
+		width: auto;
+		align-items: center;
+	}
+	&__sticky{
+		position: fixed;
+		top: rem(10);
+		left: 0;
+		width: 100%;
+		z-index: 999;
+		background: color(white);
+		&:after{
+			content: "";
+			position: absolute;
+			top: rem(-12);
+			width: 100%;
+			height: rem(62);
+			background: color(white);
+			z-index: -1;
+		}
+		&::before {
+			content: "";
+			width: 100%;
+			height: rem(20);
+			position: fixed;
+			top: 0;
+			z-index: -1;
+			background-color: white;
+		}
+		.evr-header{
+			&__container{
+				margin: 0;
+				margin-top: rem(12);
+			}
+			&__content-logo{
+				text-align: center;
+			}
+			&__block{
+				&:first-child{
+					display:none;
+					width: rem(231);
+                    height: rem(40);
+                    margin-top: rem(9);
+                    margin-right: rem(41);
+					transition: all 0.5s ease;
+				}
+				&:last-child{
+					width: rem(231);
+					height: rem(40);
+					transition: all 0.5s ease;
+					.logo{
+						width:100%;
+						height:100%;
+					}
+				}
+			}
+		}
+	}
+}
+// .controls-visible.open, .controls-visible.closed{
+// 	.evr-header{
+// 		&__sticky{
+// 			top: rem(66);
+// 		}
+// 	}
+// }
+
+@include media-query(lg) {
+	.evr-header{
+		&__container{
+			padding: rem(9) rem(15);
+			margin-top:rem(16);
+			text-align: right;
+		}
+		&__content-logo{
+			padding-top: rem(10);
+			text-align: center;
+		}
+		&__block{
+			&:first-child{
+				position: absolute;
+				left: rem(15);
+				margin: 0;
+				width: rem(56);
+				height: rem(30);
+			}
+			&:last-child{
+				width: rem(263);
+				height: rem(37);
+			}
+		}
+		&__user{
+			padding:0 35px;
+			width: 100%;
+			justify-content: end;
+		}
+		&__sticky{
+			&:after{
+				display:none;
+			}
+			.evr-header{
+				&__container{
+					margin-top:rem(16);
+				}
+				&__block{
+					&:first-child{
+						display:block;
+						position: absolute;
+						left: inherit;
+						margin: 0;
+						width: rem(56);
+						height: rem(30);
+					}
+					&:last-child{
+						width: rem(263);
+						height: rem(37);
+					}
+				}
+			}
+		}
+	}
+	.controls-visible.open, .controls-visible.closed{
+		.evr-header{
+			&__sticky{
+				top: 0;
+			}
+		}
+	}
+}
+
+@include media-query(sm) {
+	.evr-header{
+		&__block{
+			&:first-child{
+				width: rem(49);
+    			height: rem(30);
+			}
+			&:last-child{
+				width: rem(165);
+    			height: rem(30);
+			}
+		}
+		&__container{
+			margin-top: rem(8);
+			padding-top: rem(11);
+    		padding-bottom: rem(12);
+		}
+		&__content-logo{
+			padding-top: 0;
+			padding-top: rem(7);
+			padding-bottom: rem(7);
+		}
+		&__sticky{
+			.evr-header{
+				&__container{
+					margin-top: rem(8);
+					padding-top: rem(11);
+					padding-bottom: rem(12);
+				}
+				&__block{
+					&:first-child{
+						width: rem(49);
+						height: rem(30);
+						left:inherit;
+					}
+					&:last-child{
+						width: rem(165);
+						height: rem(30);
+					}
+				}
+			}
+		}
+	}
+	body.controls-hidden .evr-header.evr-header__sticky {
+		top: rem(48) !important;
+	}
+}

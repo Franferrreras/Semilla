@@ -1,0 +1,19 @@
+////
+/// TRUNCATE tool
+///
+/// This mixin includes classes to truncate a text
+/// @access public
+/// @author Dfront Specialist Team
+/// @example scss @include truncate();
+///        white-space: nowrap;
+///        overflow: hidden;
+///        text-overflow: ellipsis
+/// @group Tools
+/// @name truncate
+/// @since version 1.0.0
+////
+@mixin truncate() {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

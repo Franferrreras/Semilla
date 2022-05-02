@@ -1,0 +1,120 @@
+////
+/// Caminame component
+///
+/// Description of the component
+///
+/// @access public
+/// @author Dfront Specialist Team
+/// @group components
+/// @name .#{$wf__ns}example
+/// @since version 1.0.0
+////
+.evr-caminame {
+    text-align: end;
+    width: auto;
+    font-size: rem(13);
+    color: color(primary);
+    margin: 10px 0;
+
+    &__jssocials {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__col{
+        display: inline-block;
+        &:last-child{
+            display: inline-block;
+        }
+    }
+    &__btn{
+        display: inline-block;
+        height: rem(40);
+        border: 2px solid;
+        background: transparent;
+        width: 190px;
+        line-height: 1;
+        vertical-align: top;
+        padding: rem(10);
+        &:before{
+            content: "";
+            display: inline-block;
+            border: 4px solid;
+            margin-right: rem(5);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            border-color: color(primary) color(primary) transparent transparent;
+        }
+    }
+    &__a{
+        display: inline-block;
+        height: rem(40);
+        border: 2px solid;
+        width: 190px;
+        line-height: 1;
+        padding: rem(6);
+        text-align: center;
+        vertical-align: top;
+       /*margin-left: rem(15);*/
+        color: color(primary);
+        &:before{
+            content: "";
+            display: inline-block;
+            border: 4px solid;
+            margin-right: rem(5);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            border-color: color(primary) color(primary) transparent transparent;
+        }
+
+        &:hover,
+        &:focus,
+        &:active{
+            text-decoration: none;
+        }
+    }
+    &__span{
+        display: block;
+        padding: rem(10) 0;
+    }
+    &__fig{
+        width: rem(25);
+        height: rem(25);
+        display: inline-block;
+        margin-left: rem(5);
+    }
+    &__img{
+        max-width: 100%;
+        height: 100%;
+    }
+}
+section.evr-caminame.evr-caminame_mobile {
+    display: block!important;
+}
+@include media-query(sm){
+    .evr-caminame {
+        &__col{
+            flex: 0 1 auto;
+
+            &--margin{
+                margin-bottom: rem(10);
+            }
+        }
+        &__jssocials {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+        }
+    }
+    .evr-caminame.evr-caminame_mobile.evr-buttons__config {
+        margin-top: 0;
+
+    }
+}

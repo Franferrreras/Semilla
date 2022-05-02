@@ -1,0 +1,104 @@
+.#{$ns}table-simple {
+
+    table {
+        width: 100%;
+    }
+    thead {
+        tr {
+            th {
+                padding: rem(20) rem(20);
+                font-size: rem(10);
+                line-height: rem(30);
+                font-weight: bold;
+                color: color(grey-16);
+                vertical-align: middle;
+            }
+        }
+    }
+    tbody {
+        tr {
+            th, td {
+                min-width: rem(135);
+                padding: rem(20) rem(20);
+                vertical-align: middle;
+                font-size: rem(14);
+                line-height: rem(30);
+                color: color(grey-19);
+                &:last-child {
+                    min-width: rem(165);
+                }
+            }
+            &:nth-child(odd) {
+                background-color: color(grey-17);
+            }   
+        }
+    }
+    &__txt {
+        display: inline-block;
+        font-size: rem(14);
+        line-height: rem(25);
+        color: color(grey-19);
+        vertical-align: middle;
+    }
+    &__link {
+        display: block;
+        font-size: 0;
+        &:hover, &:focus, &:active {
+            text-decoration: none;
+            .#{$ns}table-simple__link-txt {
+                text-decoration: underline;
+                color: color(primary);
+            }
+        }
+    }
+    &__link-icon {
+        display: inline-block;
+        width: rem(21);
+/*         margin-right: rem(10); */
+        vertical-align: top;
+    }
+    &__link-txt {
+        display: inline-block;
+        width: calc(100% - 31px);
+        font-size: rem(14);
+        line-height: rem(30);
+        color: color(grey-5);
+        vertical-align: top;
+    }
+    &__thumb {
+        display: block;
+        font-size: 0;
+    }
+    &__thumb-icon {
+        display: inline-block;
+        width: rem(65);
+        height: rem(65);
+        vertical-align: middle;
+        background-color: color(grey-4);
+    }
+    &__thumb-txt {
+        display: inline-block;
+        text-align: justify;
+/*         width: calc(100% - 65px); */
+        padding-left: rem(20);
+        font-size: rem(14);
+        line-height: rem(25);
+        vertical-align: middle;
+    }
+}
+
+@include media-query(lg) {
+    .#{$ns}table-simple {
+        overflow-x: auto;
+        tbody {
+            tr {
+                th, td {
+                    min-width: rem(130);
+                    &:first-child {
+                        min-width: rem(420);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.evr-download{
+	&__title{
+	        display: block;
+	        font-size: rem(16);
+	        font-family: $ns-font-assistant;
+	        font-weight: 600;
+	        line-height: rem(21);
+	        &:after{
+	            content: "";
+	            border: 1px solid color(primary);
+	            display: block;
+	            margin: rem(10) 0;
+	        }
+	    }
+    
+    &__btn {
+    width: 100%;
+    padding: rem(12) rem(48);
+    background-color: transparent;
+    border: 1.5px solid color(primary,0.5);
+    font-size: 0;
+    text-align: center;
+    margin: rem(10) 0;
+    @include border-radius(4px);
+    }
+
+    &__icon {
+        display: inline-block;
+        width: rem(21);
+        line-height: rem(30);
+        vertical-align: middle;
+    }
+    &__txt {
+        display: inline-block;
+        font-family: $wf__font--default;
+        padding-left: rem(8);
+        font-size: rem(12);
+        line-height: 1.2;
+        font-weight: bold;
+        color: color(primary);
+        vertical-align: middle;
+    }
+
+    &:hover, &:focus, &:active {
+        border-color: color(primary_hover);
+        .#{$ns}btn-thumb__txt {
+            color: color(primary_hover);
+        }
+    }
+}
+
+@include media-query(md){
+    .evr-download{
+        &__col{
+          width: calc(98% / 2);
+        }
+    }
+}
+
+@include media-query(sm){
+    .evr-download{
+        &__col{
+          width: 100%;
+        }
+    }
+}

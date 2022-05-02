@@ -1,0 +1,76 @@
+.#{$ns}article-insta {
+    height: 100%;
+    background-color: color(white);
+    @include box-shadow(3px 3px 10px color(black, 0.11));
+
+    &__container {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: rem(6) rem(6);
+    }
+    &__rating {
+        position: absolute;
+        top: rem(12);
+        right: rem(12);
+    }
+    &__rating-star {
+        display: inline-block;
+        font-size: rem(16);
+        color: color(yellow);
+        vertical-align: top;
+    }
+    &__thumb {
+        height: rem(150);
+        overflow: hidden;
+    }
+    &__body {
+        padding: rem(15) rem(15);
+    }
+    &__txt {
+        display: block;
+        max-height: rem(65);
+        overflow: hidden;
+        margin-bottom: rem(15);
+        font-size: rem(14);
+        line-height: 1.6;
+        color: color(black);
+    }
+    &__autor {
+        font-size: 0;
+    }
+    &__autor-thumb {
+        display: inline-block;
+        width: rem(45);
+        height: rem(45);
+        margin-right: rem(10);
+        vertical-align: middle;
+        overflow: hidden;
+        @include border-radius(50%);
+    }
+    &__autor-content {
+        display: inline-block;
+        width: calc(100% - 55px);
+        vertical-align: middle;
+    }
+    &__autor-name {
+        display: block;
+        margin-bottom: rem(10);
+        font-size: rem(14);
+        line-height: 1.4;
+        font-weight: bold;
+        color: color(black);
+        @include truncate();
+    }
+    &__autor-date {
+        display: block;
+        font-size: rem(14);
+        line-height: 1.4;
+        color: color(grey-2);
+        @include truncate();
+    }
+}
+
+/**
+* Media queries
+*/

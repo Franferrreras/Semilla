@@ -1,0 +1,244 @@
+@if ($include__buttons==true) {
+
+    /********** Buttons ************/
+    // .btn {
+    //     @include transition(all 0.5s ease);
+    //     border: none;
+    //     border-radius: 0;
+    //     font-size: rem(14);
+    //     padding: rem(8) rem(18);
+    //     font-family: $wf__font--default;
+    //     white-space: normal;
+
+    //     &:focus,
+    //     &.focus,
+    //     &:active:focus,
+    //     &:active.focus,
+    //     &.active:focus,
+    //     &.active.focus {
+    //         outline: none;
+    //         box-shadow: none;
+    //     }
+
+    //     &:hover {}
+
+    //     svg *,
+    //     span {
+    //         @include transition(all 0.5s ease);
+    //     }
+
+    //     &.btn-default {
+
+    //         &:hover {}
+
+    //         &.dropdown-toggle {
+
+    //             &:hover,
+    //             &:active,
+    //             &.active {}
+    //         }
+
+    //         &.btn-lg {}
+    //     }
+
+    //     &.btn-primary {
+    //         border: rem(1) solid color(primary);
+    //         color: color(white);
+    //         background: color(primary);
+    //         font-size: rem(20);
+    //         line-height: rem(30);
+    //         padding: rem(10) rem(30);
+    //         font-family: $wf__font--bold;
+
+    //         &:hover {
+    //             border: rem(1) solid color(secondary);
+    //             color: color(white);
+    //             background: color(secondary);
+    //         }
+
+    //         &.disabled,
+    //         &[disabled] {
+    //             border: rem(1) solid color(grey-1);
+    //             color: color(white);
+    //             background: color(grey-1);
+    //         }
+    //     }
+
+    //     &.btn-secondary.btn-borderer-secondary {
+    //         border: rem(1) solid color(primary);
+    //         color: color(primary);
+    //         background: color(white);
+    //         font-size: rem(20);
+    //         line-height: rem(30);
+    //         padding: rem(10) rem(30);
+    //         font-family: $wf__font--bold;
+
+    //         &:hover {
+    //             border: rem(1) solid color(secondary);
+    //             color: color(secondary);
+    //             background: color(white);
+    //         }
+    //     }
+
+    //     &.btn-secondary {
+    //         border: rem(1) solid color(secondary);
+    //         color: color(white);
+    //         background: color(secondary);
+
+    //         &:hover {
+    //             border: rem(1) solid color(primary);
+    //             color: color(white);
+    //             background: color(primary);
+    //         }
+
+    //         &.disabled,
+    //         &[disabled] {
+    //             border: rem(1) solid color(grey-1);
+    //             color: color(white);
+    //             background: color(grey-1);
+    //         }
+    //     }
+
+    //     &.btn-bordered {
+    //         color: color(white);
+    //         border: rem(1) solid color(white);
+    //         font-size: rem(20);
+    //         line-height: rem(30);
+    //         padding: rem(10) rem(30);
+    //         font-family: $wf__font--bold;
+
+    //         &:hover {
+    //             background: color(white);
+    //             color: color(black);
+    //         }
+    //     }
+
+    //     &.btn-bordered-primary.btn-primary,
+    //     &.btn-bordered-primary {
+    //         color: color(primary);
+    //         background: white;
+    //         border: rem(2) solid color(primary);
+    //         font-size: rem(20);
+    //         line-height: rem(30);
+    //         padding: rem(10) rem(30);
+
+    //         &:hover {
+    //             background: color(white);
+    //             color: color(black);
+    //             border: rem(2) solid color(black);
+    //         }
+    //     }
+
+    //     &.btn-border-none {
+    //         font-size: rem(20);
+    //         padding-left: 0;
+    //         padding-right: 0;
+    //     }
+
+    //     &.btn-primary-inverse {
+
+    //         &:hover,
+    //         &:focus {}
+    //     }
+
+    //     &.btn-icon {
+    //         padding: 0;
+
+    //         &:hover {
+    //             svg {
+    //                 path {}
+    //             }
+    //         }
+    //     }
+
+    //     &.btn-fixed-bottom {
+    //         position: fixed;
+    //         bottom: 0;
+    //         left: 0;
+    //         right: 0;
+    //         z-index: 10;
+
+    //         &--first {
+    //             bottom: 52px;
+    //         }
+    //     }
+
+    //     &.btn-bold {
+    //         font-family: $wf__font--bold;
+    //         font-weight: normal;
+    //     }
+
+    //     &.btn-category {
+    //         border: rem(1) solid color(primary);
+    //         color: color(primary);
+    //         background: transparent;
+    //         border-radius: rem(17);
+    //         padding: rem(5) rem(15);
+    //         margin-right: rem(4);
+
+    //         &:hover {
+    //             border: rem(1) solid color(primary);
+    //             color: color(white);
+    //             background: color(primary);
+    //         }
+
+    //         &.active {
+    //             border: rem(1) solid color(primary);
+    //             color: color(white);
+    //             background: color(primary);
+
+    //             &:hover {
+    //                 border: rem(1) solid color(primary);
+    //                 color: color(white);
+    //                 background: color(primary);
+    //             }
+    //         }
+    //     }
+
+    //     &.btn-help {
+    //         min-height: 66px;
+    //         color: color(secondary);
+    //         font-size: rem(17);
+    //         line-height: rem(44);
+    //         text-align: center;
+    //         background: transparent;
+    //         border: rem(1) solid color(secondary);
+    //         border-radius: rem(5);
+
+    //         &:hover,
+    //         &:focus,
+    //         &:active,
+    //         .active {
+    //             color: color(primary);
+    //             background: #FFEEEE;
+    //             border: rem(1) solid color(primary);
+    //         }
+    //     }
+
+    //     & {
+    //         &-search-filter {
+    //             line-height: 0;
+    //             background: transparent;
+    //             padding: 0;
+    //             width: rem(40);
+    //             height: rem(40);
+    //         }
+    //     }
+
+    // }
+
+    // .ie {
+    //     .btn {
+
+    //         &.btn-primary,
+    //         &.btn-bordered {
+    //             padding-top: rem(20);
+    //         }
+    //     }
+    // }
+
+    // @include media-query(md) {}
+
+    // @include media-query(sm) {}
+
+}

@@ -1,0 +1,50 @@
+@if ($include__search-facet == true){
+
+	.search-facet{
+		.facet-value {
+		    /*margin-bottom: rem(5);
+			font-size: rem(14);*/
+		    > a{
+		    	/*color: color(secondary);*/
+		    	&:before{
+		    		/*width:rem(23);
+		    		height: rem(23);
+		    		border-radius: 100%;
+		    		border: rem(1) solid rgba(0, 44, 88, 0.2);
+		    		content: "";
+		    		display: inline-block;
+		    		text-align: center;
+					line-height: 20px;
+					margin-right: 10px;
+					vertical-align: text-bottom;
+					background-size: contain !important;*/
+		    	}
+
+		    	&:hover{
+		    		&:before{
+			    		/*background: url(#{$wf__image-path-icons}circle2.svg) center center no-repeat;*/
+			    	}
+		    	}
+
+		    	&.text-primary{	    	
+		    		&:before{
+		    			/*background: url(#{$wf__image-path-icons}circle.svg) center center no-repeat;
+		    			border: rem(1) solid color(primary);
+		    			color: color(primary);*/
+		    		}
+		    		&:hover{
+		    			&:before{
+		    				/*background: url(#{$wf__image-path-icons}circle2.svg) center center no-repeat;
+				    		border: rem(1) solid color(secondary);
+			    			color: color(secondary);*/
+			    		}
+			    	}	    	
+			    }
+		    }
+		}
+	}
+
+	@include media-query(md) {}
+    @include media-query(sm) {}
+
+}

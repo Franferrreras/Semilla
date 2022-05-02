@@ -1,0 +1,179 @@
+<ViewContext xmlns="http://www.opengis.net/context" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Callejero" version="1.1.0" xsi:schemaLocation="http://www.opengis.net/context http://schemas.opengis.net/context/1.1.0/context.xsd">
+    <General>
+        <Window height="370" width="610"/>
+        <BoundingBox SRS="EPSG:25830" maxx="621889.9370" maxy="4299792.1070" minx="96388.1179" miny="3959795.9442"/>
+        <Title>Capas base Ventana del Visitante</Title>
+        <Extension>
+            <ol:maxExtent xmlns:ol="http://openlayers.org/context" maxx="771889.9370" maxy="4599792.1070" minx="31388.1179" miny="3659795.9442"/>
+        </Extension>
+        <KeywordList>
+            <Keyword>IECA</Keyword>
+            <Keyword>SIOSE</Keyword>
+            <Keyword>Ortofoto</Keyword>
+            <Keyword>Andalucía</Keyword>
+            <Keyword>Toporaster</Keyword>
+            <Keyword>Callejero</Keyword>
+        </KeywordList>
+        <Abstract>
+Fichero de configuración del contexto de visualización de capas.
+        </Abstract>
+    </General>
+    <LayerList>
+        <!--    ******   BASE CARTOGRAFICA CDAU  ******    -->
+        <Layer hidden="0" queryable="0">
+            <Server service="OGC:WMS" title="Andalucía" version="1.1.1">
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.callejerodeandalucia.es/servicios/base/wms?"/>
+            </Server>
+            <Name>CDAU_base</Name>
+            <Title>Base Cartográfica Callejero Digital de Andalucía</Title>
+            <SRS>EPSG:25830</SRS>
+            <FormatList>
+                <Format current="1">image/png</Format>
+            </FormatList>
+            <Extension>
+                <ol:opacity xmlns:ol="http://openlayers.org/context">1</ol:opacity>
+                <ol:transparent xmlns:ol="http://openlayers.org/context">false</ol:transparent>
+                <ol:isBaseLayer xmlns:ol="http://openlayers.org/context">true</ol:isBaseLayer>
+                <ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+                <ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+            </Extension>
+            <StyleList>
+                <Style current="1">
+                    <Name/>
+                    <Title>Estilo de la leyenda</Title>
+                    <LegendURL format="image/png" height="120" width="200">
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/images/legends/cdau_base.png"/>
+                    </LegendURL>
+                </Style>
+            </StyleList>
+            <sld:MinScaleDenominator xmlns:sld="http://www.opengis.net/sld">730.78136246</sld:MinScaleDenominator>
+            <sld:MaxScaleDenominator xmlns:sld="http://www.opengis.net/sld">2500000</sld:MaxScaleDenominator>
+        </Layer>
+        <!--    ******   SIOSE + MDT 2013    ******    -->
+        <Layer hidden="0" queryable="1">
+            <Server service="OGC:WMS" title="Andalucía" version="1.1.1">
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.ideandalucia.es/wms/siose_2013?"/>
+            </Server>
+            <Name>sombreado_siose_2013</Name>
+            <Title>Siose + MDT 2013</Title>
+            <SRS>EPSG:25830</SRS>
+            <FormatList>
+                <Format current="1">image/png; mode=24bit</Format>
+            </FormatList>
+            <Extension>
+                <ol:opacity xmlns:ol="http://openlayers.org/context">1</ol:opacity>
+                <ol:transparent xmlns:ol="http://openlayers.org/context">false</ol:transparent>
+                <ol:isBaseLayer xmlns:ol="http://openlayers.org/context">true</ol:isBaseLayer>
+                <ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+                <ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+            </Extension>
+            <StyleList>
+                <Style current="1">
+                    <Name/>
+                    <Title>Estilo de la leyenda</Title>
+                    <LegendURL format="image/png" height="120" width="200">
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/images/legends/siose_2013.png"/>
+                    </LegendURL>
+                </Style>
+            </StyleList>
+            <sld:MinScaleDenominator xmlns:sld="http://www.opengis.net/sld">730.78136246</sld:MinScaleDenominator>
+            <sld:MaxScaleDenominator xmlns:sld="http://www.opengis.net/sld">2500000</sld:MaxScaleDenominator>
+        </Layer>
+        <!--    ******   MDT_2016   COLOR  ******    -->
+        <Layer hidden="0" queryable="1">
+            <Server service="OGC:WMS" title="Andalucía" version="1.1.1">
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.ideandalucia.es/wms/mdt_2016?"/>
+            </Server>
+            <Name>modelo_digital_terreno_2016_color</Name>
+            <Title>
+Modelo Digital del Terreno 2016 (tintas Hipsométricas)
+            </Title>
+            <SRS>EPSG:25830</SRS>
+            <FormatList>
+                <Format current="1">image/png; mode=24bit</Format>
+            </FormatList>
+            <Extension>
+                <ol:opacity xmlns:ol="http://openlayers.org/context">1</ol:opacity>
+                <ol:transparent xmlns:ol="http://openlayers.org/context">false</ol:transparent>
+                <ol:isBaseLayer xmlns:ol="http://openlayers.org/context">true</ol:isBaseLayer>
+                <ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+                <ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+            </Extension>
+            <StyleList>
+                <Style current="1">
+                    <Name/>
+                    <Title>Estilo de la leyenda</Title>
+                    <LegendURL format="image/png" height="120" width="200">
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/images/legends/mdt_2016_tintas_hipsometricas.png"/>
+                    </LegendURL>
+                </Style>
+            </StyleList>
+            <sld:MinScaleDenominator xmlns:sld="http://www.opengis.net/sld">730.78136246</sld:MinScaleDenominator>
+            <sld:MaxScaleDenominator xmlns:sld="http://www.opengis.net/sld">2500000</sld:MaxScaleDenominator>
+        </Layer>
+        <!--    ******   PNOA MÁXIMA ACTUALIDAD  ******    -->
+        <Layer hidden="0" queryable="1">
+            <Server service="OGC:WMS" title="Andalucía" version="1.1.1">
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.ign.es/wms-inspire/pnoa-ma?"/>
+            </Server>
+            <Name>OI.OrthoimageCoverage</Name>
+            <Title>
+PNOA máxima actualidad publicada por el Instituto Geográfico Nacional
+            </Title>
+            <SRS>EPSG:25830</SRS>
+            <FormatList>
+                <Format current="1">image/png; mode=8bit</Format>
+            </FormatList>
+            <Extension>
+                <ol:opacity xmlns:ol="http://openlayers.org/context">1</ol:opacity>
+                <ol:transparent xmlns:ol="http://openlayers.org/context">false</ol:transparent>
+                <ol:isBaseLayer xmlns:ol="http://openlayers.org/context">true</ol:isBaseLayer>
+                <ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+                <ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+            </Extension>
+            <StyleList>
+                <Style current="1">
+                    <Name/>
+                    <Title>Estilo de la leyenda</Title>
+                    <LegendURL format="image/png" height="120" width="200">
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/images/legends/pnoa_ma.png"/>
+                    </LegendURL>
+                </Style>
+            </StyleList>
+            <sld:MinScaleDenominator xmlns:sld="http://www.opengis.net/sld">730.78136246</sld:MinScaleDenominator>
+            <sld:MaxScaleDenominator xmlns:sld="http://www.opengis.net/sld">2500000</sld:MaxScaleDenominator>
+        </Layer>
+        <!--    ******   IGN BASE  ******    -->
+        <Layer hidden="0" queryable="1">
+            <Server service="OGC:WMS" title="Andalucía" version="1.1.1">
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://www.ign.es/wms-inspire/ign-base?"/>
+            </Server>
+            <Name>IGNBaseTodo</Name>
+            <Title>Mapa base del Instituto Geográfico Nacional</Title>
+            <SRS>EPSG:25830</SRS>
+            <FormatList>
+                <Format current="1">image/png; mode=8bit</Format>
+            </FormatList>
+            <Extension>
+                <ol:opacity xmlns:ol="http://openlayers.org/context">1</ol:opacity>
+                <ol:transparent xmlns:ol="http://openlayers.org/context">false</ol:transparent>
+                <ol:isBaseLayer xmlns:ol="http://openlayers.org/context">true</ol:isBaseLayer>
+                <ol:displayInLayerSwitcher xmlns:ol="http://openlayers.org/context">true</ol:displayInLayerSwitcher>
+                <ol:singleTile xmlns:ol="http://openlayers.org/context">false</ol:singleTile>
+            </Extension>
+            <StyleList>
+                <Style current="1">
+                    <Name/>
+                    <Title>Estilo de la leyenda</Title>
+                    <LegendURL format="image/png" height="120" width="200">
+                        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://10.229.20.20/o/ventana-theme/src/js/libs-gis/visor_gis/images/legends/ign_base.png"/>
+                    </LegendURL>
+                </Style>
+            </StyleList>
+            <sld:MinScaleDenominator xmlns:sld="http://www.opengis.net/sld">730.78136246</sld:MinScaleDenominator>
+            <sld:MaxScaleDenominator xmlns:sld="http://www.opengis.net/sld">2500000</sld:MaxScaleDenominator>
+        </Layer>
+    </LayerList>
+</ViewContext>

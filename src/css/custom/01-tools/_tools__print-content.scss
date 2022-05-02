@@ -1,0 +1,337 @@
+@mixin page-break() {
+  display: block !important;
+  page-break-inside: auto !important;
+  break-inside: avoid !important;
+  -webkit-column-break-inside: avoid !important;
+}
+
+
+@media print {
+  iframe {
+    margin: 25px 0!important;
+  }
+  /* Contenido del fichero print.css */
+  .evr-panel-content{
+    background-color: #f1f5f2!important;
+    height: min-content;
+  }
+  // .evr-carrusel__img-slide.slick-slide{
+  //   display: none !important;
+  //     .evr-carrusel__img{
+  //     display: none !important;
+  //     }
+
+  // }
+  .evr-carrusel-banner {
+    margin-bottom: rem(50);
+  }
+  .evr-meteo-time--inline .evr-meteo-time__item:first-child,
+  .evr-meteo-time .evr-meteo-time__temp:first-of-type {
+    vertical-align: top !important;
+}
+.evr-meteo-time__temp-max .evr-meteo-time__temp-max:first-child {
+  top: 0!important;
+  transform: none !important;
+}
+
+// .evr-meteo-time .evr-meteo-time__temp {
+//   min-height: rem(63);
+// }
+
+.evr-meteo-time--inline 
+.evr-meteo-time__item:first-child 
+.evr-meteo-time__list-text-num {
+  font-size: rem(12) !important;
+}
+.evr-meteo-time--inline .evr-meteo-time__item:first-child .evr-meteo-time__cont-temp {
+  padding: 0 !important;
+}
+
+  .evr-header__content-logo {
+    display: none;
+}
+.evr-panel-protection__container-btn {
+  display: block!important;
+}
+.evr-meteo-time--inline .evr-meteo-time__item:first-child .evr-meteo-time__cont-day {
+  font-size: 14px;
+}
+.evr-show-content__button {
+  page-break-inside: avoid;
+}
+.pru div {
+  margin-bottom: 0!important;
+}
+.ui-accordion .ui-accordion-content {
+  padding: 0!important; 
+}
+.evr-space-natural.evr-rest-content {
+  display: block!important;
+  page-break-inside: avoid;
+}
+.evr-panel-content__container.reflex-container.tab-pane.evr-rest-content {
+  .reflex-grid {
+    display: block!important;
+  }
+  .reflex-col-xs-12.reflex-col-sm-6.reflex-col-md-6.reflex-col-lg-3 {
+    width: 50%;
+  }
+}
+.evr-space-natural__btn {
+  page-break-inside: avoid;
+  display: block!important;
+}
+  
+  .evr-carousel {
+    page-break-inside: avoid;
+  }
+  .evr-panel-protection__btn {
+    page-break-inside: avoid;
+    width: 47%!important;
+    margin: 0 rem(10) rem(10) 0!important;
+  }
+  .evr-panel-data-sheet__list-item {
+    page-break-inside: avoid;
+    width: 47%!important;
+    margin: 0 0 0.9375rem 0!important;
+    display: inline-block;
+}
+  h3.ui-accordion-header {
+    background: #FFF!important;
+      color: #198430!important;
+  }
+
+  .accordionContentId.ui-accordion.ui-widget.ui-helper-reset {
+      width: 100%;
+  }
+  .pru div {
+      margin-bottom: 0;
+  }
+  .evr-carrusel-banner__txt {
+    span {
+      color: white!important;
+    }
+  }
+    .evr-panel-data-sheet__list {
+      display: block !important;
+    }
+    
+  // .evr-panel-content__description {
+  //   page-break-inside: avoid;
+  // }
+  .reflex-col-xs-0.reflex-col-sm-6.reflex-col-md-4.reflex-col-lg-3 {
+    width: 50%;
+}
+  .evr-breadcrumbs {
+    display: none!important;
+  }
+  .only-print__title {
+    display: inline-block!important;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-family: "Assistant-Semibold";
+    font-size: 18px;
+    line-height: 1.3125rem;
+    font-weight: 600;
+    letter-spacing: normal !important;
+    border-bottom: 3px solid #087021;
+    color: #087021 !important;
+    padding: 0.9375rem !important;
+    margin-right: 0;
+}
+  .evr-meteo-time__item {
+    border: 1px solid #c9c9c9;
+    page-break-inside: avoid;
+    width: 46%!important;
+    display: inline-block;
+    margin: 9px!important;
+    page-break-inside: avoid;
+    display: inline-block;
+    &:first-child {
+      margin: 9px;
+    }
+    &:last-child {
+      margin: 9px;
+    }
+    &:nth-child(2n) {
+      margin-right: 0;
+  }
+  }
+  .evr-meteo-time__content {
+    display: inline-block!important;
+  }
+  .evr-meteo-time__cont-temp {
+    page-break-inside: avoid;
+}
+  .evr-panel-content__title {
+    padding-top: 15px;
+    page-break-inside: avoid;
+
+  }
+   .evr-infoca {
+    page-break-inside: avoid;
+    border: 2px solid #f7f7f7;
+   }
+  
+  .evr-panel-content__container {
+    // page-break-after: always;
+    position: relative;
+    padding-top: rem(26);
+    margin-bottom: rem(25);
+  }
+
+  .evr-panel-content__container .ui-accordion-content {
+    display: block !important;
+  }
+
+  //Contenedor de contenido del accordion
+  .evr-article-collage__body {
+    @include page-break();
+  }
+
+  //En caso de querer que cada pestaña comience en páginas diferentes
+  // .evr-panel-content.tab-content > div {
+  //   page-break-inside: avoid !important;
+  //   -webkit-column-break-inside: avoid !important;
+  //   break-inside: avoid !important;
+  //   position: relative !important;
+  //   display: block !important;
+  // }
+
+  .evr-breadcrumbs__txt {
+    padding-left: 10px;
+}
+  
+  .evr-article-result__container {
+    page-break-inside: avoid;
+  }
+  .evr-download {
+    // page-break-inside: avoid;
+    display: none!important;
+  }
+  .evr-footer {
+    page-break-inside: avoid;
+    display: none;
+  }
+  .reflex-grid {
+    display: flex!important;
+    font-size: 0;
+  }
+  .reflex-col-xs-6 {
+    display: inline-block!important;
+    width: 50%!important;
+    padding: 0!important;
+}
+  .evr-header__container {
+    display: none!important;
+  } 
+  .evr-ratings {
+    display: none!important;
+  }
+  #p_p_id_ratingsmodule_ {
+    display: none!important;
+  }
+
+  .evr-article-result__txt {
+    margin-bottom: 0 !important;
+  }
+  //   .evr-article-result__body {
+  //     page-break-inside: avoid;
+  // }
+  // .evr-carrusel.slick-initialized.slick-slider{
+  // display: none !important;
+  // }
+  .evr-carrusel__img-slide.slick-slide.slick-active{
+    display: block !important;
+   }
+  .evr-panel-data-sheet__list-container{
+      background-color: whitesmoke !important;
+      page-break-inside: avoid
+  }
+  .evr-carrusel-banner__img {
+    min-width: 100% !important;
+}
+  .evr-caminame__jssocials,
+  .evr-caminame_mobile,
+  .scrtabs-tab-container,
+  .calendar-portlet-list,
+  .calendar-portlet-mini-calendar,
+  .evr-carrusel__btn,
+  .scheduler-base-hd
+    {
+    display: none !important;
+  }
+  .scrtabs-tab-container{
+    visibility: hidden !important;
+  }
+  .evr-wrapper .hide{
+    @include page-break();
+    width: 100%;
+  }
+  .evr-panel-data-sheet__list-span {
+    page-break-inside: avoid;
+}
+.month-container {
+  position: relative;
+  @include page-break();
+}
+button.evr-btn--delete.hide, button.evr-btn--delete-pas.hide {
+  display: none !important;
+}
+
+   *{
+      .evr-carrusel-banner__logo-container{
+       background-image: url("/medioambiente/portal/o/ventana-theme/images/componente_botones_carrusel/fondo_logo.png") !important;
+       background-size: cover!important;
+       background-position: center!important;
+       .evr-carrusel-banner__title, .evr-carrusel-banner__txt  {
+           color: white !important;
+        }
+       }
+       .evr-carrusel-banner__logo-container::before {
+          background-color: rgba(8, 112, 33, 0.8) !important;
+        }
+      }
+  html{-webkit-print-color-adjust:exact;}
+
+@page
+{
+    size: auto;   /* auto is the initial value */
+
+    /* this affects the margin in the printer settings */
+    margin: 10mm 10mm 10mm 10mm;
+}
+.reflex-container {
+    max-width: 920px !important;
+}
+
+.portlet-boundary_com_liferay_calendar_web_portlet_CalendarPortlet_, .evr-panel-data-sheet:first-child {
+    page-break-before: always;
+}
+
+a[href]:after {
+    content: none !important;
+  }
+    .lfr-nav.nav.nav-tabs{
+    display: none !important;
+    }
+    @include media-query(sm) {
+      .evr-carrusel-banner {
+        &__text-container{
+          width: calc(100% - 200px)!important;
+        }
+      }
+      .evr-carrusel__player.evr-rest-content {
+        display: none;
+    }
+      .evr-panel-data-sheet__list {
+        flex-direction: row!important;
+      }
+    }
+  }
+
+  .only-print__title {
+    display: none;
+  }
+
+  

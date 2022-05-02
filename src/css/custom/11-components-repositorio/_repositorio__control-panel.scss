@@ -1,0 +1,72 @@
+.product-menu .panel-heading .panel-title > .panel-toggler:not(.collapsed) {
+	background-color:  $wf__background-color !important;
+    border-left: 4px solid  $wf__primary-color !important;
+    padding-left: 20px;
+}
+
+.product-menu .panel-heading .panel-title > .panel-toggler .site-name {
+	color: $wf__primary-color !important;
+}
+
+.product-menu .icon-sites a {
+	color: $wf__primary-color !important;
+}
+
+.product-menu a.list-group-heading, .product-menu .nav a {
+	color:  $wf__primary-color !important;
+}
+
+.product-menu .panel-body {
+	background-color: lighten($wf__success-color, 30%) !important;	
+}
+
+.product-menu .tree-container .tree-node-selected.tree-collapsed {
+	box-shadow: -2px 0 0 0 $wf__primary-color !important;
+    color: $wf__primary-color !important;
+}
+
+.product-menu .tree-pages .tree-node-selected .tree-label .layout-tree {
+	color: $wf__primary-color !important;
+}
+
+.product-menu .panel-group .panel-heading + .panel-collapse.in {
+	border-bottom: 2px solid $wf__primary-color !important;
+}
+
+.product-menu .layout-set-tabs .selected-layout-set  {
+	border-bottom: 1px solid $wf__primary-color !important;
+}
+
+.product-menu .collapse-icon-closed, .product-menu .collapse-icon-open {
+    opacity: 1 !important;
+    color: $wf__primary-color !important;
+}
+
+.product-menu .panel-heading .panel-title > .panel-toggler .category-name, .product-menu .panel-heading .panel-title > .panel-toggler .user-name  {
+	color: $wf__primary-color !important;
+}
+
+.sidenav-menu-slider .product-menu .sidebar-header {
+	background-color: $wf__primary-color !important;
+}
+
+.control-menu-level-1 {
+	background-color: $wf__primary-color !important;
+	background-image: linear-gradient(to right, $wf__primary-color, lighten($wf__primary-color, 20%)) !important;
+}
+
+.product-menu .tree-container {
+	border-left: 2px solid $wf__primary-color !important;
+}
+
+.product-menu .tree-hitarea {
+	background-color: $wf__primary-color !important;
+}
+
+.product-menu .tree-container .tree-container .tree-node-content:not(.tree-node-selected) .tree-node-hidden-hitarea:before{
+	color: $wf__primary-color !important;
+}
+
+.product-menu .tree-container .tree-container {
+    border-left: 1px dashed $wf__primary-color !important;
+}

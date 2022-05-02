@@ -1,0 +1,51 @@
+@if ($include__headings==true) {
+    /*----------------------------------------------------------------
+    # ELEMENT HEADINGS
+------------------------------------------------------------------*/
+
+    h1,
+    %h1 {
+        color: color(black);
+        font-family: $wf__font--bold;
+        line-height: rem(44);
+        font-size: rem($wf__h1);
+    }
+
+    h2,
+    %h2 {
+        color: color(black);
+        font-family: $wf__font--bold;
+        line-height: rem(44);
+        font-size: rem($wf__h2);
+    }
+
+    h3,
+    %h3 {
+        color: color(black);
+        font-family: $wf__font--bold;
+        line-height: rem(44);
+        font-size: rem($wf__h3);
+    }
+
+    h4,
+    %h4 {
+        color: color(black);
+        font-family: $wf__font--bold;
+        line-height: rem(44);
+        font-size: rem($wf__h4);
+    }
+
+    h5,
+    %h5 {
+        font-size: rem($wf__h5);
+    }
+
+    h6,
+    %h6 {
+        font-size: rem($wf__h6);
+    }
+
+    /*----------------------------------------------------------------
+    # END ELEMENT HEADINGS
+------------------------------------------------------------------*/
+}

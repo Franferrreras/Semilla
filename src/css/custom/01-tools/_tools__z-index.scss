@@ -1,0 +1,27 @@
+////
+/// Z-INDEX tool
+///
+/// Handy function to setup z-index by name 
+///
+/// if no schema is used then it will use the one from _settings.z-index.scss
+///
+/// @access public
+/// @author Dfront Specialist Team
+/// @example scss z-index : z-index(base); 
+///    z-index : 0;
+/// @group Tools
+/// @name z-index
+/// @param {String} $name - Put a value that exists at $z-index-map variable
+/// @param {Map} $schema [$z-index-map]
+/// @see $z-index-map
+/// @since version 1.0.0
+/// @return {Number} z-index value
+////
+@function z-index($name, $schema:$z-index-map) {
+  @if map-has-key($schema, $name) {
+    @return map-get($schema, $name);
+  } @else {
+    @warn "The value #{$name} is not in the map '$z-index--map'";
+    @return null;
+  }
+};

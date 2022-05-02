@@ -1,0 +1,45 @@
+.#{$ns}input-ico {
+    position: relative;
+
+    &__icon {
+        display: inline-block;
+        width: rem(15);
+        position: absolute;
+        top: rem(15);
+        left: rem(15);
+        font-size: rem(16);
+        color: color(primary,0.5);
+    }
+    &__ipt {
+        display: inline-block;
+        width: 100%;
+        height: rem(45);
+        font-size: rem(14);
+        line-height: 1.2;
+        padding: rem(8) rem(12) rem(8) rem(42);
+        color: color(black);
+        vertical-align: top;
+        border: 1px solid color(primary,0.5);
+        @include border-radius(4px,'all');
+        @include border-radius(4px,'all');
+        &:hover, &:focus, &:active {
+            border: 1px solid color(primary);
+        }
+    }
+
+    /**
+     * Modifiers
+     */
+
+    &--button-search-right{
+        .#{$ns}input-ico {
+            &__icon {
+                right: rem(15);
+                left: auto;
+            }
+            &__ipt{
+                padding: rem(8) rem(42) rem(8) rem(12);
+            }
+        }
+    }
+}

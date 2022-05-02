@@ -1,0 +1,106 @@
+////
+/// Page component
+///
+/// Pagina no encontrada
+///
+/// @access public
+/// @author Dfront Specialist Team
+/// @group components
+/// @name .#{$wf__ns}orgn
+/// @since version 1.0.0
+////
+
+.evr-page {
+    &__element {
+        display: flex;
+        background-image: url("/o/ventana-theme/images/icons/foto_tarjeta.jpg");
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__item {
+        padding: 200px 15px 400px 15px;
+        text-align: center;
+    }
+
+    &__title,
+    &__title p {
+        font-size: 29px;
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        letter-spacing: 0.3px;
+
+        &--primary {
+            margin-bottom: 34px;
+        }
+    }
+
+    &__title {
+        &:first-child {
+            margin-bottom: 54px;
+        }
+    }
+
+
+    &__txt,
+    &__txt p {
+        font-size: 21px;
+        color: white;
+        letter-spacing: 0.5px;
+        margin-bottom: 8px;
+        text-align: left;
+    }
+
+    &__txt p {
+        &:last-child {
+            margin-bottom: 28px;
+        }
+    }
+
+    &__text {
+        margin-left: 35px;
+        text-align: left;
+        margin-bottom: 28px;
+    }
+}
+
+@include media-query(sm) {
+    .evr-page {
+
+        &__title,
+        &__title p {
+            line-height: 33px;
+            margin-bottom: 48px;
+        }
+
+        &__txt {
+            &:first-child {
+                margin-top: 46px;
+            }
+        }
+
+        &__title {
+            &:first-child {
+                margin-bottom: 10px;
+            }
+        }
+
+        &__txt,
+        &__txt p {
+            text-align: center;
+        }
+
+        &--short {
+            margin-top: 72px;
+        }
+    }
+    .evr-btn {
+        &__secondary {
+            &--short {
+                margin-top: 90px;
+            }
+        }
+    }
+}

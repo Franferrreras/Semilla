@@ -1,0 +1,10 @@
+@if ($include__sidebar == true){
+
+	.sidebar-default{
+
+	}
+
+	@include media-query(md) {}
+    @include media-query(sm) {}
+
+}

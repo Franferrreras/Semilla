@@ -1,0 +1,10 @@
+@if ($include__card==true) {
+
+	.card{
+
+	}
+
+	@include media-query(md) {}
+    @include media-query(sm) {}
+
+}

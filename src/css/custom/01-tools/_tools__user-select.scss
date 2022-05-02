@@ -1,0 +1,21 @@
+////
+/// USER-SELECT tool
+///
+/// This mixin creates all compatibilities with user select property
+/// @access public
+/// @author Dfront Specialist Team
+/// @example scss @include user-select(none);
+///    -webkit-user-select: none;
+///    -moz-user-select: none;
+///    -ms-user-select: none;
+///    user-select: none;
+/// @group Tools
+/// @name user-select
+/// @param {String} $value The value for user select
+/// @since version 1.0.0
+@mixin user-select($value) {
+    -webkit-user-select: $value;
+    -moz-user-select: $value;
+    -ms-user-select: $value;
+    user-select: $value;
+}

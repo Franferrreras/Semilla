@@ -1,0 +1,165 @@
+@if ($include__carousel==true) {
+    // .carousel-inner {
+    //     margin-bottom: rem(153);
+
+    //     >.active,
+    //     >.next,
+    //     >.prev {}
+
+    //     >.active {}
+
+    //     >.next,
+    //     >.prev {}
+
+    //     >.next {}
+    //     >.prev {}
+    //     >.next.left,
+    //     >.prev.right {}
+
+    //     >.active.left {}
+    //     >.active.right {}
+    // }
+
+    // // Left/right controls for nav
+    // // ---------------------------
+    // .carousel-control {
+    //     width: rem(56);
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     font-size: rem(19);
+    //     color: color(primary);
+    //     text-shadow: none;
+    //     text-align: center;
+    //     opacity: 1;
+    //     span{
+    //         background: color(white);
+    //         width: rem(56);
+    //         height: rem(56);
+    //         border-radius: 100%;
+    //         font-size: rem(48);
+    //         line-height: rem(52);
+    //     }
+
+    //     // Set gradients for backgrounds
+    //     &.left {
+    //         background: none;
+    //         left: rem(16);
+    //         span{
+    //             padding-right: rem(3);
+    //         }
+    //     }
+    //     &.right {
+    //         background: none;
+    //         right: rem(16);
+    //         span{
+    //             padding-left: rem(3);
+    //         }
+    //     }
+    //     // Hover/focus state
+    //     &:hover,
+    //     &:focus {
+    //       color: color(primary);
+    //     }
+
+    //     // Toggles
+    //     .icon-prev,
+    //     .icon-next,
+    //     .glyphicon-chevron-left,
+    //     .glyphicon-chevron-right {}
+    //     .icon-prev,
+    //     .glyphicon-chevron-left {}
+    //     .icon-next,
+    //     .glyphicon-chevron-right {}
+    //     .icon-prev,
+    //     .icon-next {}
+
+
+    //     .icon-prev {
+    //         &:before {
+    //             /* content: '\2039'; */ // SINGLE LEFT-POINTING ANGLE QUOTATION MARK (U+2039)
+    //         }
+    //     }
+    //     .icon-next {
+    //         &:before {
+    //             /* content: '\203a'; */ // SINGLE RIGHT-POINTING ANGLE QUOTATION MARK (U+203A)
+    //         }
+    //     }
+    // }
+
+    // // Optional indicator pips
+    // //
+    // // Add an unordered list with the following class and add a list item for each
+    // // slide your carousel holds.
+    // .carousel-indicators {
+    //     z-index: 2;
+    //     margin-bottom: 0;
+    //     bottom: rem(-42);
+    //     li {
+    //       width: rem(8px);
+    //       height: rem(8px);
+    //       border-color: color(primary);
+    //     }
+    //     .active {
+    //       width: rem(8px);
+    //       height: rem(8px);
+    //       background: color(primary);
+    //     }
+    // }
+
+    // // Optional captions
+    // // -----------------------------
+    // // Hidden by default for smaller viewports
+    // .carousel-caption {}
+
+    // @include media-query(md) {}
+    // @include media-query(sm) {}
+}
+
+@if ($include__carousel-fade==true) {
+
+    // Fade transition
+
+    // .carousel-fade {
+    //     .carousel-inner {
+    //         .item {
+    //             transition-property: opacity;
+    //         }
+
+    //         .item,
+    //         .active.left,
+    //         .active.right {
+    //             opacity: 0;
+    //         }
+
+    //         .active,
+    //         .next.left,
+    //         .prev.right {
+    //             opacity: 1;
+    //         }
+
+    //         .next,
+    //         .prev,
+    //         .active.left,
+    //         .active.right {
+    //             left: 0;
+    //             transform: translate3d(0, 0, 0);
+    //         }
+    //     }
+
+    //     .carousel-control {
+    //         z-index: 2;
+    //     }
+    // }
+
+    // @include media-query(md) {}
+    // /*@include media-query(sm) {*/
+    // @media(max-width:76rem(8px)){
+    //     .carousel-inner {
+    //         margin-bottom: rem(45);
+    //         .carousel-control {
+    //             display: none;
+    //         }
+    //     }
+    // }
+}

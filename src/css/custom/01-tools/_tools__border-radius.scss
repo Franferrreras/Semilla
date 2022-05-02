@@ -1,0 +1,28 @@
+////
+/// BORDER-RADIUS tool
+///
+/// This mixin helps to develop border-radius styles
+/// @access public
+/// @author Dfront Specialist Team
+/// @example scss @include border-radius(10px);
+///     -webkit-border-radius: 10px;
+///     border-radius: 10px;
+/// @example scss @include border-radius(50%);
+///     -webkit-border-radius: 50%;
+///     border-radius: 50%;
+/// @group Tools
+/// @name border-radius
+/// @param {String} $value The value of the border-radius property.
+/// @param {String} $position [all] The path where you must find the font.
+/// @since version 1.0.0
+////
+@mixin border-radius($value, $position: all) {
+    @if $position==all {
+        -webkit-border-radius: $value;
+        border-radius: $value;
+    }
+    @else {
+        -webkit-border-#{$position}-radius: $value;
+        border-#{$position}-radius: $value;
+    }
+}

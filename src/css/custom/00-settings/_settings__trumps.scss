@@ -1,0 +1,33 @@
+
+///*-----------------------------------------------------
+///		# INCLUDE TRUMPS
+///-----------------------------------------------------*/
+
+
+// Trumps fs list
+$ns-trumps-fs					: 12,16,18,24;
+
+// Include trump for hide in base to breakpoints
+$include__trumps--hide 			: true !default;
+
+// Include trump for margin
+$include__trump--margin 		: true !default;
+
+// Trumps margin steps
+	$ns-trumps-margin-init 		: 0;
+	$ns-trumps-margin-steps		: 1;
+	$ns-trumps-margin-end		: 40;
+
+// Include trump for padding
+$include__trump--padding 		: true !default;
+
+// Trumps padding steps
+	$ns-trumps-padding-init 	: 0;
+	$ns-trumps-padding-steps	: 1;
+	$ns-trumps-padding-end 		: 40;
+
+// Include trump for text align
+$include__trump--text-align 	: true !default;
+
+// Include trump for set elements color from _settings__colors
+$include__trump--colors     	: true !default;

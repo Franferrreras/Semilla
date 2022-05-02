@@ -1,0 +1,66 @@
+@if ($include__taglib == true){
+
+  .taglib-ratings.like, .taglib-ratings.thumbs {
+
+  }
+
+  .glyphicon-thumbs-up, .taglib-ratings .rating-element {
+    /*font-family: $wf__font--default;*/
+
+    &::before {
+      /*vertical-align: middle;
+      background: transparent url(#{$wf__image-path-icons}like.svg) no-repeat center center;
+      display: inline-block;
+      background-size: contain;
+      text-indent: rem(-9999);
+      content:"";
+      font-size: 0px;*/
+    }
+
+    &:hover{
+      
+    }
+  }
+
+  .lfr-discussion-controls .reply-action{
+
+    a{
+
+      &:before {
+        /*vertical-align: middle;
+        background: transparent url(#{$wf__image-path-icons}chat.svg) no-repeat center center;
+        display: inline-block;
+        background-size: contain;
+        text-indent: -9999px;
+        content:"";
+        display: inline-block;*/
+      }
+
+      &:hover{
+        
+      }
+    }
+  }
+
+
+  .taglib-discussion {
+      .subscribe-link {
+      }
+      a.author-link + .small{
+      }
+    }
+
+
+  /* EXPLORER 11 */
+
+  .ie {
+    .rating-input-container{
+
+    }
+  }
+
+
+  @include media-query(md) {}
+  @include media-query(sm) {}
+
+}

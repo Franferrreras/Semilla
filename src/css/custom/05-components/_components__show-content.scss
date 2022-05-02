@@ -1,0 +1,65 @@
+/*------------------------------------
+        # COMPONENT HIGHLIGHTED
+	------------------------------------*/
+
+.evr-show-content{
+	position: relative;
+    z-index: 1;
+	margin-bottom:rem(25);
+	background-color: color(primary);
+	&__title{
+		margin: 0;
+	}
+	&__link{
+		display:block;
+		padding: rem(20) rem(10);
+		font-size: rem(22);	
+		font-weight: bold;	
+		line-height: 28px;
+		color:color(white)!important;
+		text-align: center;
+		background-position: center;
+		&:hover,&:focus{
+			color:color(white);
+			text-decoration: none;
+			background-color: color(primary_hover);
+			background-position: center;
+		}
+	}
+	&__button{
+	    position: relative;
+        z-index: 1;
+        //height: rem(25);
+        background-color: color(primary)!important;
+	}
+}
+.fb-page.fb_iframe_widget.fb_iframe_widget_fluid {
+    width: 100%;
+    max-width: 100%;
+}
+.row-fluid.text-center {
+    width: 100%;
+    max-width: 100%;
+}
+@include media-query(lg) {
+	.evr-show-content{
+		margin-bottom: rem(30);
+		margin-top: rem(30);
+		&__link{
+			padding: rem(16) rem(2);
+			font-size: rem(16);
+			line-height: 21px;
+		}
+	}
+	
+}
+
+@include media-query(sm) {
+	.evr-show-content{
+		&__link{
+			font-size: rem(12);
+			line-height: 15px;
+			padding: rem(16) rem(10);
+		}
+	}
+}

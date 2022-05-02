@@ -1,0 +1,85 @@
+////
+/// Tabs component
+///
+/// Description of the component
+///
+/// @access public
+/// @author Dfront Specialist Team
+/// @group components
+/// @name .#{$wf__ns}example
+/// @since version 1.0.0
+////
+
+.#{$ns}tabs{
+
+    &__nav{
+        height: 100%;
+    }
+    
+    &__nav-lnk{
+        color: color(grey-5) !important;
+        height: 100%;
+        font-weight: bold;
+        font-size: rem(14);
+        line-height: rem(18);
+        font-family: $wf__font--assistant-bold;
+
+        .numberCircle {
+            padding: rem(8) rem(12);
+            margin-left: rem(2);
+        }
+        &--circle {
+            content: "";
+            display: inline-block;
+            width: rem(16);
+            height: rem(16);
+            background: green;
+            border-radius: 50%;
+            margin-left: 2px;
+            vertical-align: top;
+        }
+    }
+    .scrtabs-tabs-movable-container, 
+    .nav-tabs{
+        height: 100%;
+    }
+
+    .nav-tabs>li{
+        border: 1px solid #E4E4E4;
+        margin-right: 0 !important;
+    }
+    .nav-tabs>li.active>a {
+        background-color: color(grey-20);
+        border-bottom: 3px solid color(primary);
+        color: color(primary) !important;
+        padding: rem(15) !important;
+        margin-right: 0;
+    }
+
+    .scrtabs-tab-scroll-arrow{
+        color: color(primary) !important;
+        height: rem(64) !important;
+        padding-top: 18px !important;
+        border: 1px solid transparent !important;
+    }
+
+    .scrtabs-tabs-fixed-container {
+        height: rem(64) !important;
+    }
+    .scrtabs-tab-container{
+        height: rem(64) !important;
+    }
+    .nav > li > a{
+        background-color: #FCFBFC;
+    }
+    .nav > li > a, .nav > li > span, .nav-heading > a, .nav-heading > span {
+        padding: rem(15) !important;
+    }
+}
+@include media-query(sm){
+    .#{$ns}tabs{
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}

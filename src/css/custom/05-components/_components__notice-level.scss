@@ -1,0 +1,92 @@
+////
+/// Meteo Time component
+///
+/// Description of the component
+///
+/// @access public
+/// @author Dfront Specialist Team
+/// @group components
+/// @name .#{$wf__ns}example
+/// @since version 1.0.0
+////
+.#{$ns}notice-level{
+        display: none;
+        position: absolute;
+        right: rem(-88);
+        top: rem(35);
+        width: rem(200);
+        z-index: 2;
+        background-color: white;
+        @include box-shadow("0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2)");
+        @include border-radius(5px);
+        &:after{
+            content: "";
+            position: absolute;
+            height: 0;
+            width: 0;
+            bottom: 100%;
+            left: 50%;
+            border: solid transparent;
+            pointer-events: none;
+            border-color: rgba(255, 255, 255, 0);
+            border-bottom-color: #ffffff;
+            border-width: rem(10);
+            margin-left: rem(-10);
+        }
+
+        &__btn{
+            display: block;
+            cursor: pointer;
+            margin: rem(10) rem(15) 0 rem(15);
+            margin-left: auto;
+            &:hover,&:focus,&:active {
+                border: 1px solid color(primary);
+            }
+        }
+
+        &__wrapper{
+            padding: 0 rem(15) rem(10) rem(15);
+            &--border-top{
+                border-top: 1px solid color(green-2);
+            }
+            &--padding{
+                padding: rem(15);
+            }
+        }
+
+        &__title{
+            display: block;
+            font-size: rem(12);
+            font-weight: 600;
+            line-height: rem(18);
+            &:before{
+                content: "";
+                -webkit-border-radius: 28;
+                -moz-border-radius: 28;
+                border-radius: rem(28);
+                font-size: rem(8);
+                background-color: color(yellow-1);
+                padding-left: rem(10);
+                margin: 0 rem(10);
+                &:last-child{
+                    background-color: color(orange-1);
+                }
+            }
+        }
+        
+        &__txt{
+            display: block;
+            font-size: rem(16);
+            font-weight: 300;
+            line-height: rem(18);
+            padding: rem(4) rem(30);
+        }
+}
+
+@include media-query(sm){
+    .#{$ns}notice-level{
+        right: rem(-45);
+        top: rem(33);
+        width: rem(163);
+    }
+}

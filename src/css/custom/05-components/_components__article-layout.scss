@@ -1,0 +1,64 @@
+.#{$ns}article-layout {
+    margin-bottom: rem(10);
+    &__section {
+        margin-bottom: rem(30);
+        padding-bottom: rem(30);
+        border-bottom: 1px solid color(grey-1);
+    }
+    &__section-title {
+        display: block;
+        font-size: rem(14);
+        line-height: 1.2;
+        font-weight: bold;
+        margin-bottom: rem(20);
+    }
+    &__title {
+        display: block;
+        font-size: rem(24);
+        line-height: rem(35);
+        font-weight: bold;
+        margin-bottom: rem(20);
+    }
+    &__time {
+        display: block;
+        font-size: rem(20);
+        line-height: 1.2;
+        font-weight: 300;
+        color: color(grey-3);
+        margin-bottom: rem(20);
+    }
+    &__social {
+        display: block;
+        margin-bottom: rem(20);
+    }
+    &__paragraph {
+        display: block;
+        width: 100%;
+        margin-bottom: rem(20);
+        /*         text-align: justify; */
+    }
+    &__paragraph-title {
+        display: block;
+        font-size: rem(14);
+        line-height: 1.2;
+        font-weight: bold;
+        margin-bottom: rem(10);
+    }
+    &__paragraph-fig {
+        width: 100%;
+        margin-bottom: rem(10);
+        overflow: hidden;
+        background-color: color(grey-8);
+    }
+    &__txt {
+        display: block;
+        margin-bottom: rem(8);
+        font-size: rem(14);
+        line-height: rem(25);
+        color: color(grey-9);
+    }
+    &__tags {
+        display: block;
+        width: 100%;
+    }
+}

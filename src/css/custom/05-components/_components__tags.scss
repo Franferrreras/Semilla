@@ -1,0 +1,44 @@
+.#{$ns}tags {
+    &__list {
+        display: block;
+        margin: 0;
+        font-size: 0;
+    }
+    &__item {
+        display: flex;
+        font-size: 0;
+        margin: 0 rem(18) rem(12) 0;
+    }
+    &__icon {
+        display: inline-block;
+        width: rem(14);
+        margin-top: rem(2);
+        margin-right: rem(7);
+        font-size: rem(16);
+        color: color(primary);
+        vertical-align: top;
+    }
+    &__body {
+        display: inline-block;
+        width: auto;
+    }
+    &__txt {
+        position: relative;
+        font-size: rem(14);
+        line-height: 1.2;
+        font-weight: bold;
+        color: color(primary);
+        &:after {
+            content: ".";
+            display: inline-block;
+            padding: 0 rem(5);
+            top: rem(-3);
+            position: relative;
+        }
+        &:last-child {
+            &:after {
+                display: none;
+            }
+        }
+    }
+}

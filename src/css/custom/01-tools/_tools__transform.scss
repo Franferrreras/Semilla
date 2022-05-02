@@ -1,0 +1,20 @@
+////
+/// TRANSFORM tool
+///
+/// This mixin creates all compatibilities with transform property
+/// @access public
+/// @author Dfront Specialist Team
+/// @example scss @include transform(rotate(90deg) translate(50%,50%));
+///    -webkit-transform: rotate(90deg) translate(50%,50%);
+///    -ms-transform: rotate(90deg) translate(50%,50%);
+///    transform: rotate(90deg) translate(50%,50%);
+/// @group Tools
+/// @name transform
+/// @param {String} $val Value of the transform.
+/// @since version 1.0.0
+////
+@mixin transform($val) {
+    -webkit-transform: $val;
+    -ms-transform: $val;
+    transform: $val;
+}

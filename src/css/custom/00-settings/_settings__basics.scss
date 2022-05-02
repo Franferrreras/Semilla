@@ -1,0 +1,63 @@
+///*-------------------------------------------------------------------------
+//   #SETTINGS CONFIG
+//--------------------------------------------------------------------------*/
+
+//	CONTENT THIS FILE:
+//		# NAMESPACE
+//      # CONFIG - FONTS
+//		# BASIC VALUE FOR PROJECT
+//      # CONFIG - SETTINGS
+
+
+
+///*-------------------------------------------------------------------------
+//   	# NAMESPACE
+//--------------------------------------------------------------------------*/
+$ns				:   evr-;
+
+
+
+///*-----------------------------------------------------
+///     # CONFIG - FONTS
+///-----------------------------------------------------*/
+$ns-font-default				: 'OpenSans', Helvetica, sans-serif;
+$ns-font-alternative			: 'BillyOhio', verdana;
+$ns-font-assistant              : 'Assistant';
+
+
+
+///*-------------------------------------------------------------------------
+//   	# BASIC VALUE FOR PROJECT
+//--------------------------------------------------------------------------*/
+
+$ns-font-family          :	$ns-font-default;
+$ns-font-size            :	14;
+$ns-line-height          :	$ns-font-size + 4;
+$ns-background-color     :	white;
+$ns-path-font            :	"../assets/fonts/";
+$ns-path-img             :	"../assets/img/";
+
+///*-------------------------------------------------------------------------
+//   	# BASIC COLORS FOR PROJECT
+//--------------------------------------------------------------------------*/
+
+$wf__background-color      :    #fff;
+$wf__bg_section-color      :    #f3f7fa;
+
+
+
+$wf__primary-color         :    #087021;
+$wf__primary-color-hover   :    #094525;
+$wf__secondary-color       :    #000000;
+$wf__therciary-color       :    #515151;
+
+
+/*messages*/
+$wf__error-color           :    #d06575;
+$wf__warning-color         :    #cfa962;
+$wf__info-color            :    #6fadd3;
+$wf__success-color         :    #85bd6e;
+
+/*text */
+$wf__text-default-color    :    rgb(100,100,100);
+$wf__text-twitter          :    #00ACED;

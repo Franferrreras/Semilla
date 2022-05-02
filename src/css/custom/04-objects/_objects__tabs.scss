@@ -1,0 +1,48 @@
+@if ($include__tabs == true){
+
+    .tabs{
+        .nav-tabs {
+
+            > li {
+
+                &[class*='col-'] {
+
+                    > a {
+
+                        &:hover, &:focus{
+
+                        }
+                    }
+
+                    &.active{
+                        a{
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+            &.nav-tabs-default{
+
+                li{
+
+                }
+            }
+        }
+
+
+        .nav-tabs.nav-justified {
+            > li > a {
+
+            }
+        }
+
+    }
+
+    @include media-query(md) {}
+    @include media-query(sm) {}
+
+}

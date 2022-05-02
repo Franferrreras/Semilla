@@ -1,0 +1,125 @@
+////
+/// Perfil component
+///
+/// Description of the component
+///
+/// @access public
+/// @author Dfront Specialist Team
+/// @group components
+/// @name .#{$wf__ns}Perfil
+/// @since version 1.0.0
+////
+
+.evr-perfil {
+    &__container {
+        padding: 16px 35px;
+        box-shadow: 3px 2px 11px -4px rgba(196, 194, 196, 1);
+        margin: rem(25) auto;
+    }
+
+    &__confi {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__elements {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__banner {
+        width: 55%;
+        display: flex;
+        flex-wrap: wrap;
+        &:first-child {
+            margin-right: rem(15);
+        }
+        &--primary {
+            width: 45%;
+        }
+    }
+
+    &__item {
+        padding: rem(13);
+        width: 30%;
+        // height: 68px;
+        // padding-right: 36px;
+        margin-right: 17px;
+        margin-bottom: 16px;
+        border: 1px solid grey;
+        border-radius: 4px;
+        align-items: center;
+    }
+
+    &__text {
+        padding-left: 18px;
+        margin-top: 13px;
+    }
+
+    &__txt {
+        font-size: rem(14);
+        margin: auto;
+        line-height: 19px;
+
+        &--bold {
+            font-weight: bold;
+            letter-spacing: 1.2px;
+        }
+    }
+
+    &__figure {
+        align-self: center;
+        margin-right: 20px;
+        &--image {
+            border-radius: 50%;
+            // width: 130px;
+            height: 140px;
+            min-width: 130px;
+            min-height: 140px;
+            background: grey;
+            background-color: color(grey-2);
+        }
+    }
+
+    &__number {
+        font-weight: bold;
+        font-size: 22px;
+        margin-right: 14%;
+        padding-top: 0;
+    }
+}
+@include media-query(md) { 
+    .evr-perfil {
+        &__banner {
+            width: 70%;
+            &--primary {
+                width: 30%;
+            }
+        }
+        &__text {
+            padding-left: 0;
+        }
+        
+    }
+}
+@include media-query(sm) { 
+    .evr-perfil {
+        &__elements {
+            flex-direction: column;
+        }
+        &__banner {
+            width: 100%;
+            &:first-child {
+                margin-bottom: rem(25);
+                margin-right: 0;
+            }
+        }
+        &__item {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+}
+
+

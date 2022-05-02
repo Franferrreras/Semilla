@@ -1,0 +1,19 @@
+////
+/// Phototitle component
+///
+/// Description of the component
+///
+/// @access public
+/// @author Dfront Specialist Team
+/// @group components
+/// @name .#{$wf__ns}phototitle
+/// @since version 1.0.0
+////
+.#{$ns}phototitle {
+    &__item {
+        display: flex;
+    }
+    &__title {
+        font-family: $ns-font-alternative;
+    }
+}

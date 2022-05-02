@@ -1,0 +1,41 @@
+@if ($include__navigation == true){
+
+    #navigation {
+
+        > ul {
+
+
+            > li > a{
+                
+
+                span:first-child {
+
+                }
+
+                svg{
+
+                }
+
+                &:hover, &.active{
+                    svg{
+
+                    }
+                }
+            }
+
+        }
+
+    }
+
+
+    @include media-query(md) {}
+    @include media-query(sm) {}
+
+}
+
+
+
+
+
+
+

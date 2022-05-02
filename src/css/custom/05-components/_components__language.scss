@@ -1,0 +1,132 @@
+/*------------------------------------
+        # COMPONENT LANGUAGE
+    ------------------------------------*/
+
+.evr-language{
+	display: inline-block;
+    margin-left: rem(10);
+    vertical-align: middle;
+	.portlet-title-text{
+		position: absolute;
+		left: -9999px;
+		font-size: 0;
+		opacity: 0;
+	}
+	.portlet{
+		margin-bottom: 0;
+	}
+	.portlet-content{
+		padding: 0;
+		border: 0;
+		background: none;
+		word-wrap: normal;
+	}
+	.dropdown-toggle{
+		display: block;
+		// margin: rem(4) 0 0;
+		font-size: rem(18);
+		line-height: rem(23);
+		font-weight: bold;
+		padding: 0;
+		color: color(white);
+		border: 0;
+		background: none;
+		border-radius: 0;
+		box-shadow: none;
+		&:hover,&:focus{
+			color: color(white);
+			background:none;
+			border:none;
+		}
+	}
+	&__list-items{
+		left: inherit;
+		right: 0;
+	}
+	.dropdown.open{
+		>.btn-default.dropdown-toggle{
+			color: color(white);
+			background:none;
+			border:none;
+		}
+		.caret{
+			transform: rotate(180deg);
+		}
+	}
+	&__list-items{
+		margin: 0 auto 0;
+		padding: 0;
+		max-height: inherit;
+		background-color: white;
+		z-index: 1;
+		border: 0;
+		border-radius: 0;
+		box-shadow: 0 2px 4px 0 color(black, 0.5);
+	}
+	&__item{
+		border-bottom: 1px solid color(grey-6);
+	}
+	&__btn{
+		display: block;
+		width: 100%;
+		padding: rem(10) rem(7) rem(9);
+		font-size: rem(16);
+		font-weight: bold;
+		color: color(primary);
+		text-transform: uppercase;
+		border: 0;
+		background: none;
+		text-align: left;
+		&:hover,&:focus{
+			text-decoration:underline;
+		}
+	}
+	/*.language-entry-short-text{
+		display: block;
+		margin-top: rem(4);
+		font-weight: bold;
+		padding: 0;
+		color: color(white);
+		text-align: right;
+	}*/
+}
+.evr-logout-section {
+    display: inline-block;
+}
+.evr-backButton {
+	margin-left: 0.625rem;
+}
+
+@include media-query(lg) {
+	.evr-language{
+		.dropdown-toggle{
+			font-size: rem(15);
+    		line-height: 19px;
+		}
+		&__btn{
+			font-size: rem(15);
+			line-height: 19px;
+		}
+		.dropdown-backdrop{
+			display:none;
+		}
+	}
+}
+
+@include media-query(sm) {
+	.evr-language{
+		margin-left: rem(21);
+		.dropdown-toggle{
+			margin-top: 0;
+			font-size: rem(10);
+			line-height: 13px;
+		}
+		&__btn{
+			font-size: rem(10);
+			line-height: 13px;
+		}
+	}
+	.evr-logout-section {
+		margin-left: 20px;
+	}
+}

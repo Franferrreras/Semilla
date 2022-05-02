@@ -1,0 +1,33 @@
+.#{$ns}breadcrumbs {
+    margin-bottom: rem(20);
+
+    &__list {
+        display: block;
+        width: 100%;
+        font-size: 0;
+    }
+    &__item {
+        display: inline;
+    }
+    &__link {
+        font-size: rem(14);
+        line-height: rem(25);
+        font-weight: bold;
+        color: color(primary);
+        &:hover,&:focus,&:active {
+            color: color(primary);
+            text-decoration: underline;
+        }
+        &:after {
+            content: "/";
+            display: inline-block;
+            font-size: rem(14);
+            margin: 0 rem(12);
+        }
+    }
+    &__txt {
+        font-size: rem(14);
+        line-height: 1.2;
+        color: color(grey-3);
+    }
+}

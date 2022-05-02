@@ -1,0 +1,35 @@
+@if ($include__label == true){
+
+    label{
+
+    }
+
+    .has-error .help-block {
+        
+    }
+
+    .has-error .control-label,
+    .has-error.radio label,
+    .has-error.checkbox label,
+    .has-error.radio-inline label,
+    .has-error.checkbox-inline label {
+        
+    }
+
+    .form-inline .input-group{
+
+        label{
+
+        }
+
+        .data{
+
+        }
+    }
+
+
+    @include media-query(md) {}
+    @include media-query(sm) {}
+}
+
+

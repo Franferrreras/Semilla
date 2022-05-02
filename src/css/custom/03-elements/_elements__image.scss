@@ -1,0 +1,23 @@
+@if ($include__image==true) {
+
+/*------------------------------------
+    # ELEMENT IMAGE
+------------------------------------*/
+
+img {
+	max-width 		: 100%;
+	font-style 		: italic;
+	vertical-align 	: middle;
+}
+
+/* img, */
+/* img[width], */
+/* img[height] { */
+/* 	max-width 		: none; */
+/* 	width			: 100%; */
+/* } */
+
+/*------------------------------------
+    # END ELEMENT IMAGE
+------------------------------------*/
+}

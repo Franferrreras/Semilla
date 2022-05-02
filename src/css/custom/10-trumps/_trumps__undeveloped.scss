@@ -1,0 +1,24 @@
+/* BUSCADOR DOCKBAR */
+.evr-header__container div.evr-search {
+    display: inline-flex;
+}
+
+/* LOGIN USER DOCKBAR */
+.evr-header__user a.user {
+    display: none;
+}
+
+/* LOGOUT USER DOCKBAR */
+.evr-header__user a.logout {
+    display: none;
+}
+
+/* BOTON VERSION IMPRIMIBLE FICHA ESPACIO Y EQUIPAMIENTO */
+.evr-download .reflex-grid .reflex-col-xs-12:first-child {
+    display: none;
+}
+
+/* MENSAJES INFO (PROVISIONAL PARA NODE INFO) */
+body .alert.alert-info {
+    display: none;
+}

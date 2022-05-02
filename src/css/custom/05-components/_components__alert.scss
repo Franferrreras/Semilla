@@ -1,0 +1,56 @@
+.evr-alert {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    &__content {
+        margin: 0px auto;
+        margin-top: rem(120);
+        position: relative;
+        max-width: rem(500);
+        min-height: rem(250);
+        border-radius: 4px;
+        background-color: color(white);
+        box-shadow: 0 2px 5px color(grey-7);
+        padding: rem(24);
+    }
+
+    &__title {
+        margin-top: 0;
+        font-size: rem(20);
+        line-height: rem(25);
+        font-weight: bold;
+        color: color(primary);
+        border-bottom: 1px solid color(primary);
+        margin-bottom: rem(18);
+        padding-bottom: rem(8);
+    }
+
+    &__close {
+        position: absolute;
+        width: 2.5rem;
+        top: rem(10);
+        right: rem(10);
+        line-height: 0;
+        opacity: 0.6;
+        &:hover, &:focus {
+            opacity: 1;
+        }
+    }
+
+    &__overlay {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: calc(100% + 30px);
+        margin: 0 rem(-15);
+        min-height: 100%;
+        background-color: #777777;
+        opacity: 0.7;
+        z-index: 1;
+    }
+}
+

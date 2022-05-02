@@ -1,0 +1,26 @@
+@if ($include__forms-display == true){
+    .portlet-forms-display{
+        .ddl-form-builder-app{
+            /* max-width: rem(550);
+            margin: 0 auto;
+            clear: both;
+            padding-left: 0;
+            padding-right: 0; */
+
+            .lfr-ddm-form-page > .row {
+                /* margin-left: -15px;
+                margin-right: -15px; */
+            }
+        }
+
+        .lfr-alert-container {
+            /* display: flex;
+            flex-direction: row;
+            background: red;
+            height: 100%;
+            width: 100%;
+            justify-content: center; */
+        }
+
+    }
+}

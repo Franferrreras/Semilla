@@ -1,0 +1,81 @@
+{
+  "_args": [
+    [
+      "jquery-bootstrap-scrolling-tabs@2.6.1",
+      "C:\\Dev\\Projects\\cmaot\\LIFERAY\\cmaot-workspace\\themes\\ventana-theme"
+    ]
+  ],
+  "_development": true,
+  "_from": "jquery-bootstrap-scrolling-tabs@2.6.1",
+  "_id": "jquery-bootstrap-scrolling-tabs@2.6.1",
+  "_inBundle": false,
+  "_integrity": "sha512-8Kbf3co6w7IgKLKLQLGp7wZfBZ5g/UC6MYdbhQHCBAkwz48ryerD3nabbB3cNUysrZY4ftbfxPiR69z/Qa2yXw==",
+  "_location": "/jquery-bootstrap-scrolling-tabs",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "jquery-bootstrap-scrolling-tabs@2.6.1",
+    "name": "jquery-bootstrap-scrolling-tabs",
+    "escapedName": "jquery-bootstrap-scrolling-tabs",
+    "rawSpec": "2.6.1",
+    "saveSpec": null,
+    "fetchSpec": "2.6.1"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jquery-bootstrap-scrolling-tabs/-/jquery-bootstrap-scrolling-tabs-2.6.1.tgz",
+  "_spec": "2.6.1",
+  "_where": "C:\\Dev\\Projects\\cmaot\\LIFERAY\\cmaot-workspace\\themes\\ventana-theme",
+  "author": {
+    "name": "Mike Jacobson",
+    "email": "michaeljjacobson1@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/mikejacobson/jquery-bootstrap-scrolling-tabs/issues"
+  },
+  "dependencies": {
+    "bootstrap": "^3.1.1",
+    "jquery": ">=1.9.0 <4.0.0"
+  },
+  "description": "jQuery plugin for scrollable Bootstrap Tabs",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-header": "^1.8.8",
+    "gulp-include": "^2.3.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.0",
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1",
+    "run-sequence": "^1.2.2"
+  },
+  "homepage": "https://github.com/mikejacobson/jquery-bootstrap-scrolling-tabs",
+  "ignore": [
+    ".gitignore",
+    "bower.json",
+    "README.md",
+    "*.scss",
+    "config.rb"
+  ],
+  "keywords": [
+    "jquery",
+    "bootstrap",
+    "tabs",
+    "scrolling",
+    "scrollable"
+  ],
+  "license": "MIT",
+  "main": "./dist/jquery.scrolling-tabs.js",
+  "name": "jquery-bootstrap-scrolling-tabs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikejacobson/jquery-bootstrap-scrolling-tabs.git"
+  },
+  "version": "2.6.1"
+}

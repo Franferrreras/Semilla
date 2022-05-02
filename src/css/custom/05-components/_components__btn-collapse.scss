@@ -1,0 +1,36 @@
+.#{$ns}btn-collapse {
+
+    &__txt {
+        display: inline-block;
+        font-size: rem(13);
+        font-weight: 600;
+        line-height: rem(18);
+        color: color(primary);
+        vertical-align: top;
+
+        &:before {
+            content: "";
+            display: inline-block;
+            width: rem(10);
+            height: rem(10);
+            margin: rem(2) rem(8) 0 0;
+            vertical-align: top;
+            border-right: 2px solid color(primary);
+            border-bottom: 2px solid color(primary);
+            @include transform(rotate(45deg));
+        }
+    }
+
+    /**
+     * Modifier
+     */
+
+    &--open {
+        .#{$ns}btn-collapse__txt {
+            &:before {
+                margin: rem(7) rem(8) 0 0;
+                @include transform(rotate(-135deg));
+            }
+        }
+    }
+}

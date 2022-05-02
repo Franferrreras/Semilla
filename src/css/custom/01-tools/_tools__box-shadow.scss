@@ -1,0 +1,23 @@
+////
+/// BOX-SHADOW tool
+///
+/// This mixin helps to develop box-shadow styles
+/// @access public
+/// @author Dfront Specialist Team
+/// @example scss @include box-shadow(0 0 10px black);
+///     -webkit-box-shadow: 0 0 10px black;
+///     -ms-box-shadow: 0 0 10px black;
+///     box-shadow: 0 0 10px black;
+/// @group Tools
+/// @name box-shadow
+/// @param {String} $val The value of the box-shadow property.
+/// @since version 1.0.0
+////
+@mixin box-shadow($val) {
+    @if type-of($val) == string {
+        $val: unquote($val);
+    }
+    -webkit-box-shadow: $val;
+    -ms-box-shadow: $val;
+    box-shadow: $val;
+}

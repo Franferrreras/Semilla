@@ -1,0 +1,119 @@
+.evr-basic-content {
+    ol {
+        list-style-type: none;
+        margin-bottom: rem(25);
+        counter-reset: li;
+
+        li {
+            counter-increment: li;
+
+            &:before {
+                content: counter(li);
+                color: red;
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        margin-bottom: rem(25);
+
+        li {
+            &:before {
+                content: ">>";
+                position: absolute;
+                color: color(primary);
+                font-size: 16px;
+                left: 0;
+            }
+        }
+    }
+
+    h1 {
+        color: color(primary);
+    }
+
+    h2 {
+        color: color(primary);
+    }
+
+    li {
+        position: relative;
+        padding-bottom: rem(5);
+        margin-bottom: rem(5);
+        padding-left: rem(20);
+        padding-top: rem(5);
+        color: color(black);
+        font-family: $wf__font--default;
+        font-size: rem(16);
+
+        &:before {
+            content: ">>";
+            position: absolute;
+            color: red;
+            font-size: 16px;
+            left: 0;
+        }
+    }
+
+    table {
+        background-color: color(grey-4);
+        margin-bottom: rem(25);
+
+        thead tr td {
+            border: none;
+            border-bottom: 1px solid black;
+            padding: rem(15) rem(10) rem(15) rem(10);
+            font-weight: bold;
+            font-family: $wf__font--default;
+            color: color(therciary);
+            font-size: rem(16);
+        }
+
+        tbody tr td {
+            border: none;
+            padding: rem(15) rem(10) rem(15) rem(10);
+            font-family: $wf__font--default;
+        }
+
+    }
+
+    cite {
+        font-size: rem(15);
+        color: color(secondary);
+        border-left: 6px solid color(primary);
+        padding-left: rem(10);
+        margin-left: 10%;
+        font-weight: 600;
+        font-style: normal;
+        display: block;
+    }
+}
+
+.lighter {
+    .evr-main-title-generic {
+        font-family: $wf__font--light !important;
+    }
+    .evr-main-subtitle-generic{
+        
+    }
+}
+
+.has-control-menu .affix :target::before,
+.has-control-menu #wrapper :target::before {
+    content: '';
+    display: block;
+    height: 200px !important;
+    margin-top: -200px !important;
+}
+
+@include media-query(sm) {
+
+    .has-control-menu .affix :target::before,
+    .has-control-menu #wrapper :target::before {
+        height: 68px !important;
+        margin-top: 68px !important;
+    }
+}

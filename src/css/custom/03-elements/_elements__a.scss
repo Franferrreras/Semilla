@@ -1,0 +1,51 @@
+@if ($include__a==true) {
+/*------------------------------------
+    # ELEMENT A
+------------------------------------*/
+    $link-color: color(black);
+    $link-hover-color: color(secondary);
+    $link-hover-color-therciary: color(therciary);
+
+    a {
+        @include transition(all 0.5s ease);
+        cursor: pointer;
+        /*font-family: $wf__font--default;*/
+        color: $link-color;
+        /*font-size: rem(14);
+        line-height: rem(24);*/
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+            .taglib-text{
+                text-decoration: none;
+            }
+        }
+    //        &:focus, &:active {
+    //     outline: 0;
+    // }
+    &:hover, &:focus, &:active {
+        color: color(primary_hover);
+    }
+
+        * {
+            @include transition(all 0.5s ease);
+        }
+
+        .arrow-right {
+            &:after {
+                content: "\f105";
+                width: rem(20);
+                height: rem(20);
+                display: inline-block;
+                font-family: $wf__font--fa;
+                font-size: 1.1em;
+                margin-left: rem(3);
+                vertical-align: rem(-2);
+            }
+        }
+    }
+
+/*------------------------------------
+    # END ELEMENT A
+------------------------------------*/
+}

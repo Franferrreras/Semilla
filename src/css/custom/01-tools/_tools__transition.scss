@@ -1,0 +1,20 @@
+////
+/// TRANSITION tool
+///
+/// This mixin creates all compatibilities with transition property
+/// @access public
+/// @author Dfront Specialist Team
+/// @example scss @include transition(width .35s ease-in-out);
+///    -webkit-transition: width .35s ease-in-out;
+///    -ms-transition: width .35s ease-in-out;
+///    transition: width .35s ease-in-out;
+/// @group Tools
+/// @name transition
+/// @param {String} $val Value of the transition.
+/// @since version 1.0.0
+////
+@mixin transition($val) {
+    -webkit-transition: $val;
+    -ms-transition: $val;
+    transition: $val;
+}

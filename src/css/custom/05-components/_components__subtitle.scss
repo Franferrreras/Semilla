@@ -1,0 +1,31 @@
+/*------------------------------------
+        # COMPONENT SUBTITLE
+	------------------------------------*/
+	
+.evr-subtitle{
+	position: relative;
+	margin: rem(7) auto rem(23);
+	width: rem(322);
+	color: color(grey-12);	
+	font-family: opensans;
+	font-size: rem(18);
+	line-height: 24px;
+	text-align: center;
+}
+
+@include media-query(lg) {
+	.evr-subtitle{
+		margin-top: rem(5);
+		margin-bottom: rem(24);
+		width: rem(253);
+		font-size: rem(16);	
+		line-height: 20px;
+	}
+}
+
+@include media-query(sm) {
+	.evr-subtitle{
+		margin-bottom: rem(13);
+	}
+}
+

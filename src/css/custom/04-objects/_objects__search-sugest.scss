@@ -1,0 +1,50 @@
+$resta : rem(100);
+
+@if ($include__search-sugest == true){
+
+    input[type="text"]:focus + .search-sugest{}
+
+    .search-sugest, .yui3-aclist {
+        padding: rem(8) rem(10);;
+        position: absolute !important;
+        width: 100% !important;
+        box-shadow: 0 rem(5) rem(9) rem(-1) rgba(0,44,88,0.1);
+        z-index: 3;
+        overflow: hidden;
+        left: 0;
+
+
+        &--list{
+            padding: 0;
+            margin:0;
+        }
+
+        &--item, &-item {
+
+            &-hover{
+
+            }
+            &-active{
+
+            }
+        }
+        &--link{
+
+            &:hover{
+
+            }
+        }
+
+
+        &-content {
+            border: none !important;
+            box-shadow: none !important;
+        }
+
+    }
+
+    @include media-query(md) {}
+    @include media-query(sm) {}
+
+}
+

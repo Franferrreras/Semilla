@@ -1,0 +1,97 @@
+@if ($include__navbar == true){
+
+
+	.navbar{
+		.form-group{
+			margin-bottom: 0;
+		}
+
+		.lfr-ddm-field-group {
+		    margin-bottom: inherit;
+		}
+
+		.navbar-nav{
+			display: flex;
+			> li {
+			    flex: 1 1 auto;
+			    text-align: center;
+			    a{
+
+			    	&:hover, &:focus , &:active{
+
+			    	}
+			    }
+			    &.active {
+
+					> a{
+
+					}
+				}
+
+				.dropdown-menu {
+
+				    > li{
+				    	> a{
+
+						}
+				    }
+				    
+				}
+			}
+		}
+
+		.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+
+		}
+
+
+		.navbar-header.selectpicker{
+			.navbar-toggle{
+
+
+				.icon-angle-down{
+					width: rem(20);
+					height: rem(20);
+					vertical-align: top; 
+					position: absolute;
+					right: rem(4);
+					color: color(primary);					
+					display: flex;
+					justify-content: space-between;
+					&:before{
+						width: inherit;
+						height: inherit;
+						vertical-align: top;
+						font-size: rem(26);
+						float: none;
+						padding: 0;
+						line-height: inherit;
+						vertical-align: top;
+						margin-top: 0;
+						position: relative;
+						right: rem(4);
+						transform: rotate(180deg);
+						transition: all 0.5s ease;
+					}
+				}
+
+				&.collapsed{
+					.icon-angle-down{
+						&:before{
+							transform: rotate(0);
+						}
+					}
+				}
+			}
+
+			& + .navbar-collapse{
+				padding: 0;
+			}
+		}
+		
+	}
+
+	@include media-query(md) {}
+    @include media-query(sm) {}
+
+}

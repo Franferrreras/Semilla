@@ -1,0 +1,467 @@
+.portlet-boundary_googlemaps_ {
+    position: relative;
+    margin-top: 82px;
+
+    section.portlet {
+        margin-bottom: 0 !important;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: -15px;
+        top: 0;
+        width: calc(100% + 30px);
+        height: 100%;
+        background: #f4f4f4;
+        z-index: -1;
+    }
+
+    .lfr-google-maps {
+        height: 100%;
+        min-height: rem(549);
+
+        button.gm-control-active.gm-fullscreen-control {
+            display: none;
+        }
+
+        .gm-style-mtc {
+            display: none;
+        }
+
+        .gm-svpc {
+            display: none;
+        }
+
+        .gm-ui-hover-effect {
+            display: none;
+        }
+
+        .lfr-google-maps__ctn {
+            position: relative;
+
+            .evr-map-center__figure {
+                margin-bottom: 10px;
+                width: rem(360);
+                height: rem(120);
+                position: relative;
+                overflow: hidden;
+
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+        }
+
+        .evr-map-center {
+            &__tooltip-link {
+                display: inline;
+                position: absolute;
+                top: 0;
+                right: rem(3);
+                font-weight: bold;
+                max-width: rem(45);
+                font-size: rem(16);
+            }
+
+            &__tooltip-title {
+                padding-left: rem(30);
+                font-size: rem(20);
+                font-family: $wf__font--bold;
+                padding-right: rem(50);
+                margin-bottom: rem(20);
+                position: relative;
+
+                &:before {
+                    width: rem(20);
+                    height: rem(20);
+                    content: "";
+                    position: absolute;
+                    top: 2px;
+                    left: 0;
+                    max-height: rem(20);
+                    background-image: url(#{$wf__image-path-icons}pin.svg);
+                    background-size: 20px 20px;
+                }
+            }
+
+            &__tooltip-container {
+                position: relative;
+            }
+
+            &__tooltip-text {
+                font-size: rem(18);
+                position: relative;
+
+                &--aft {
+                    margin-bottom: rem(22);
+
+                    &:after {
+                        content: "";
+                        bottom: -16px;
+                        position: absolute;
+                        height: rem(2);
+                        left: 0;
+                        width: 100%;
+                        opacity: 0.2;
+                        background: color(grey-7);
+                    }
+                }
+            }
+
+            &__tooltip-mail {
+                font-size: rem(15);
+                position: relative;
+                padding-left: rem(25);
+
+                &:hover {
+                    &:after {
+                        background-image: url(#{$wf__image-path-icons}send-red.svg);
+                    }
+                }
+
+                &:after {
+                    position: absolute;
+                    width: rem(18);
+                    height: rem(18);
+                    top: rem(2);
+                    background-image: url(#{$wf__image-path-icons}send-border.svg);
+                    background-size: rem(18) rem(18);
+                    background-repeat: no-repeat;
+                    content: "";
+                    left: 0;
+                }
+            }
+
+            &__tooltip-tlf {
+                font-size: rem(15);
+                position: relative;
+                padding-left: rem(25);
+
+                &:hover {
+                    &:after {
+                        background-image: url(#{$wf__image-path-icons}phone-red.svg);
+                    }
+                }
+
+                &:after {
+                    position: absolute;
+                    width: rem(18);
+                    height: rem(18);
+                    top: rem(2);
+                    background-image: url(#{$wf__image-path-icons}phone-border.svg);
+                    background-size: rem(18) rem(18);
+                    background-repeat: no-repeat;
+                    content: "";
+                    left: 0;
+                }
+            }
+        }
+
+    }
+
+    .btn.btn-primary {
+        margin-bottom: rem(10);
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    .portlet-content-container {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+    }
+
+    .evr-map-center {
+        &__form {
+            display: inline-block;
+            width: 42.5%;
+            min-height: rem(549);
+            background-color: color(grey-8);
+            padding-top: 52px;
+            z-index: 1;
+            position: relative;
+
+            &:after {
+                content: "";
+                position: absolute;
+                left: -15px;
+                top: 0;
+                width: calc(100% + 30px);
+                height: 100%;
+                background: color(grey-8);
+                z-index: -1;
+            }
+        }
+
+        &__map {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            right: -15px;
+            width: 58%;
+            vertical-align: top;
+            margin-right: 0;
+        }
+
+        &__content-form {
+            margin-right: rem(65);
+            text-align: right;
+
+            select,
+            input {
+                position: relative;
+                z-index: 2;
+                color: color(grey-9);
+                font-family: $wf__font--default;
+                width: 100%;
+                font-size: rem(18);
+                font-weight: 200;
+                line-height: rem(27);
+                padding: rem(11) rem(40) rem(11) rem(15);
+                box-shadow: 0 0 10px 0 rgba(0, 44, 88, 0.1) !important;
+                border: 1px solid color(grey-1);
+                max-width: rem(430);
+                width: 100%;
+                background-color: transparent;
+            }
+        }
+
+        &__content-button {
+            margin-right: rem(348);
+            text-align: right;
+        }
+
+        &__title-md {
+            display: none;
+        }
+
+        &__container-select {
+            position: relative;
+            margin-bottom: 30px;
+            background-color: color(white);
+
+            &--input {
+                &:after {
+                    display: none;
+                }
+            }
+
+            &:after {
+                position: absolute;
+                content: "";
+                background-image: url(#{$wf__image-path-icons}arrow-down.svg);
+                background-size: rem(15) rem(15);
+                background-repeat: no-repeat;
+                width: rem(15);
+                height: rem(15);
+                right: 10px;
+                z-index: 1;
+                top: 19px;
+                transition: 1s;
+            }
+        }
+
+        &__container-select.open {
+            &:after {
+                transform: rotate(180deg);
+            }
+        }
+
+        &__title {
+            color: color(black);
+            font-family: $wf__font--default;
+            font-size: rem(30);
+            margin-top: 0;
+            font-weight: 600;
+            line-height: rem(46);
+            margin-bottom: rem(28);
+            text-transform: uppercase;
+            text-align: left;
+
+            &--no-arrow {
+                &:after {
+                    display: none !important;
+                }
+            }
+
+            &--small {
+                font-size: rem(18);
+                font-weight: 300;
+                line-height: rem(27);
+                margin-bottom: rem(9);
+                text-transform: initial;
+                position: relative;
+                transition: 1s;
+            }
+        }
+    }
+}
+
+
+
+
+@include media-query(md) {
+    .portlet-boundary_googlemaps_ {
+        position: relative;
+
+        &:after {
+            display: none;
+        }
+
+        .maxwidth {
+            position: relative;
+            min-height: rem(480);
+        }
+
+        .lfr-google-maps {
+            position: relative;
+            overflow: hidden;
+            min-height: rem(480);
+        }
+
+        .btn.btn-primary {}
+
+        .portlet-content-container {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        .hide-md {
+            display: none !important;
+        }
+
+        .vis-md {
+            position: relative;
+            z-index: 1;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .evr-map-center {
+            &__form {
+                background: transparent;
+                width: 100%;
+                position: relative;
+                background: transparent;
+                margin-top: rem(7);
+                padding-top: rem(10);
+                min-height: auto;
+
+                &:after {
+                    display: none;
+                }
+            }
+
+            &__map {
+                width: calc(100% + 30px);
+                top: 0;
+                right: 0;
+                left: -15px;
+            }
+
+            &__container-select {
+                max-width: 430px;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            &__content-form {
+                margin-right: 0;
+
+                select,
+                input {
+                    color: color(grey-3);
+                    font-size: rem(14);
+                    font-weight: 200;
+                    line-height: rem(22);
+                    border: none;
+
+                    &:last-child {}
+                }
+            }
+
+            &__title-md {
+                display: block;
+                color: color(black);
+                font-family: $wf__font--default;
+                font-size: rem(20);
+                font-weight: 600;
+                line-height: rem(30);
+                padding-left: rem(15);
+                padding-right: rem(15);
+            }
+
+            &__title {
+                position: absolute;
+                bottom: 100%;
+                margin-bottom: rem(10);
+                left: rem(20);
+                font-size: rem(20);
+                line-height: rem(30);
+
+                &--small {
+                    max-width: rem(430);
+                    width: 100%;
+                    left: 50%;
+                    transform: translate(-50%, 0%);
+                    z-index: 3;
+                    font-size: 0;
+
+                    &:after {
+                        top: calc(100% + 35px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(sm) {
+    .portlet-boundary_googlemaps_ {
+        .lfr-google-maps {}
+
+        .btn.btn-primary {}
+
+        .portlet-content-container {}
+
+        .vis-md {
+            width: 100%;
+            max-width: 100%;
+            margin-left: rem(15);
+        }
+
+        .evr-map-center {
+            &__content-form {
+
+                select,
+                input {
+                    width: 100%;
+                    max-width: 100%;
+                    margin-left: 0;
+                }
+            }
+
+            &__title {
+                &--small {
+                    font-size: 0;
+                    display: block;
+                    max-width: 100%;
+                    width: 100%;
+                    left: 15px;
+                    transform: translate(0%, 0%);
+                    z-index: 3;
+
+                    &:after {
+                        right: rem(27);
+                        z-index: 5;
+                        top: calc(100% + 36px);
+                    }
+                }
+            }
+        }
+    }
+}

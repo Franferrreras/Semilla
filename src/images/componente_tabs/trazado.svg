@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>ico/trazado</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ico/trazado" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ico/distancia" transform="translate(0.000000, 2.000000)">
+            <ellipse id="Oval" fill="#5C966A" cx="17.5" cy="2.64130435" rx="2.5" ry="2.44565217"></ellipse>
+            <ellipse id="Oval" fill="#5C966A" cx="2.5" cy="15.3586957" rx="2.5" ry="2.44565217"></ellipse>
+            <path d="M2.5,15.3586957 C4.2095361,9.92235697 5.87620276,6.98757436 7.5,6.55434783 C9.93569586,5.90450802 10.6431486,13.5418114 13.5,12.423913 C15.4045676,11.6786475 16.7379009,8.41777789 17.5,2.64130435" id="Path-6" stroke="#5C966A" stroke-width="2" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

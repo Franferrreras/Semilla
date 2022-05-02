@@ -1,0 +1,118 @@
+.evr-mapa-web-cmaot{
+    margin-bottom: 20px;
+   .custom-size-font {
+    font-size: rem(18);
+}
+
+ 
+
+    ul {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 11pt;
+}
+ li {
+  color: $wf__secondary-color;
+  margin-left: 10px;
+  list-style-type: none;
+  cursor: pointer;
+}
+ li > ul {
+  display: none;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+ li > ul > li {
+  border-left: 1px dotted #cccccc;
+}
+li > a {
+  color: $wf__secondary-color;
+  font-weight: normal;
+}
+
+ 
+
+
+  
+  .liIcono{
+    display: inline !important;
+  }
+
+ 
+
+.custom-margin-left{
+  margin-left: 24px!important;
+  display: flex !important;   
+  flex-wrap: wrap !important;
+}
+
+ 
+
+.custom-background{
+    background-color:#F2F2F2;
+    margin-bottom:9px;
+}
+
+ 
+
+.custom-color-font-lvl1{
+    color:#727272;
+    font-size:rem(18);
+}
+
+ 
+
+.custom-color-font-lvl2{
+    color:$wf__primary-color ;
+    font-style:bold;
+}
+
+ 
+
+default{
+    color:#B8B8B8;
+    font-size:rem(18);
+}
+
+ 
+
+.custom-color-lvl3{
+    color:#8A8A8A;
+    font-size:rem(18);    
+}
+     
+     i{
+    align-items: baseline;
+    float: left;
+    margin-right: rem(7);
+    padding-top: 4px;
+    font-size:rem(18);
+    color: $wf__primary-color ;
+}
+
+ 
+
+.iconos-size-min{
+    font-size:rem(18);
+}
+
+ 
+
+   
+}
+
+
+
+@include media-query(xs) {
+    .evr-mapa-web-cmaot{
+        i{
+            font-size:rem(22);
+            align-items: baseline;
+            float: left;
+            margin-right: rem(7);
+            padding-top: 4px;
+            color: $wf__primary-color ;
+        }
+    }
+}
+ 

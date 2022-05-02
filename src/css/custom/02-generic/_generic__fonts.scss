@@ -1,0 +1,78 @@
+/*-------------------------------------------
+// 	#FONT GENERATOR
+// ------------------------------------------*/
+
+
+/* Example for use @font-face
+//
+//	@include font-face([name-font],
+//		$wf__base-path-font+'[name-font]',
+//		[font-style],
+//		[font-weight],
+//		[type-font(eot | woff | svg | ttf)]
+//	);
+//
+//*/
+
+/*@include font-face(Poppins,
+    $wf__base-path-font + 'Poppins/PoppinsLatin-Regular',
+    normal,
+    normal,
+    /*eot*/  /*woff*/  /*woff2*/  /*otf  ttf
+);*/
+/*@include font-face(PoppinsBold,
+    $wf__base-path-font + 'Poppins/PoppinsLatin-Bold',
+    normal,
+    normal,
+    /*eot*/  /*woff*/  /*woff2*/  /*otf  ttf
+);
+@include font-face(PoppinsLight,
+    $wf__base-path-font + 'Poppins/PoppinsLatin-light',
+    normal,
+    normal,
+    /*eot*/  /*woff*/  /*woff2*/  /*otf  ttf
+);*/
+
+
+@include font-face(BillyOhio,
+    $wf__base-path-font + 'BillyOhio/Billy-Ohio',
+    normal,
+    normal,
+    eot  woff  woff2  otf  ttf
+);
+
+
+@include font-face(OpenSans,
+    $wf__base-path-font+'OpenSans/OpenSans-Regular',
+    normal,
+    normal,
+    /*eot*/ /*woff*/ /*woff2*/ /*otf*/ ttf
+);
+
+@include font-face(FontAwesome,
+    $wf__base-path-font + 'fontawesome/fontawesome',
+    normal,
+    normal,
+    ttf eot svg otf
+);
+
+@include font-face(Assistant,
+    $wf__base-path-font + 'Assistant/Assistant-Regular',
+    normal,
+    normal,
+    /*eot*/  /*woff*/  /*woff2*/  otf  /*ttf*/
+);
+
+@include font-face(Assistant-Bold,
+    $wf__base-path-font + 'Assistant/Assistant-Bold',
+    normal,
+    normal,
+    /*eot*/  /*woff*/  /*woff2*/  otf  /*ttf*/
+);
+
+@include font-face(Assistant-Semibold,
+    $wf__base-path-font + 'Assistant/Assistant-SemiBold',
+    normal,
+    normal,
+    /*eot*/  /*woff*/  /*woff2*/  otf  /*ttf*/
+);

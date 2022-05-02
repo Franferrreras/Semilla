@@ -1,0 +1,25 @@
+@if ($include__site-title == true){
+
+	.site-title{
+		margin: 0;
+		padding: rem(33) 0;
+		.logo{
+			img{
+				width: rem(200);
+			}
+		} 
+	} 
+
+	@include media-query(xl) {
+    	.site-title{
+    		padding: rem(15) 0;
+		} 
+    }
+	@include media-query(md) {}
+    @include media-query(sm) {
+    	.site-title{
+    		padding: rem(3) 0;
+		}
+    }
+
+}
